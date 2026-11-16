@@ -17,7 +17,7 @@
       "收益机制"
     ]
   },
-  "updated_at": "2026-11-16T04:57:11.550622+00:00",
+  "updated_at": "2026-11-16T05:51:22.136083+00:00",
   "data_snapshot": {
     "retrieved_at": "2026-11-16",
     "public_parameter_records": 48,
@@ -339,7 +339,7 @@
       "title": "复用Yan888-clo已有公开仓库并完成代码推送",
       "type": "deployment",
       "topic": "仓库连接",
-      "status": "blocked",
+      "status": "done",
       "priority": "high",
       "gap_ids": [],
       "source_ids": [],
@@ -355,15 +355,15 @@
       "dependencies": [],
       "evidence": [
         {
-          "path": "docs/github-import-audit.json",
-          "kind": "public_repository_read_and_history_reconciliation",
-          "checked_at": "2026-11-16T04:57:11.550622+00:00",
-          "limitations": "只能证明公开读取及本地历史核对，不能证明拥有远端写权限"
+          "path": "research/evidence/github-push-6315d90.json",
+          "kind": "verified_github_push",
+          "checked_at": "2026-11-16T05:51:22.136083+00:00",
+          "limitations": "GitHub仓库已推送；Pages开通仍需独立设置"
         }
       ],
-      "blocked_reason": "公开读取和fetch已成功；ChatGPT连接失败，当前环境写入凭据无效，尚未推送GitHub",
+      "blocked_reason": null,
       "extra_inputs": [],
-      "last_updated": "2026-11-16T04:57:11.550622+00:00"
+      "last_updated": "2026-11-16T05:51:22.136083+00:00"
     },
     {
       "id": "D-PUBLISH",
@@ -457,6 +457,36 @@
       "evidence": [],
       "blocked_reason": "平台Cloudflare返回403；需要站点平台解除限制或另部署镜像并复测",
       "last_updated": "2026-11-16T04:41:27.209380+00:00"
+    },
+    {
+      "id": "D-GHPAGES",
+      "title": "启用GitHub Pages并验证自动发布",
+      "type": "deployment",
+      "topic": "仓库自动部署",
+      "status": "blocked",
+      "priority": "high",
+      "gap_ids": [],
+      "source_ids": [],
+      "dependencies": [
+        "D-GITHUB"
+      ],
+      "deliverables": [
+        "GitHub Pages成功部署回执和匿名访问结果"
+      ],
+      "acceptance": [
+        "仓库Pages发布源选择GitHub Actions",
+        "工作流通过且部署返回真实URL",
+        "匿名访问与下载成功后再作大陆实测"
+      ],
+      "blocked_reason": "当前连接管理Pages设置的API返回403；需仓库所有者在Settings → Pages选择GitHub Actions",
+      "evidence": [
+        {
+          "path": "research/evidence/github-push-6315d90.json",
+          "kind": "pages_management_permission_failure",
+          "checked_at": "2026-11-16T05:51:22.136083+00:00"
+        }
+      ],
+      "last_updated": "2026-11-16T05:51:22.136083+00:00"
     }
   ],
   "gaps": [
@@ -612,7 +642,7 @@
     "website_source": "site/",
     "generated_output": "dist/",
     "build_status": "passed",
-    "github_status": "公开仓库已找到并核对，本地已接入；写入授权未完成",
+    "github_status": "已授权并推送，远端SHA核验一致",
     "sites_source_access": "owner_confirmed",
     "sites_current_access_mode": "public",
     "publication_status": "published",
@@ -621,7 +651,8 @@
     "sites_status": "published",
     "domestic_status": "three_mainland_probes_http_403",
     "github_url": "https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations",
-    "deployment_note": "版本4已成功发布并匿名HTTP核验；本页与下载包随同仓库构建。GitHub待授权，未配置GitHub自动更新原Sites。"
+    "deployment_note": "GitHub已接入并完成源码推送；main工作流已启动。Pages首次开通需网页设置，原Sites仍独立发布。",
+    "github_pages_status": "待仓库所有者启用Pages；源码推送与自动构建不受影响"
   },
   "deployment": {
     "site_project_id": "appgprj_6afa7f3df0048191a958ae780f2c34c8",
@@ -651,7 +682,15 @@
     "last_verified_version": 4,
     "receipt_note": "这里记录最近已归档的版本4回执；后续发布不将未知提交或版本写为已验证。",
     "github_remote_main_checked": "77a2406f9a92f4dd35c29872009eb8e428b902cb",
-    "github_push_status": "awaiting_write_authorization"
+    "github_push_status": "succeeded",
+    "github_verified_commit": "6315d902b5a98dd422e281055c408ae0223a85a8",
+    "github_pages": {
+      "status": "requires_owner_setup",
+      "settings_url": "https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations/settings/pages",
+      "build_workflow_url": "https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations/actions",
+      "management_api_status": 403,
+      "published_url": null
+    }
   },
   "claims": {
     "real_station_efficiency_improvement": null,

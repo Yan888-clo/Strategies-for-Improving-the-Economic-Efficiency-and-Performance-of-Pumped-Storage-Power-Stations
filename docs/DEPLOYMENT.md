@@ -14,13 +14,13 @@
 
 现有公开仓库：[https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations](https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations)，账号`Yan888-clo`。已成功读取与fetch main，当前远端提交`77a2406f9a92f4dd35c29872009eb8e428b902cb`，只有README。原README保留在`docs/GITHUB_INITIAL_README.md`，本地与Sites历史合并；不另建仓库，不强推。
 
-用户截图显示“无法连接到GitHub”和“无法连接应用”。这是ChatGPT连接流程的通用失败提示，不能据此判定账号、密码或网络中的哪一项故障。当前`gh auth status`仍报凭据无效，插件未完成连接。公开读取无需写入授权，二者不得混称。
+此前用户截图显示通用连接失败。2026-11-16用户完成关联后，GitHub工具与CLI已识别Yan888-clo，推送成功且远端main SHA一致。此前失败不再作为当前授权状态。公开读取、仓库写入和Pages管理仍是独立权限。
 
 前面只要求连接ChatGPT插件的说明不足：应用读取与Codex写入权限需要分别验证。可先在Safari或桌面浏览器登录GitHub与ChatGPT，再通过Codex的仓库/云环境设置选择现有仓库；若出现GitHub授权页，只选择本项目仓库。GitHub端的OpenAI官方[ChatGPT Codex Connector](https://github.com/apps/chatgpt-codex-connector)可用于检查安装及仓库选择，但仅安装App不代表当前任务已经取得写权限。
 
 官方设置入口说明：[Codex Cloud环境](https://learn.chatgpt.com/docs/environments/cloud-environments)：Settings → Codex Cloud → Environments；选择/编辑环境并选中仓库，按页面完成GitHub授权。在手机平板上如未显示环境管理入口，用网页或桌面端；不要删除当前任务，本工作区成果保留。
 
-获得本仓库写入授权后，回到原任务运行 `bash scripts/connect-github.sh --push`。脚本只使用已配置的github远端，先fetch并核对远端main是本地祖先，先dry-run验证写入，再正常推送；不会强推或另建仓库。无授权会明确停止。不要在聊天、源码或公开仓库中填写密码、验证码或令牌。
+后续提交更新可运行 `bash scripts/connect-github.sh --push`。脚本只使用已配置的github远端，先fetch并核对远端main是本地祖先，先dry-run验证写入，再正常推送；不会强推或另建仓库。无授权会明确停止。不要在聊天、源码或公开仓库中填写密码、验证码或令牌。
 
 GitHub仓库Settings → Pages → Build and deployment → Source选择GitHub Actions，再运行`.github/workflows/pages.yml`。main更新后构建检查并发布dist，PR只检查；原Sites仍独立发布。
 
@@ -41,3 +41,9 @@ GitHub仓库Settings → Pages → Build and deployment → Source选择GitHub A
 | 腾讯云COS中国大陆地域 | 用户腾讯云账号、Bucket静态网站、自定义域名及相关备案，CI密钥置Secrets | 按地域存储、请求、流量及域名计费；未选用量不虚构总价 | 同上，需实测 |
 
 官方依据：[GitHub Pages限制](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)、[Cloudflare Pages限制](https://developers.cloudflare.com/pages/platform/limits/)、[OSS静态网站](https://help.aliyun.com/zh/oss/user-guide/hosting-static-websites)、[OSS价格](https://www.aliyun.com/price/detail/oss)、[COS价格](https://cloud.tencent.com/product/cos/pricing)。动态价格页与历史示例不同，购买时需确认地域、预期存储/下载流量、备案主体、域名注册/续费价格后再预算。本次未注册域名、未开通付费云资源。
+
+## 本次连接验证结果
+
+GitHub仓库写入已成功；证据见research/evidence/github-push-6315d90.json。首次启用Pages的POST接口返回HTTP403 Resource not accessible by integration。仓库owner权限不代表当前应用拥有Pages配置权限。不要为此重新连接账号或在聊天发送令牌；直接在仓库Settings → Pages → Build and deployment → Source选择GitHub Actions，然后在Actions重新运行工作流即可。
+
+工作流会检查Pages配置：未找到或发布源未选Actions时，保留构建产物并明确提示，不执行发布；403等其他错误仍使检查失败，避免掩盖权限故障。Pages未实际发布前不提供虚构的已上线镜像地址。

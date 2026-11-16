@@ -8,7 +8,7 @@
 
 - 另一个ChatGPT项目的聊天、文件上传或回答不会自动进入此仓库。把新成果整理进本仓库后才能进入构建链。
 - 没有配置定时自动科研抓取；新增来源由研究者核实后提交。网页不会自行补造缺失参数。
-- GitHub Pages工作流准备就绪，只有授权、仓库和Pages配置完成后才会在main提交后自动部署。
+- GitHub授权与仓库推送已完成，main提交会自动构建检查。Pages首次设置尚待所有者在Settings → Pages选择GitHub Actions；该设置完成后工作流才会自动部署。
 - 原Sites有独立源仓库与版本发布操作。GitHub Pages工作流不具备Sites的长效发布凭据，不自动更新原Sites。
 - 原Sites更新由有权的后续Codex/Sites会话读取当前仓库、运行构建校验、推送Sites源分支、保存并发布同一提交。所有研究和源码变更随该版本一起更新。
 - GitHub与Sites双远端时，保留`origin`为Sites，`github`为用户公开仓库。每次先fetch并核对两边历史，不强推、不覆盖远端新成果。

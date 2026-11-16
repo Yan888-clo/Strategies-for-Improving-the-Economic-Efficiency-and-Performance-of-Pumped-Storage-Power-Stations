@@ -6,7 +6,9 @@
 
 研究数据、来源、任务与网页放在同一个Git仓库。`research/data/` 是内容依据，`site/` 是网页模板，`scripts/build.py` 把数据与进度生成到 `dist/`，同时更新下载包。修改研究成果后执行构建与校验，网页及下载文件同步更新。只修改聊天内容或另一个ChatGPT项目不会自动修改仓库。
 
-原站的Sites Git历史已保留。已找到并核对现有公开仓库：[Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations](https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations)。该仓库目前只有初始README，已添加github远端并在本地保留、合并双方历史。当前没有已验证可用的GitHub写入授权，网站与研究代码尚未推送该仓库。GitHub Actions部署配置已经准备好；需完成写入授权、推送现有仓库并启用Pages才能自动发布GitHub Pages。**GitHub Pages与原Sites是两个独立部署目标，不能把Pages成功当作Sites自动更新。**
+原站的Sites Git历史与现有GitHub初始提交均已保留。公开仓库：[Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations](https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations)。GitHub授权、源码与研究资料推送已完成，远端SHA已核对。main更新会触发GitHub Actions构建与检查。
+
+GitHub Pages首次开通尚受限：当前连接修改Pages设置时返回403，需仓库所有者打开[Pages设置](https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations/settings/pages)，在Source选择GitHub Actions，再重新运行工作流。工作流会在Pages未准备好时明确提示并跳过发布，不把检查通过当作已部署。**GitHub Pages与原Sites是两个独立部署目标，Pages成功不代表Sites自动更新。**
 
 ## 本地运行
 
