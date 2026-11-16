@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-11-16T05:54:06.310481+00:00",
+  "sites_previous_commit": "8bf28063777409a91dcfbeb601cfcef7cc78e11e",
+  "common_ancestor": "6315d902b5a98dd422e281055c408ae0223a85a8",
+  "retained_features": [
+    "恒定水头闭合循环A/B效率模型",
+    "详细代入、同发电任务节能对比和负价格",
+    "数值检查与已记录的UI证据",
+    "GitHub写入成功与Pages就绪检查"
+  ],
+  "resolution": "Merge source files and tasks on both histories; rebuild all generated dist files. No force push, no research gaps closed."
+}

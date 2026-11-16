@@ -54,3 +54,7 @@ python -m http.server 8000 --directory dist
 [LICENSE](LICENSE)的MIT许可仅覆盖原创HTML/CSS/JavaScript；第三方数据、来源网站、论文与商标遵从原权利。新增Python与Shell脚本也以MIT提供，保留原代码许可范围说明。公开仓库与下载包只保留结构化数据及来源记录，不包含第三方论文全文或账号凭据。不要提交`.env`、访问令牌、个人账号配置或原始站点访问名单。
 
 国内可访问性报告在 `research/evidence/hosting_reachability.json`：2026-11-16的大陆三运营商探针访问首页、研究页、ZIP均HTTP403；当前云机匿名访问成功。不能据此声称大陆已正常可用，也不能把该探测直接推广为所有普通浏览器不可访问。
+
+## 效率计算新增入口
+
+`efficiency.html`提供两组工况、完整代入、同任务节电与费用对照；模型见`research/efficiency-model.md`。效率提升为核心目标，网页与研究计算同时维护。

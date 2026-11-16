@@ -20,6 +20,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Verify efficiency calculation boundaries
+        run: node scripts/test-efficiency.cjs --check-only
       - name: Build from canonical research data
         run: python scripts/build.py
       - name: Check evidence, units, generated pages and downloads
