@@ -1,0 +1,2334 @@
+{
+  "metadata": {
+    "plant": "辽宁清原抽水蓄能电站一期",
+    "scope": "6×300MW，排除辽宁清原二期及广东清远",
+    "retrieved_at": "2026-11-16",
+    "real_plant_efficiency_optimization_ready": false,
+    "reason": "尚无清原完整库容曲线、机组效率曲面及可核验时序；已公开设计参数可用于明确假设的计算研究。",
+    "price_sample": {
+      "date": "2026-11-15",
+      "points": 96,
+      "step_minutes": 15,
+      "time_zone": "Asia/Shanghai",
+      "time_label": "日内时刻00:15至24:00，按15分钟区间末端标签处理，原始xData保留",
+      "location": "辽宁统一结算点，非清原节点",
+      "unit": "元/MWh",
+      "source": "E13",
+      "real_time_min": -100.0,
+      "real_time_max": 432.74,
+      "real_time_arithmetic_mean": 213.48697916666666,
+      "day_ahead_min": -100.0,
+      "day_ahead_max": 460.0,
+      "day_ahead_arithmetic_mean": 120.57104166666667,
+      "negative_real_time_points": 19,
+      "note": "真实公开栏目返回的数据；可作为可追溯代理电价算例，不能声称是清原实际结算单。日均数为各15分钟价简单均值，不是电量加权均价。负价保留。"
+    }
+  },
+  "parameters": [
+    {
+      "key": "plant_power_mw",
+      "category": "规模",
+      "parameter": "总装机容量",
+      "value": 1800,
+      "unit": "MW",
+      "status": "官方公开",
+      "source_ids": "S01;S03",
+      "location": "项目基本情况；容量电价表序号43",
+      "use": "装机上限",
+      "notes": ""
+    },
+    {
+      "key": "unit_count",
+      "category": "规模",
+      "parameter": "机组数量",
+      "value": 6,
+      "unit": "台",
+      "status": "官方公开",
+      "source_ids": "S01",
+      "location": "项目基本情况",
+      "use": "机组组合约束",
+      "notes": ""
+    },
+    {
+      "key": "unit_power_mw",
+      "category": "规模",
+      "parameter": "单机发电容量",
+      "value": 300,
+      "unit": "MW",
+      "status": "官方公开",
+      "source_ids": "S01;S08",
+      "location": "项目基本情况；供应商原刊p25",
+      "use": "发电额定功率；不是抽水最大入力",
+      "notes": ""
+    },
+    {
+      "key": "full_output_hours",
+      "category": "运行基准",
+      "parameter": "连续满发利用小时数",
+      "value": 6,
+      "unit": "h",
+      "status": "官方公开",
+      "source_ids": "S01",
+      "location": "项目基本情况",
+      "use": "设计连续满发任务",
+      "notes": "不代表实际每天均满发6小时"
+    },
+    {
+      "key": "annual_gen_hours",
+      "category": "运行基准",
+      "parameter": "年利用小时数",
+      "value": 1673,
+      "unit": "h/年",
+      "status": "官方公开",
+      "source_ids": "S01",
+      "location": "项目基本情况",
+      "use": "设计年利用参考",
+      "notes": "与30.11亿kWh/1800MW约1672.78h相符；不是机组每年实际开机时长"
+    },
+    {
+      "key": "regulation_type",
+      "category": "运行基准",
+      "parameter": "调节类型",
+      "value": "日调节",
+      "unit": "—",
+      "status": "官方公开",
+      "source_ids": "S01",
+      "location": "项目基本情况",
+      "use": "典型日分析依据",
+      "notes": ""
+    },
+    {
+      "key": "upper_normal_level_m",
+      "category": "水库",
+      "parameter": "上库正常蓄水位",
+      "value": 725.0,
+      "unit": "m",
+      "status": "官方公开",
+      "source_ids": "S01",
+      "location": "项目基本情况",
+      "use": "上库水位上界",
+      "notes": ""
+    },
+    {
+      "key": "upper_dead_level_m",
+      "category": "水库",
+      "parameter": "上库死水位",
+      "value": 695.0,
+      "unit": "m",
+      "status": "官方公开",
+      "source_ids": "S01",
+      "location": "项目基本情况",
+      "use": "上库水位下界",
+      "notes": ""
+    },
+    {
+      "key": "upper_total_storage_m3",
+      "category": "水库",
+      "parameter": "上库总库容",
+      "value": 15220000,
+      "unit": "m³",
+      "status": "官方公开",
+      "source_ids": "S01",
+      "location": "项目基本情况",
+      "use": "工程背景",
+      "notes": "总库容不是正常运行可用库容"
+    },
+    {
+      "key": "upper_normal_storage_m3",
+      "category": "水库",
+      "parameter": "上库正常蓄水位相应库容",
+      "value": 14370000,
+      "unit": "m³",
+      "status": "官方公开",
+      "source_ids": "S01",
+      "location": "项目基本情况",
+      "use": "正常蓄水位库容",
+      "notes": ""
+    },
+    {
+      "key": "upper_regulating_storage_m3",
+      "category": "水库",
+      "parameter": "上库调节库容",
+      "value": 12160000,
+      "unit": "m³",
+      "status": "官方公开",
+      "source_ids": "S01",
+      "location": "项目基本情况",
+      "use": "调节容积边界",
+      "notes": "不等同全部可发电水量，冰冻/运行备用等划分需另核"
+    },
+    {
+      "key": "lower_normal_level_m",
+      "category": "水库",
+      "parameter": "下库正常蓄水位",
+      "value": 319.0,
+      "unit": "m",
+      "status": "官方公开",
+      "source_ids": "S01",
+      "location": "项目基本情况",
+      "use": "下库水位上界",
+      "notes": ""
+    },
+    {
+      "key": "lower_dead_level_m",
+      "category": "水库",
+      "parameter": "下库死水位",
+      "value": 298.0,
+      "unit": "m",
+      "status": "官方公开",
+      "source_ids": "S01",
+      "location": "项目基本情况",
+      "use": "下库水位下界",
+      "notes": ""
+    },
+    {
+      "key": "lower_total_storage_m3",
+      "category": "水库",
+      "parameter": "下库总库容",
+      "value": 17080000,
+      "unit": "m³",
+      "status": "官方公开",
+      "source_ids": "S01",
+      "location": "项目基本情况",
+      "use": "工程背景",
+      "notes": ""
+    },
+    {
+      "key": "lower_normal_storage_m3",
+      "category": "水库",
+      "parameter": "下库正常蓄水位相应库容",
+      "value": 16140000,
+      "unit": "m³",
+      "status": "官方公开",
+      "source_ids": "S01",
+      "location": "项目基本情况",
+      "use": "正常蓄水位库容",
+      "notes": ""
+    },
+    {
+      "key": "lower_regulating_storage_m3",
+      "category": "水库",
+      "parameter": "下库调节库容",
+      "value": 14920000,
+      "unit": "m³",
+      "status": "官方公开",
+      "source_ids": "S01",
+      "location": "项目基本情况",
+      "use": "调节容积边界",
+      "notes": ""
+    },
+    {
+      "key": "lower_catchment_km2",
+      "category": "水文",
+      "parameter": "下库集水面积",
+      "value": 65.3,
+      "unit": "km²",
+      "status": "官方公开",
+      "source_ids": "S01",
+      "location": "项目基本情况",
+      "use": "水量平衡背景",
+      "notes": "不能仅凭面积得到逐时径流"
+    },
+    {
+      "key": "annual_permitted_withdrawal_m3",
+      "category": "水文",
+      "parameter": "批准年取水量",
+      "value": 2548900,
+      "unit": "m³/年",
+      "status": "官方许可限额",
+      "source_ids": "S01",
+      "location": "二、批准事项",
+      "use": "外部取水许可边界",
+      "notes": "非实际年取水量，非抽发往返水量，非蒸发量"
+    },
+    {
+      "key": "rated_head_m",
+      "category": "机组",
+      "parameter": "额定水头",
+      "value": 390.0,
+      "unit": "m",
+      "status": "供应商与文献交叉核实",
+      "source_ids": "S07;S08",
+      "location": "表3清原；原刊p25",
+      "use": "额定工况基准",
+      "notes": "不能直接作为所有时段的恒定毛水头"
+    },
+    {
+      "key": "rated_speed_rpm",
+      "category": "机组",
+      "parameter": "额定转速",
+      "value": 375,
+      "unit": "r/min",
+      "status": "供应商公开",
+      "source_ids": "S08",
+      "location": "原刊p25",
+      "use": "机组技术参数",
+      "notes": "非变速可调范围"
+    },
+    {
+      "key": "max_generating_head_m",
+      "category": "机组",
+      "parameter": "最大水头（文献表头）",
+      "value": 421.57,
+      "unit": "m",
+      "status": "文献对比表列示",
+      "source_ids": "S07",
+      "location": "p54表3清原行",
+      "use": "机组水头设计范围参考",
+      "notes": "与水库毛落差口径不同；实际可用范围还受工况限制"
+    },
+    {
+      "key": "min_generating_head_m",
+      "category": "机组",
+      "parameter": "最小水头（文献表头）",
+      "value": 364.13,
+      "unit": "m",
+      "status": "文献对比表列示",
+      "source_ids": "S07",
+      "location": "p54表3清原行",
+      "use": "机组水头设计范围参考",
+      "notes": ""
+    },
+    {
+      "key": "max_pumping_head_m",
+      "category": "机组",
+      "parameter": "最大扬程",
+      "value": 433.31,
+      "unit": "m",
+      "status": "文献对比表列示",
+      "source_ids": "S07",
+      "location": "p54表3清原行",
+      "use": "抽水工况参考",
+      "notes": "抽水扬程含损失口径，不是水库高差"
+    },
+    {
+      "key": "annual_generation_kwh",
+      "category": "运行基准",
+      "parameter": "设计年发电量",
+      "value": 3011000000,
+      "unit": "kWh/年",
+      "status": "论文公开设计值",
+      "source_ids": "S02",
+      "location": "1.2调查方法",
+      "use": "年能量基准",
+      "notes": "不是实际发电记录"
+    },
+    {
+      "key": "annual_pumping_kwh",
+      "category": "运行基准",
+      "parameter": "设计年抽水用电量",
+      "value": 4015000000,
+      "unit": "kWh/年",
+      "status": "论文公开设计值",
+      "source_ids": "S02",
+      "location": "1.2调查方法",
+      "use": "年能量基准",
+      "notes": "与发电量同一论文口径；不是实测抽水记录"
+    },
+    {
+      "key": "capacity_tariff_2023",
+      "category": "经济",
+      "parameter": "2023核定容量电价",
+      "value": 599.66,
+      "unit": "元/kW（年容量费口径）",
+      "status": "官方历史批复",
+      "source_ids": "S03",
+      "location": "PDF第2页序号43、表注",
+      "use": "政策基准情景",
+      "notes": "原表单位写元/千瓦且含增值税；实际容量费受核价周期、投运容量及考核影响，不视为已收收入"
+    },
+    {
+      "key": "project_investment_approx_yuan",
+      "category": "经济",
+      "parameter": "政府工作报告所述项目投资约数",
+      "value": 10900000000,
+      "unit": "元",
+      "status": "官方公开约数",
+      "source_ids": "S04",
+      "location": "项目建设全面提速",
+      "use": "背景/成本量级",
+      "notes": "约109亿元，不是竣工决算，不能用于精确财务回收期"
+    },
+    {
+      "key": "transmission_single_220plus_yuan_kwh",
+      "category": "经济",
+      "parameter": "220kV及以上单一制输配电量价",
+      "value": 0.141,
+      "unit": "元/kWh",
+      "status": "官方现行表列",
+      "source_ids": "S06",
+      "location": "附件第1页单一制行",
+      "use": "符合该电压档时的费用分项",
+      "notes": "自2026-08-01起；非抽水总购电价；发电相应退减输配电费"
+    },
+    {
+      "key": "provincial_grid_loss_rate",
+      "category": "经济",
+      "parameter": "省内上网环节线损率",
+      "value": 0.0378,
+      "unit": "—",
+      "status": "官方现行表列",
+      "source_ids": "S06",
+      "location": "附件第1页注3",
+      "use": "结算损失费用参数",
+      "notes": "按实际结算细则使用；不能直接等同电站物理能量损失"
+    },
+    {
+      "key": "lower_inlet_holes",
+      "category": "局部水力",
+      "parameter": "下库单体进出水口孔数",
+      "value": 4,
+      "unit": "孔",
+      "status": "论文设计体型（原型尺度）",
+      "source_ids": "S09",
+      "location": "p111–112节2.1",
+      "use": "局部水力模型",
+      "notes": "单体结构孔口数，不是全电站机组数"
+    },
+    {
+      "key": "lower_inlet_hole_width_m",
+      "category": "局部水力",
+      "parameter": "下库单体每孔宽",
+      "value": 6.3,
+      "unit": "m",
+      "status": "论文设计体型（原型尺度）",
+      "source_ids": "S09",
+      "location": "p112节2.1",
+      "use": "局部水力计算",
+      "notes": ""
+    },
+    {
+      "key": "lower_inlet_hole_height_m",
+      "category": "局部水力",
+      "parameter": "下库单体每孔高",
+      "value": 8.7,
+      "unit": "m",
+      "status": "论文设计体型（原型尺度）",
+      "source_ids": "S09",
+      "location": "p112节2.1",
+      "use": "局部水力计算",
+      "notes": ""
+    },
+    {
+      "key": "lower_inlet_length_m",
+      "category": "局部水力",
+      "parameter": "下库单体进出水口总长",
+      "value": 72.5,
+      "unit": "m",
+      "status": "论文设计体型（原型尺度）",
+      "source_ids": "S09",
+      "location": "p112节2.1",
+      "use": "局部水力计算",
+      "notes": "不是整条输水系统长度"
+    },
+    {
+      "key": "lower_inlet_diffuser_length_m",
+      "category": "局部水力",
+      "parameter": "下库单体扩散段长",
+      "value": 36.0,
+      "unit": "m",
+      "status": "论文设计体型（原型尺度）",
+      "source_ids": "S09",
+      "location": "p112节2.1",
+      "use": "局部水力计算",
+      "notes": ""
+    },
+    {
+      "key": "lower_inlet_vertical_angle_deg",
+      "category": "局部水力",
+      "parameter": "扩散段顶板垂向扩散角",
+      "value": 2.4,
+      "unit": "°",
+      "status": "论文设计体型（原型尺度）",
+      "source_ids": "S09",
+      "location": "p112节2.1",
+      "use": "局部水力计算",
+      "notes": ""
+    },
+    {
+      "key": "lower_inlet_horizontal_angle_deg",
+      "category": "局部水力",
+      "parameter": "扩散段总水平扩散角",
+      "value": 34.3,
+      "unit": "°",
+      "status": "论文设计体型（原型尺度）",
+      "source_ids": "S09",
+      "location": "p112节2.1",
+      "use": "局部水力计算",
+      "notes": ""
+    },
+    {
+      "key": "lower_inlet_tunnel_diameter_m",
+      "category": "局部水力",
+      "parameter": "下库进出水口连接隧洞直径",
+      "value": 8.2,
+      "unit": "m",
+      "status": "论文图示",
+      "source_ids": "S09",
+      "location": "p111图1",
+      "use": "局部水力计算",
+      "notes": "局部连接隧洞直径，非全程等径"
+    },
+    {
+      "key": "lower_inlet_inflow_xi",
+      "category": "局部水力",
+      "parameter": "下库进流局部损失系数（模型试验）",
+      "value": 0.141,
+      "unit": "—",
+      "status": "论文模型试验",
+      "source_ids": "S09",
+      "location": "p113表1实测值行；p112式14",
+      "use": "局部损失 hf=xi*v²/(2g)",
+      "notes": "进流为库水进入隧洞，通常对应抽水；v为连接隧洞断面平均速度，动能修正系数取1；模型比尺1:60；损失界面为库区至渐变段末端1.5D处"
+    },
+    {
+      "key": "lower_inlet_outflow_xi",
+      "category": "局部水力",
+      "parameter": "下库出流局部损失系数（模型试验）",
+      "value": 0.347,
+      "unit": "—",
+      "status": "论文模型试验",
+      "source_ids": "S09",
+      "location": "p113表1实测值行；p112式14",
+      "use": "局部损失 hf=xi*v²/(2g)",
+      "notes": "出流为隧洞排水入库，通常对应发电；损失界面为库区至渐变段末端1.5D处；非全站实测损失"
+    },
+    {
+      "key": "unit_form",
+      "category": "机组",
+      "parameter": "机组形式",
+      "value": "立轴、单级、可逆混流式",
+      "unit": "—",
+      "status": "供应商公开",
+      "source_ids": "S08",
+      "location": "p25 Qingyuan",
+      "use": "机组类型",
+      "notes": ""
+    },
+    {
+      "key": "runner_D1_m",
+      "category": "机组",
+      "parameter": "转轮直径D1（文献对比）",
+      "value": 4.543,
+      "unit": "m",
+      "status": "文献对比表列示",
+      "source_ids": "S07",
+      "location": "p54表2清原行",
+      "use": "几何设计参考",
+      "notes": "非清原原始竣工尺寸；不可混用网络约4.7m"
+    },
+    {
+      "key": "motor_generator_mva",
+      "category": "机组",
+      "parameter": "发电电动机容量（文献对比）",
+      "value": 333.3,
+      "unit": "MVA",
+      "status": "文献对比表列示",
+      "source_ids": "S07",
+      "location": "p54表2清原行",
+      "use": "电气容量背景",
+      "notes": "MVA不是MW，不能当抽水最大输入有功功率"
+    },
+    {
+      "key": "inlet_ball_valve_dn_mm",
+      "category": "设备部件",
+      "parameter": "进水球阀公称直径",
+      "value": 2500,
+      "unit": "mm",
+      "status": "供应商公开",
+      "source_ids": "S08",
+      "location": "p25 Qingyuan",
+      "use": "设备背景",
+      "notes": "不是全流道直径"
+    },
+    {
+      "key": "inlet_ball_valve_design_head_m",
+      "category": "设备部件",
+      "parameter": "进水球阀设计水头",
+      "value": 714,
+      "unit": "m",
+      "status": "供应商公开",
+      "source_ids": "S08",
+      "location": "p25 Qingyuan",
+      "use": "设备承压设计背景",
+      "notes": "不得代入电站运行水头或抽水扬程"
+    },
+    {
+      "key": "grid_voltage_kv",
+      "category": "接入",
+      "parameter": "接入电压",
+      "value": 500,
+      "unit": "kV",
+      "status": "政府刊载项目报道",
+      "source_ids": "E11",
+      "location": "2025-01-20报道第2段",
+      "use": "输配电价电压档判断",
+      "notes": "以两回500kV线路接入，实际结算接入点以合同为准"
+    },
+    {
+      "key": "first_unit_commercial_date",
+      "category": "运行基准",
+      "parameter": "首台机组投产日期",
+      "value": "2023-12-15",
+      "unit": "日期",
+      "status": "政府刊载项目报道",
+      "source_ids": "E11",
+      "location": "2025-01-20报道末段",
+      "use": "累计统计区间起点",
+      "notes": ""
+    },
+    {
+      "key": "all_units_commercial_date",
+      "category": "运行基准",
+      "parameter": "全部机组投产日期",
+      "value": "2025-01-16",
+      "unit": "日期",
+      "status": "政府刊载项目报道",
+      "source_ids": "E11",
+      "location": "2025-01-20报道首段",
+      "use": "累计统计区间终点",
+      "notes": ""
+    },
+    {
+      "key": "lower_inlet_model_scale",
+      "category": "局部水力",
+      "parameter": "局部物理模型几何比尺",
+      "value": 60,
+      "unit": "原型/模型",
+      "status": "论文设计模型试验",
+      "source_ids": "S09",
+      "location": "p111-112节2.3",
+      "use": "说明试验性质",
+      "notes": "1:60，不是电站现场商运实测"
+    }
+  ],
+  "derived_parameters": [
+    {
+      "key": "design_energy_ratio",
+      "parameter": "设计年发电/抽水电量比",
+      "value": 0.7499377334993773,
+      "unit": "—",
+      "formula": "E_gen/E_pump",
+      "input_keys": "annual_generation_kwh;annual_pumping_kwh",
+      "notes": "约74.9938%；用作设计能量比基准，不视为商运实测完整循环效率",
+      "status": "由公开参数推导；非独立实测"
+    },
+    {
+      "key": "annual_energy_difference_kwh",
+      "parameter": "设计年抽发电量差",
+      "value": 1004000000,
+      "unit": "kWh/年",
+      "formula": "E_pump-E_gen",
+      "input_keys": "annual_generation_kwh;annual_pumping_kwh",
+      "notes": "10.04亿kWh；不能仅凭该差额拆分各设备损失",
+      "status": "由公开参数推导；非独立实测"
+    },
+    {
+      "key": "gen_equivalent_hours",
+      "parameter": "由设计电量折算年发电利用小时",
+      "value": 1672.7777777777778,
+      "unit": "h/年",
+      "formula": "E_gen/(1000*P_MW)",
+      "input_keys": "annual_generation_kwh;plant_power_mw",
+      "notes": "约1672.78h，与官方1673h的取整口径一致",
+      "status": "由公开参数推导；非独立实测"
+    },
+    {
+      "key": "six_hour_output_mwh",
+      "parameter": "额定功率连续6小时发电量",
+      "value": 10800,
+      "unit": "MWh",
+      "formula": "P_MW*t_h",
+      "input_keys": "plant_power_mw;full_output_hours",
+      "notes": "10800MWh为满发任务量，不等同直接测得的水库物理储能",
+      "status": "由公开参数推导；非独立实测"
+    },
+    {
+      "key": "upper_dead_storage_m3",
+      "parameter": "上库死库容推导值",
+      "value": 2210000,
+      "unit": "m³",
+      "formula": "V_normal-V_regulating",
+      "input_keys": "upper_normal_storage_m3;upper_regulating_storage_m3",
+      "notes": "按调节库容定义相减，非额外公开库容点",
+      "status": "由公开参数推导；非独立实测"
+    },
+    {
+      "key": "lower_dead_storage_m3",
+      "parameter": "下库死库容推导值",
+      "value": 1220000,
+      "unit": "m³",
+      "formula": "V_normal-V_regulating",
+      "input_keys": "lower_normal_storage_m3;lower_regulating_storage_m3",
+      "notes": "按调节库容定义相减，非额外公开库容点",
+      "status": "由公开参数推导；非独立实测"
+    },
+    {
+      "key": "gross_normal_difference_m",
+      "parameter": "两库均处正常水位时的水位差",
+      "value": 406.0,
+      "unit": "m",
+      "formula": "Z_upper_normal-Z_lower_normal",
+      "input_keys": "upper_normal_level_m;lower_normal_level_m",
+      "notes": "406m；只是该水位组合的毛落差，不能替代额定水头390m，也不保证循环中能到达",
+      "status": "由公开参数推导；非独立实测"
+    },
+    {
+      "key": "independent_gross_max_m",
+      "parameter": "独立水位界限相减的最大毛落差",
+      "value": 427.0,
+      "unit": "m",
+      "formula": "Z_upper_max-Z_lower_min",
+      "input_keys": "upper_normal_level_m;lower_dead_level_m",
+      "notes": "427m；仅为独立边界包络，实际可达状态还需上下库总水量耦合",
+      "status": "由公开参数推导；非独立实测"
+    },
+    {
+      "key": "independent_gross_min_m",
+      "parameter": "独立水位界限相减的最小毛落差",
+      "value": 376.0,
+      "unit": "m",
+      "formula": "Z_upper_min-Z_lower_max",
+      "input_keys": "upper_dead_level_m;lower_normal_level_m",
+      "notes": "376m；不是文献列示最小水头364.13m",
+      "status": "由公开参数推导；非独立实测"
+    },
+    {
+      "key": "lower_tunnel_area_m2",
+      "parameter": "下库连接隧洞圆断面面积",
+      "value": 52.81017250684442,
+      "unit": "m²",
+      "formula": "pi*D²/4",
+      "input_keys": "lower_inlet_tunnel_diameter_m",
+      "notes": "用于局部平均流速Q/A；Q需为该单体总流量，不能随意使用全站总流量",
+      "status": "由公开参数推导；非独立实测"
+    },
+    {
+      "key": "illustrative_gross_capacity_payment_yuan",
+      "parameter": "按2023核价与全装机简单相乘的容量费量级",
+      "value": 1079388000.0,
+      "unit": "元/年",
+      "formula": "tariff*1000*P_MW",
+      "input_keys": "capacity_tariff_2023;plant_power_mw",
+      "notes": "约10.79388亿元/年；仅量级演算，非当期实际收入或利润；未处理考核、投运时点、核价变更和税费",
+      "status": "由公开参数推导；非独立实测"
+    }
+  ],
+  "missing_parameters": [
+    [
+      "M01",
+      "上、下库完整水位—库容曲线/离散表",
+      "变水头、水量平衡",
+      "公开检索未取得",
+      "可采用两端点构造线性近似开展方法算例，须标为假设并做曲线形状敏感性分析；不得称实际库容曲线",
+      "S01仅提供边界点，S10摘要不含"
+    ],
+    [
+      "M02",
+      "水轮机效率η_t(H,Q)或η_t(H,P)曲面",
+      "负荷分配效率优化",
+      "未取得可公开下载数值曲面",
+      "寻找S10全文或明确标注来源的可比机组曲线；替代曲线只证明方法，不证明清原实站提升",
+      "S10仅摘要开放"
+    ],
+    [
+      "M03",
+      "水泵效率η_p(H,Q)及Q-H/P-H曲线",
+      "抽水能耗与定速约束",
+      "未取得",
+      "不能用任意连续抽水功率模型冒充定速真实特性",
+      "S10论文线索"
+    ],
+    [
+      "M04",
+      "发电机/电动机/主变效率与损耗随负荷变化",
+      "从水力效率算电站电效率",
+      "未取得清原曲线",
+      "可明确作为情景参数；不能从75%综合电量比唯一反推各设备效率",
+      "S08设备介绍无数值曲面"
+    ],
+    [
+      "M05",
+      "单机额定发电流量及抽水流量",
+      "功率—流量—水头模型",
+      "未取得原始清原数值",
+      "不能在未知效率时由300MW和390m反算后称额定流量；可用作待标定变量",
+      "待查S10全文"
+    ],
+    [
+      "M06",
+      "各流道分段长度、直径、糙率、局部构件系数及共用关系",
+      "完整输水损失",
+      "仅取得下库进出水口单体数据",
+      "按段建模；不能将钢管安装累计长度、全部交通洞总长当一条流道长度",
+      "S09为局部构件，不覆盖全站"
+    ],
+    [
+      "M07",
+      "机组最小稳定出力、禁振区与运行允许区",
+      "可行负荷分配",
+      "未取得",
+      "缺失时只能做带明确假设的工况算例，不可推荐实际运行指令",
+      "S10线索"
+    ],
+    [
+      "M08",
+      "抽水最小/最大入力与水头关联",
+      "定速抽水开停组合",
+      "未取得原始清原参数",
+      "不能把单机300MW发电容量直接当抽水最大输入功率",
+      "待查设备验收资料"
+    ],
+    [
+      "M09",
+      "启停耗能、启停成本、爬坡、最小开停时间",
+      "多时段优化",
+      "未取得",
+      "主研究可暂限定稳定工况负荷分配；若加启停模型需列假设与敏感性",
+      "不编造磨损费用"
+    ],
+    [
+      "M10",
+      "同周期逐时抽水电量、发电量、厂用电及上下库水位",
+      "实测效率与模型验证",
+      "未取得配套公开时序",
+      "零散累计发电量没有配套抽水量，不能算实测循环效率",
+      "年设计电量不能替代实测"
+    ],
+    [
+      "M11",
+      "清原所在节点逐时/15分钟实时现货价格",
+      "现行市场经济调度",
+      "已取得2026-11-15辽宁统一结算点96点公开价格；清原节点价格仍未取得",
+      "该96点可作公开代理电价算例，必须显示“非清原节点”；不能把统一结算点与节点价格视为相同。",
+      "S05要求节点实时价格"
+    ],
+    [
+      "M12",
+      "月度系统运行费和上网线损费完整结算细则",
+      "实际购电成本",
+      "仅查到输配价和省内线损率",
+      "完整成本需同时处理输配电费退减，不可机械重复加收",
+      "S05;S06"
+    ],
+    [
+      "M13",
+      "实际容量费结算、可用率考核和最新校核核价",
+      "电站财务收益",
+      "2023批复可得；实际结算未得",
+      "599.66仅作为标明日期的政策基准",
+      "S03"
+    ],
+    [
+      "M14",
+      "全年实际运维、检修、保险、税费及折旧、融资",
+      "全寿命经济评价",
+      "未取得",
+      "本科主线采用增量节能收益；不据不完整成本估精确IRR/回收期",
+      "政府投资约数不等于财务成本表"
+    ],
+    [
+      "M15",
+      "逐日来水、生态下泄、蒸发渗漏、冬季冰冻库容",
+      "长期水量平衡",
+      "只取得年取水许可限额与集水面积",
+      "典型日忽略项需明确并检验；不能拿批准取水量当实际水损",
+      "S01；生态流量研究线索另列"
+    ],
+    [
+      "M16",
+      "实际调度负荷指令及开机组合",
+      "基线验证",
+      "未取得",
+      "可构造明确标注的典型发电任务；结果不称实测调度改进",
+      "公开设计规模可作边界"
+    ]
+  ],
+  "sources": [
+    [
+      "S01",
+      "辽宁省水利厅",
+      "辽宁省水利厅关于准予辽宁清原抽水蓄能有限公司抽水蓄能电站取水许可决定书",
+      "2026-02-11（落款2026-02-09）",
+      "https://slt.ln.gov.cn/slt/zfxxgk/fdzdgknr/xzxkjd/2026060514021837722/index.shtml",
+      "一、项目基本情况；二、批准事项",
+      "已打开全文；URL日期与正文发布日期不同，以正文为准"
+    ],
+    [
+      "S02",
+      "北京大学学报（自然科学版）；清华大学作者",
+      "孟祥鑫等：多能互补视角下抽水蓄能电站运营管理的影响因素分析——以辽宁清原抽水蓄能电站为例",
+      "2024-09；60(5):917起；DOI 10.13209/j.0479-8023.2024.075",
+      "https://xbna.pku.edu.cn/fileup/0479-8023/HTML/2024-5-917.html",
+      "1.2 调查方法",
+      "已打开全文；年电量为设计值，不是实测年报"
+    ],
+    [
+      "S03",
+      "国家发展改革委",
+      "关于抽水蓄能电站容量电价及有关事项的通知附件：抽水蓄能电站容量电价表",
+      "2023-05",
+      "https://www.ndrc.gov.cn/xxgk/zcfb/tz/202305/P020230515603052952327.pdf",
+      "PDF第2页，序号43，末尾表注",
+      "已打开原始PDF；2023批复基准，后续监管周期校核及实际结算另需核验"
+    ],
+    [
+      "S04",
+      "抚顺市人民政府",
+      "2024年清原县政府工作报告",
+      "2023-12-21",
+      "https://fushun.gov.cn/zwgk/002009/002009002/20231221/efa3b260-fc0f-4a05-98d1-6c3ebf7f2f4e.html",
+      "2023年工作回顾（一）项目建设全面提速",
+      "已打开全文；项目投资为约数，非竣工决算"
+    ],
+    [
+      "S05",
+      "辽宁省发展改革委",
+      "省发展改革委关于第四监管周期辽宁电网输配电价及有关事项的通知",
+      "2026-07-31；2026-08-01起执行",
+      "https://fgw.ln.gov.cn/fgw/zc/zxzc/2026073115014473464/index.shtml",
+      "二、其他事项第2条；三、有关要求第3条",
+      "已打开全文；抽发电价依节点实时现货价格，不能用普通用户峰谷电价替代"
+    ],
+    [
+      "S06",
+      "辽宁省发展改革委",
+      "第四监管周期辽宁电网输配电价表（附件1）",
+      "2026-07-31；2026-08-01起执行",
+      "https://fgw.ln.gov.cn/fgw/zc/zxzc/2026073115014473464/2026073114583385294.pdf",
+      "PDF第1页单一制220千伏及以上栏；注2、注3",
+      "已打开原始PDF；发电电量退减输配电费，完整购电费用不止表列输配价"
+    ],
+    [
+      "S07",
+      "水利水电快报",
+      "章勋等：宁波梅山港抽水蓄能电站机组选型分析",
+      "2024；45(8)；DOI 10.15974/j.cnki.slsdkb.2024.08.008",
+      "https://slsdkb.xml-journal.net/cn/article/pdf/preview/10.15974/j.cnki.slsdkb.2024.08.008.pdf",
+      "印刷页54，表2、表3清原行",
+      "已核对公开全文搜索索引中的表头与清原数据行；直接PDF有验证限制；非清原原始设计或运行记录"
+    ],
+    [
+      "S08",
+      "Voith（设备供应商）",
+      "Hypower 36，Qingyuan机组介绍",
+      "2025（最后一台投产事件为2025-01-16）",
+      "https://d15nmabv5huvcn.cloudfront.net/asset/180128162393/document_vu8g1f58ht0opdl8khvntpbm3i/hypower_nr36-deutsch.pdf",
+      "原刊印刷页25，Qingyuan栏目",
+      "已下载并读取供应商原刊PDF；印刷页25。"
+    ],
+    [
+      "S09",
+      "水利水电技术；天津大学作者",
+      "高学平、陈昊、孙博闻、朱洪涛：侧式进/出水口数值模拟湍流模型比较研究",
+      "2020；51(11):109–116；DOI 10.13928/j.cnki.wrahe.2020.11.013",
+      "https://sjwj.cbpt.cnki.net/portal/journal/portal//client/paper/preview?cache=false&filePath=history%2FEditor%2F2022%2F1231%2Fsjwj%2F29fdece5-f5a5-41e9-af15-da6a9a2a3e63.pdf",
+      "印刷页111图1、112节2.1与3.1、113表1",
+      "已读原文PDF；研究对象明确为清原下水库单体侧式进出水口；1:60设计模型试验并非电站商运实测，图示米值为工程原型尺度，几何参数不保证与竣工一致"
+    ],
+    [
+      "S10",
+      "水利水电技术；中国电建北京院作者",
+      "朱茹莎：清原抽水蓄能电站水泵水轮机主要参数选择及结构设计",
+      "2023；54(S2):62–66；DOI 10.13928/j.cnki.wrahe.2023.S2.011",
+      "https://sjwj.cbpt.cnki.net/portal/journal/portal/client/paper/26872000ecadbfd9818dc44d6152a31a",
+      "官网摘要与出版信息",
+      "官网可读摘要；未取得公开全文，不据摘要填入效率曲线或流量"
+    ],
+    [
+      "S11",
+      "辽宁省生态环境厅",
+      "辽宁清原二期抽水蓄能电站环境影响报告书的批复",
+      "2026-03-05",
+      "https://sthj.ln.gov.cn/sthj/xxgk/zwxxgk/xxgkml/2026031209482487283/index.shtml",
+      "一、本项目工程规模及主要组成",
+      "仅用于排除二期参数；4×300MW、13.63/18.17亿kWh、381m等不得并入一期数据"
+    ],
+    [
+      "E3",
+      "国家发展改革委、国家能源局",
+      "关于完善发电侧容量电价机制的通知（发改价格〔2026〕114号）",
+      "2026-01-27",
+      "https://www.ndrc.gov.cn/xwdt/tzgg/202601/t20260130_1403525.html",
+      "二（二）、四（二）",
+      "official_policy"
+    ],
+    [
+      "E6",
+      "辽宁省发展改革委",
+      "关于建立发电侧可靠容量补偿机制的通知",
+      "2026-11-09",
+      "https://fgw.ln.gov.cn/fgw/zc/zxzc/2026110915280075305/index.shtml",
+      "一实施范围、三补偿标准、五电费分摊",
+      "official_policy"
+    ],
+    [
+      "E7",
+      "辽宁省发展改革委",
+      "辽宁省深化燃煤发电上网电价形成机制改革实施方案",
+      "2020-04-02",
+      "https://fgw.ln.gov.cn/fgw/index/tzgg/296A9D43AC834C4B90D052A97F7F7E66/index.shtml",
+      "三（一），自2020-01-01执行",
+      "official_historical_tariff"
+    ],
+    [
+      "E8",
+      "国家发展改革委",
+      "关于进一步完善抽水蓄能价格形成机制的意见（发改价格〔2021〕633号）",
+      "2021-04-30",
+      "https://www.ndrc.gov.cn/xxgk/zcfb/tz/202105/t20210507_1279341.html",
+      "二（一）第1、2条；三（二）",
+      "official_historical_policy"
+    ],
+    [
+      "E9",
+      "国家发展改革委",
+      "抽水蓄能容量电价核定办法",
+      "2021-04-30",
+      "https://www.ndrc.gov.cn/xxgk/zcfb/tz/202105/P020210519510284562741.pdf",
+      "第2页第六条、第八条；第3页第八、九条",
+      "official_regulatory_assumptions"
+    ],
+    [
+      "E11",
+      "辽宁省人民政府（转载人民网报道）",
+      "东北地区最大抽水蓄能电站全面投产发电",
+      "2025-01-20",
+      "https://www.ln.gov.cn/web/ywdt/zymtkln/2025012009163748293/index.shtml",
+      "正文第1、2段及最后一段；截至全面投产2025-01-16",
+      "government_news_reprint"
+    ],
+    [
+      "E12",
+      "抚顺市人民政府（来源抚顺新闻网）",
+      "辽宁清原抽水蓄能电站连创运营新纪录",
+      "2026-03-25",
+      "https://fushun.gov.cn/006/006022/006022002/20260325/012360fc-84e5-4e2d-9b17-8f7b2cff4918.html",
+      "首段及末段，累计口径不同",
+      "government_news_reprint"
+    ],
+    [
+      "E13",
+      "辽宁省发展改革委",
+      "现货电价—统一结算点电价信息表",
+      "2026-11-15",
+      "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml",
+      "栏目iframe https://fgw.ln.gov.cn/indexview；公开前端调用POST /indexview/api/getLine JSON {date:2026-11-15}，data.xData/before/realTime",
+      "official_open_dashboard"
+    ]
+  ],
+  "conflicts": [
+    [
+      "项目身份",
+      "辽宁清原一期6×300MW",
+      "清原二期4×300MW；广东清远4×320MW",
+      "先核对省份、总容量、机组数量；一期参数不拼入二期",
+      "S01;S03;S11"
+    ],
+    [
+      "水位差与水头",
+      "正常水位差406m；额定水头390m",
+      "直接以两库正常水位差充当额定净水头",
+      "分别存储毛落差、机组发电水头与抽水扬程；不得相互替换",
+      "S01;S07;S08"
+    ],
+    [
+      "水库库容",
+      "S01(2026)上总1522/下总1708万m³",
+      "旧文献/百科出现1424/1654等数值；正常库容也不同",
+      "优先采用已核实官方当期边界，旧数据不直接合并；完整曲线须与选用边界同版",
+      "S01"
+    ],
+    [
+      "效率定义",
+      "年设计电量比约74.9938%",
+      "当成单台水轮机效率或商运实测效率",
+      "分别标注设计电量比、机组效率、全站实测循环效率",
+      "S02"
+    ],
+    [
+      "模型试验",
+      "局部损失系数0.141/0.347来自试验模型",
+      "当作全站实测输水损失系数",
+      "仅在文中几何与测量界面范围使用",
+      "S09"
+    ],
+    [
+      "电价有效期",
+      "2026-08-01起节点实时现货价+相应结算费用",
+      "把历史燃煤基准价75%或普通工商业峰谷价当当前清原购电价",
+      "按研究年份选择电价机制；没有节点价只作情景分析",
+      "S05;S06"
+    ],
+    [
+      "阀门设计值",
+      "供应商提到球阀设计水头714m",
+      "误认为清原电站运行水头714m",
+      "阀门承压设计指标与运行水头分开，本表不纳入能量模型",
+      "S08"
+    ],
+    [
+      "电站收入",
+      "容量费、能量及服务收益需要各自口径",
+      "把容量费或峰谷价差直接当净利润；系统收益重复计入电站现金流",
+      "增量效率收益与全站财务收益分开；避免收益叠加重复计算",
+      "S03;S05"
+    ]
+  ],
+  "method": [
+    [
+      "研究定位",
+      "以辽宁清原一期公开设计参数为工程参照，建立可复现的效率与节能经济性计算；当前资料不足以声称得到实站最优调度。"
+    ],
+    [
+      "推荐题目",
+      "考虑水头变化的抽水蓄能电站运行效率及节能经济性计算研究；若后续取得机组曲面，再进入机组负荷优化分配。"
+    ],
+    [
+      "水量平衡",
+      "Vu[t+1]=Vu[t]+(sum Qp-sum Qg+Iu-Ru-Lu)*dt_seconds；下库建立对应反向方程。加入自然来水、生态泄流及损失；闭合比较必须保证两库初末状态一致。"
+    ],
+    [
+      "水位映射",
+      "Zu=f_u(Vu), Zl=f_l(Vl)。现仅取得边界点，没有真实曲线。端点线性化是计算近似，必须在网站和论文同时标识。"
+    ],
+    [
+      "发电功率",
+      "Pg_MW=rho*g*Qg*(Zu-Zl-h_loss_g)*eta_t*eta_gen/1e6。若效率曲线已包含电气损失，不再重复乘效率。"
+    ],
+    [
+      "抽水功率",
+      "Pp_MW=rho*g*Qp*(Zu-Zl+h_loss_p)/(eta_p*eta_motor*1e6)。定速机组Qp/Pp应受特性曲线限制，不能任意连续调节。"
+    ],
+    [
+      "局部损失",
+      "S09：hf=xi*v²/(2*g)，v=Q/A，A=pi*8.2²/4。Q为对应进出水口流量；上下库及其他分段损失需分别计算。进流xi=0.141，出流xi=0.347。"
+    ],
+    [
+      "能量统计",
+      "E_kWh=sum(P_MW*dt_hours)*1000。全站抽发比较需明确是否包含厂用电、主变损失及表计边界。"
+    ],
+    [
+      "优化主目标",
+      "在相同逐时发电任务、同一初始状态和相同末状态下，减少完整循环抽水用电；发电工况子问题可在给定水头和功率下最小化总流量。"
+    ],
+    [
+      "必要约束",
+      "上下库水位库容界限；水量耦合；发电及抽水工况范围；机组状态互斥；启停/振动区/最小出力限制（若缺参数须明示简化）。"
+    ],
+    [
+      "效率与经济性",
+      "节能量不等于利润增长；利润最大方案也不一定效率最高。按S05逐时现货价格计算电费，并处理线损、系统运行费、输配费退减。"
+    ],
+    [
+      "敏感性表用途",
+      "下一工作表只回答“如果设计电量比提高到某目标，理论少用多少电”；目标效率是情景假设，不是优化结果。节电收益须再按实际节电发生时段的边际购电费用计算。"
+    ],
+    [
+      "复现要求",
+      "原始公开值、推导值、替代曲线/假设以及求解结果必须分表分字段，禁止把假设值改写成清原实测数据。"
+    ]
+  ],
+  "sensitivity": [
+    [
+      0.7499377334993773,
+      3011000000,
+      4015000000.0,
+      0.0,
+      "情景假设；固定年发电量；不代表已实现效率提升",
+      "节电发生时段的购电边际成本尚缺，不填实际收益"
+    ],
+    [
+      0.75,
+      3011000000,
+      4014666666.6666665,
+      333333.3333334923,
+      "情景假设；固定年发电量；不代表已实现效率提升",
+      "节电发生时段的购电边际成本尚缺，不填实际收益"
+    ],
+    [
+      0.76,
+      3011000000,
+      3961842105.263158,
+      53157894.736842155,
+      "情景假设；固定年发电量；不代表已实现效率提升",
+      "节电发生时段的购电边际成本尚缺，不填实际收益"
+    ],
+    [
+      0.77,
+      3011000000,
+      3910389610.3896103,
+      104610389.61038971,
+      "情景假设；固定年发电量；不代表已实现效率提升",
+      "节电发生时段的购电边际成本尚缺，不填实际收益"
+    ],
+    [
+      0.78,
+      3011000000,
+      3860256410.25641,
+      154743589.74358988,
+      "情景假设；固定年发电量；不代表已实现效率提升",
+      "节电发生时段的购电边际成本尚缺，不填实际收益"
+    ],
+    [
+      0.8,
+      3011000000,
+      3763750000.0,
+      251250000.0,
+      "情景假设；固定年发电量；不代表已实现效率提升",
+      "节电发生时段的购电边际成本尚缺，不填实际收益"
+    ]
+  ],
+  "supplemental_economics": [
+    [
+      "2027可靠容量补偿标准",
+      370,
+      "元/kW·年",
+      "not_applicable_to_qingyuan_current_scope",
+      "E6",
+      "",
+      "",
+      "通知当前实施范围不含抽蓄；不得替代清原原容量电价或重复加算。抽蓄抽水电量列为分摊对象"
+    ],
+    [
+      "辽宁燃煤基准价",
+      0.3749,
+      "元/kWh",
+      "published_historical_reference",
+      "E7",
+      "",
+      "",
+      "非清原2026实际售电价"
+    ],
+    [
+      "历史无现货抽水价情景",
+      0.281175,
+      "元/kWh",
+      "derived_historical_policy_scenario",
+      "E7;E8",
+      "",
+      "0.3749*75%",
+      "0.281175；仅2021机制“现货尚未运行且电网提供电量”等适用条件下，不能用作2026当前实际购电价"
+    ],
+    [
+      "容量核价经营期",
+      40,
+      "年",
+      "regulatory_assumption",
+      "E9",
+      "",
+      "",
+      "核价参数，不等于工程物理寿命"
+    ],
+    [
+      "容量核价资本金内部收益率",
+      6.5,
+      "%",
+      "regulatory_assumption",
+      "E9",
+      "",
+      "",
+      "核价参数，不是清原实际投资收益率，也不能直接当项目折现率"
+    ],
+    [
+      "容量核价还贷期限",
+      25,
+      "年",
+      "regulatory_assumption",
+      "E9",
+      "",
+      "",
+      ""
+    ],
+    [
+      "临时容量核价资本金比例",
+      20,
+      "%投资",
+      "regulatory_assumption",
+      "E9",
+      "",
+      "",
+      "实际资本金未公开，不能称清原实测资本结构"
+    ],
+    [
+      "全面投产日期",
+      "2025-01-16",
+      "日期",
+      "published_event",
+      "E11",
+      "",
+      "",
+      "第6台机组正式商运"
+    ],
+    [
+      "首台投产日期",
+      "2023-12-15",
+      "日期",
+      "published_event",
+      "E11",
+      "",
+      "",
+      ""
+    ],
+    [
+      "截至全面投产累计抽水电量",
+      16.37,
+      "亿kWh",
+      "reported_operating_cumulative",
+      "E11",
+      "",
+      "",
+      "自2023-12-15至全面投产；非完整年度/闭合循环数据"
+    ],
+    [
+      "截至全面投产累计发电电量",
+      12.46,
+      "亿kWh",
+      "reported_operating_cumulative",
+      "E11",
+      "",
+      "",
+      "不可直接把两累计量比值当闭合循环效率"
+    ],
+    [
+      "截至全面投产累计抽水次数",
+      1342,
+      "次",
+      "reported_operating_cumulative",
+      "E11",
+      "",
+      "",
+      ""
+    ],
+    [
+      "截至全面投产累计发电次数",
+      1356,
+      "次",
+      "reported_operating_cumulative",
+      "E11",
+      "",
+      "",
+      ""
+    ],
+    [
+      "截至全面投产累计抽水时长",
+      4954.18,
+      "h",
+      "reported_operating_cumulative",
+      "E11",
+      "",
+      "",
+      "多台机组累计时长，不能当全站等效利用小时"
+    ],
+    [
+      "截至全面投产累计发电时长",
+      4776.88,
+      "h",
+      "reported_operating_cumulative",
+      "E11",
+      "",
+      "",
+      "多台机组累计时长，不能当全站等效利用小时"
+    ],
+    [
+      "全面商运以来累计发电量（2026-03报道）",
+      25,
+      "亿kWh",
+      "reported_approximate_cumulative",
+      "E12",
+      "",
+      "",
+      "报道首段约25亿，与末段投运以来38.6亿起点不同，非2025全年"
+    ],
+    [
+      "投运以来累计发电量（2026-03报道）",
+      38.6,
+      "亿kWh",
+      "reported_operating_cumulative",
+      "E12",
+      "",
+      "",
+      "截至报道时累计，未披露精确截止时刻和配套抽水量"
+    ]
+  ],
+  "price_sample": {
+    "date": "2026-11-15",
+    "points": 96,
+    "step_minutes": 15,
+    "time_zone": "Asia/Shanghai",
+    "time_label": "日内时刻00:15至24:00，按15分钟区间末端标签处理，原始xData保留",
+    "location": "辽宁统一结算点，非清原节点",
+    "unit": "元/MWh",
+    "source": "E13",
+    "real_time_min": -100.0,
+    "real_time_max": 432.74,
+    "real_time_arithmetic_mean": 213.48697916666666,
+    "day_ahead_min": -100.0,
+    "day_ahead_max": 460.0,
+    "day_ahead_arithmetic_mean": 120.57104166666667,
+    "negative_real_time_points": 19,
+    "note": "真实公开栏目返回的数据；可作为可追溯代理电价算例，不能声称是清原实际结算单。日均数为各15分钟价简单均值，不是电量加权均价。负价保留。"
+  },
+  "price_data": [
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "00:15",
+      "day_ahead_CNY_per_MWh": "460.00",
+      "real_time_CNY_per_MWh": "360.00",
+      "day_ahead_CNY_per_kWh": "0.46",
+      "real_time_CNY_per_kWh": "0.36",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "00:30",
+      "day_ahead_CNY_per_MWh": "350.00",
+      "real_time_CNY_per_MWh": "360.00",
+      "day_ahead_CNY_per_kWh": "0.35",
+      "real_time_CNY_per_kWh": "0.36",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "00:45",
+      "day_ahead_CNY_per_MWh": "350.00",
+      "real_time_CNY_per_MWh": "350.00",
+      "day_ahead_CNY_per_kWh": "0.35",
+      "real_time_CNY_per_kWh": "0.35",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "01:00",
+      "day_ahead_CNY_per_MWh": "350.00",
+      "real_time_CNY_per_MWh": "350.00",
+      "day_ahead_CNY_per_kWh": "0.35",
+      "real_time_CNY_per_kWh": "0.35",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "01:15",
+      "day_ahead_CNY_per_MWh": "350.00",
+      "real_time_CNY_per_MWh": "350.00",
+      "day_ahead_CNY_per_kWh": "0.35",
+      "real_time_CNY_per_kWh": "0.35",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "01:30",
+      "day_ahead_CNY_per_MWh": "350.00",
+      "real_time_CNY_per_MWh": "340.00",
+      "day_ahead_CNY_per_kWh": "0.35",
+      "real_time_CNY_per_kWh": "0.34",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "01:45",
+      "day_ahead_CNY_per_MWh": "330.00",
+      "real_time_CNY_per_MWh": "330.00",
+      "day_ahead_CNY_per_kWh": "0.33",
+      "real_time_CNY_per_kWh": "0.33",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "02:00",
+      "day_ahead_CNY_per_MWh": "300.00",
+      "real_time_CNY_per_MWh": "300.00",
+      "day_ahead_CNY_per_kWh": "0.3",
+      "real_time_CNY_per_kWh": "0.3",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "02:15",
+      "day_ahead_CNY_per_MWh": "350.00",
+      "real_time_CNY_per_MWh": "350.00",
+      "day_ahead_CNY_per_kWh": "0.35",
+      "real_time_CNY_per_kWh": "0.35",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "02:30",
+      "day_ahead_CNY_per_MWh": "330.00",
+      "real_time_CNY_per_MWh": "350.00",
+      "day_ahead_CNY_per_kWh": "0.33",
+      "real_time_CNY_per_kWh": "0.35",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "02:45",
+      "day_ahead_CNY_per_MWh": "330.00",
+      "real_time_CNY_per_MWh": "340.00",
+      "day_ahead_CNY_per_kWh": "0.33",
+      "real_time_CNY_per_kWh": "0.34",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "03:00",
+      "day_ahead_CNY_per_MWh": "300.00",
+      "real_time_CNY_per_MWh": "330.00",
+      "day_ahead_CNY_per_kWh": "0.3",
+      "real_time_CNY_per_kWh": "0.33",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "03:15",
+      "day_ahead_CNY_per_MWh": "300.00",
+      "real_time_CNY_per_MWh": "300.00",
+      "day_ahead_CNY_per_kWh": "0.3",
+      "real_time_CNY_per_kWh": "0.3",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "03:30",
+      "day_ahead_CNY_per_MWh": "280.00",
+      "real_time_CNY_per_MWh": "290.00",
+      "day_ahead_CNY_per_kWh": "0.28",
+      "real_time_CNY_per_kWh": "0.29",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "03:45",
+      "day_ahead_CNY_per_MWh": "280.00",
+      "real_time_CNY_per_MWh": "280.00",
+      "day_ahead_CNY_per_kWh": "0.28",
+      "real_time_CNY_per_kWh": "0.28",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "04:00",
+      "day_ahead_CNY_per_MWh": "270.00",
+      "real_time_CNY_per_MWh": "280.00",
+      "day_ahead_CNY_per_kWh": "0.27",
+      "real_time_CNY_per_kWh": "0.28",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "04:15",
+      "day_ahead_CNY_per_MWh": "280.00",
+      "real_time_CNY_per_MWh": "280.00",
+      "day_ahead_CNY_per_kWh": "0.28",
+      "real_time_CNY_per_kWh": "0.28",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "04:30",
+      "day_ahead_CNY_per_MWh": "270.00",
+      "real_time_CNY_per_MWh": "280.00",
+      "day_ahead_CNY_per_kWh": "0.27",
+      "real_time_CNY_per_kWh": "0.28",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "04:45",
+      "day_ahead_CNY_per_MWh": "270.00",
+      "real_time_CNY_per_MWh": "280.00",
+      "day_ahead_CNY_per_kWh": "0.27",
+      "real_time_CNY_per_kWh": "0.28",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "05:00",
+      "day_ahead_CNY_per_MWh": "0.00",
+      "real_time_CNY_per_MWh": "270.00",
+      "day_ahead_CNY_per_kWh": "0.0",
+      "real_time_CNY_per_kWh": "0.27",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "05:15",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "260.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "0.26",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "05:30",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "230.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "0.23",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "05:45",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "270.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "0.27",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "06:00",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "260.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "0.26",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "06:15",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "250.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "0.25",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "06:30",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "270.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "0.27",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "06:45",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "270.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "0.27",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "07:00",
+      "day_ahead_CNY_per_MWh": "0.00",
+      "real_time_CNY_per_MWh": "270.00",
+      "day_ahead_CNY_per_kWh": "0.0",
+      "real_time_CNY_per_kWh": "0.27",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "07:15",
+      "day_ahead_CNY_per_MWh": "250.00",
+      "real_time_CNY_per_MWh": "280.00",
+      "day_ahead_CNY_per_kWh": "0.25",
+      "real_time_CNY_per_kWh": "0.28",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "07:30",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "280.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "0.28",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "07:45",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "280.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "0.28",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "08:00",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "280.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "0.28",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "08:15",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "300.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "0.3",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "08:30",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "320.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "0.32",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "08:45",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "350.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "0.35",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "09:00",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "350.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "0.35",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "09:15",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "300.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "0.3",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "09:30",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "270.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "0.27",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "09:45",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "270.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "0.27",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "10:00",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "0.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "0.0",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "10:15",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "-100.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "-0.1",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "10:30",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "0.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "0.0",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "10:45",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "-100.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "-0.1",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "11:00",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "-100.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "-0.1",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "11:15",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "-100.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "-0.1",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "11:30",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "-100.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "-0.1",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "11:45",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "-100.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "-0.1",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "12:00",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "-100.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "-0.1",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "12:15",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "-100.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "-0.1",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "12:30",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "-100.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "-0.1",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "12:45",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "-100.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "-0.1",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "13:00",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "-100.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "-0.1",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "13:15",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "-100.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "-0.1",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "13:30",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "-100.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "-0.1",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "13:45",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "-100.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "-0.1",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "14:00",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "-100.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "-0.1",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "14:15",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "-100.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "-0.1",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "14:30",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "-100.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "-0.1",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "14:45",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "-100.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "-0.1",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "15:00",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "-100.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "-0.1",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "15:15",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "0.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "0.0",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "15:30",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "280.00",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "0.28",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "15:45",
+      "day_ahead_CNY_per_MWh": "260.00",
+      "real_time_CNY_per_MWh": "270.00",
+      "day_ahead_CNY_per_kWh": "0.26",
+      "real_time_CNY_per_kWh": "0.27",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "16:00",
+      "day_ahead_CNY_per_MWh": "280.00",
+      "real_time_CNY_per_MWh": "300.00",
+      "day_ahead_CNY_per_kWh": "0.28",
+      "real_time_CNY_per_kWh": "0.3",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "16:15",
+      "day_ahead_CNY_per_MWh": "301.54",
+      "real_time_CNY_per_MWh": "330.00",
+      "day_ahead_CNY_per_kWh": "0.30154000000000003",
+      "real_time_CNY_per_kWh": "0.33",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "16:30",
+      "day_ahead_CNY_per_MWh": "304.84",
+      "real_time_CNY_per_MWh": "372.42",
+      "day_ahead_CNY_per_kWh": "0.30484",
+      "real_time_CNY_per_kWh": "0.37242000000000003",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "16:45",
+      "day_ahead_CNY_per_MWh": "335.82",
+      "real_time_CNY_per_MWh": "364.57",
+      "day_ahead_CNY_per_kWh": "0.33582",
+      "real_time_CNY_per_kWh": "0.36457",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "17:00",
+      "day_ahead_CNY_per_MWh": "309.09",
+      "real_time_CNY_per_MWh": "334.27",
+      "day_ahead_CNY_per_kWh": "0.30909",
+      "real_time_CNY_per_kWh": "0.33426999999999996",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "17:15",
+      "day_ahead_CNY_per_MWh": "310.25",
+      "real_time_CNY_per_MWh": "401.37",
+      "day_ahead_CNY_per_kWh": "0.31025",
+      "real_time_CNY_per_kWh": "0.40137",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "17:30",
+      "day_ahead_CNY_per_MWh": "310.35",
+      "real_time_CNY_per_MWh": "432.74",
+      "day_ahead_CNY_per_kWh": "0.31035",
+      "real_time_CNY_per_kWh": "0.43274",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "17:45",
+      "day_ahead_CNY_per_MWh": "309.44",
+      "real_time_CNY_per_MWh": "377.74",
+      "day_ahead_CNY_per_kWh": "0.30944",
+      "real_time_CNY_per_kWh": "0.37774",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "18:00",
+      "day_ahead_CNY_per_MWh": "309.36",
+      "real_time_CNY_per_MWh": "368.40",
+      "day_ahead_CNY_per_kWh": "0.30936",
+      "real_time_CNY_per_kWh": "0.36839999999999995",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "18:15",
+      "day_ahead_CNY_per_MWh": "309.26",
+      "real_time_CNY_per_MWh": "340.58",
+      "day_ahead_CNY_per_kWh": "0.30926",
+      "real_time_CNY_per_kWh": "0.34058",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "18:30",
+      "day_ahead_CNY_per_MWh": "309.20",
+      "real_time_CNY_per_MWh": "331.30",
+      "day_ahead_CNY_per_kWh": "0.3092",
+      "real_time_CNY_per_kWh": "0.33130000000000004",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "18:45",
+      "day_ahead_CNY_per_MWh": "309.10",
+      "real_time_CNY_per_MWh": "339.94",
+      "day_ahead_CNY_per_kWh": "0.30910000000000004",
+      "real_time_CNY_per_kWh": "0.33994",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "19:00",
+      "day_ahead_CNY_per_MWh": "317.95",
+      "real_time_CNY_per_MWh": "329.38",
+      "day_ahead_CNY_per_kWh": "0.31795",
+      "real_time_CNY_per_kWh": "0.32938",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "19:15",
+      "day_ahead_CNY_per_MWh": "308.33",
+      "real_time_CNY_per_MWh": "320.01",
+      "day_ahead_CNY_per_kWh": "0.30833",
+      "real_time_CNY_per_kWh": "0.32001",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "19:30",
+      "day_ahead_CNY_per_MWh": "307.01",
+      "real_time_CNY_per_MWh": "320.02",
+      "day_ahead_CNY_per_kWh": "0.30701",
+      "real_time_CNY_per_kWh": "0.32001999999999997",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "19:45",
+      "day_ahead_CNY_per_MWh": "306.94",
+      "real_time_CNY_per_MWh": "309.29",
+      "day_ahead_CNY_per_kWh": "0.30694",
+      "real_time_CNY_per_kWh": "0.30929",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "20:00",
+      "day_ahead_CNY_per_MWh": "305.34",
+      "real_time_CNY_per_MWh": "281.79",
+      "day_ahead_CNY_per_kWh": "0.30534",
+      "real_time_CNY_per_kWh": "0.28179000000000004",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "20:15",
+      "day_ahead_CNY_per_MWh": "305.33",
+      "real_time_CNY_per_MWh": "281.79",
+      "day_ahead_CNY_per_kWh": "0.30533",
+      "real_time_CNY_per_kWh": "0.28179000000000004",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "20:30",
+      "day_ahead_CNY_per_MWh": "285.67",
+      "real_time_CNY_per_MWh": "272.09",
+      "day_ahead_CNY_per_kWh": "0.28567000000000004",
+      "real_time_CNY_per_kWh": "0.27209",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "20:45",
+      "day_ahead_CNY_per_MWh": "280.00",
+      "real_time_CNY_per_MWh": "276.05",
+      "day_ahead_CNY_per_kWh": "0.28",
+      "real_time_CNY_per_kWh": "0.27605",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "21:00",
+      "day_ahead_CNY_per_MWh": "280.00",
+      "real_time_CNY_per_MWh": "276.32",
+      "day_ahead_CNY_per_kWh": "0.28",
+      "real_time_CNY_per_kWh": "0.27632",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "21:15",
+      "day_ahead_CNY_per_MWh": "290.00",
+      "real_time_CNY_per_MWh": "266.63",
+      "day_ahead_CNY_per_kWh": "0.29",
+      "real_time_CNY_per_kWh": "0.26663",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "21:30",
+      "day_ahead_CNY_per_MWh": "280.00",
+      "real_time_CNY_per_MWh": "266.78",
+      "day_ahead_CNY_per_kWh": "0.28",
+      "real_time_CNY_per_kWh": "0.26677999999999996",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "21:45",
+      "day_ahead_CNY_per_MWh": "280.00",
+      "real_time_CNY_per_MWh": "276.39",
+      "day_ahead_CNY_per_kWh": "0.28",
+      "real_time_CNY_per_kWh": "0.27638999999999997",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "22:00",
+      "day_ahead_CNY_per_MWh": "280.00",
+      "real_time_CNY_per_MWh": "276.41",
+      "day_ahead_CNY_per_kWh": "0.28",
+      "real_time_CNY_per_kWh": "0.27641000000000004",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "22:15",
+      "day_ahead_CNY_per_MWh": "280.00",
+      "real_time_CNY_per_MWh": "276.82",
+      "day_ahead_CNY_per_kWh": "0.28",
+      "real_time_CNY_per_kWh": "0.27682",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "22:30",
+      "day_ahead_CNY_per_MWh": "280.00",
+      "real_time_CNY_per_MWh": "276.77",
+      "day_ahead_CNY_per_kWh": "0.28",
+      "real_time_CNY_per_kWh": "0.27676999999999996",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "22:45",
+      "day_ahead_CNY_per_MWh": "280.00",
+      "real_time_CNY_per_MWh": "276.77",
+      "day_ahead_CNY_per_kWh": "0.28",
+      "real_time_CNY_per_kWh": "0.27676999999999996",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "23:00",
+      "day_ahead_CNY_per_MWh": "280.00",
+      "real_time_CNY_per_MWh": "267.01",
+      "day_ahead_CNY_per_kWh": "0.28",
+      "real_time_CNY_per_kWh": "0.26700999999999997",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "23:15",
+      "day_ahead_CNY_per_MWh": "270.00",
+      "real_time_CNY_per_MWh": "257.34",
+      "day_ahead_CNY_per_kWh": "0.27",
+      "real_time_CNY_per_kWh": "0.25733999999999996",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "23:30",
+      "day_ahead_CNY_per_MWh": "250.00",
+      "real_time_CNY_per_MWh": "257.01",
+      "day_ahead_CNY_per_kWh": "0.25",
+      "real_time_CNY_per_kWh": "0.25701",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "23:45",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "247.39",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "0.24739",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    },
+    {
+      "date": "2026-11-15",
+      "interval_end_Asia_Shanghai": "24:00",
+      "day_ahead_CNY_per_MWh": "-100.00",
+      "real_time_CNY_per_MWh": "209.36",
+      "day_ahead_CNY_per_kWh": "-0.1",
+      "real_time_CNY_per_kWh": "0.20936000000000002",
+      "price_location": "辽宁统一结算点（非清原节点）",
+      "source_url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml"
+    }
+  ]
+}
