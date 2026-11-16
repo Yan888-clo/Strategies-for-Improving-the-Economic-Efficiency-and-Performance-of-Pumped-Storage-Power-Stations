@@ -15,9 +15,10 @@
       "机组负荷分配",
       "价差与运行策略",
       "收益机制"
-    ]
+    ],
+    "primary_goal": "在可比任务与约束下提升效率；详细计算、网页计算工具及量化成果展示同步推进"
   },
-  "updated_at": "2026-11-16T04:57:11.550622+00:00",
+  "updated_at": "2026-11-16T05:31:33.215930+00:00",
   "data_snapshot": {
     "retrieved_at": "2026-11-16",
     "public_parameter_records": 48,
@@ -457,6 +458,47 @@
       "evidence": [],
       "blocked_reason": "平台Cloudflare返回403；需要站点平台解除限制或另部署镜像并复测",
       "last_updated": "2026-11-16T04:41:27.209380+00:00"
+    },
+    {
+      "id": "D-EFF-CALC",
+      "title": "两组工况效率计算、详细代入与量化展示",
+      "type": "development",
+      "topic": "效率提升",
+      "status": "done",
+      "description": "恒定水头教学模型；展示设备/水道效率输入下的理论结果，不是自动优化或实站验证",
+      "deliverables": [
+        "site/efficiency.html",
+        "site/efficiency-model.js",
+        "site/efficiency.js",
+        "research/efficiency-model.md"
+      ],
+      "acceptance": [
+        "两组工况动态计算与12步代入",
+        "闭合循环能量一致、无损极限与负改进测试",
+        "同发电任务比较及输入输出导出",
+        "实站成果无数据时标明待验证"
+      ],
+      "gap_ids": [
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M07",
+        "M10"
+      ],
+      "last_updated": "2026-11-16T05:30:19.747980+00:00",
+      "evidence": [
+        {
+          "path": "research/evidence/efficiency-calculation-tests.json",
+          "kind": "numerical_model_checks",
+          "limitations": "恒定水头理论模型检查，非实站验证"
+        },
+        {
+          "path": "research/evidence/efficiency-ui-checks.json",
+          "kind": "browser_interaction_checks",
+          "limitations": "当前云浏览器，非国内可达性验证"
+        }
+      ]
     }
   ],
   "gaps": [

@@ -29,3 +29,5 @@
 - 用户提供GitHub用户名Yan888-clo与两张连接错误截图。已找到其现有公开研究仓库，远端main为77a2406，只有初始README；保留原README与初始提交，不重复创建仓库。
 - 已增加github远端并fetch，核对README的add/add冲突后，将完整项目说明保留于根README，远端原文另存docs/GITHUB_INITIAL_README.md，并合并双方历史。
 - 写入授权仍未完成；公开读取成功不等于推送授权，未声称GitHub已同步。更正账号连接指引，区分ChatGPT应用读取和Codex仓库写入。
+
+2026-11-16：按用户要求将效率提升、详细计算、交互输入与量化成果展示列为主线；新增efficiency.html及独立可测试模型；保留M01—M16，实站提升保持待验证。
