@@ -1,0 +1,129 @@
+{
+  "checked_at": "2026-11-16T06:15:21.533004+00:00",
+  "site": "GitHub Pages mirror",
+  "measurements": [
+    {
+      "endpoint": "home",
+      "measurement_id": "2uoDO9UXzqcCvaAoe00021Vri",
+      "created_at": "2026-11-16T06:14:26.034Z",
+      "result_url": "https://api.globalping.io/v1/measurements/2uoDO9UXzqcCvaAoe00021Vri",
+      "status": "finished",
+      "results": [
+        {
+          "country": "CN",
+          "city": "Guilin",
+          "asn": 4134,
+          "network": "China Telecom",
+          "http_status": 200,
+          "tls_authorized": true,
+          "content_type": "text/html; charset=utf-8",
+          "elapsed_ms": 3836
+        },
+        {
+          "country": "CN",
+          "city": "Changsha",
+          "asn": 4837,
+          "network": "CHINA UNICOM China169 Backbone",
+          "http_status": 200,
+          "tls_authorized": true,
+          "content_type": "text/html; charset=utf-8",
+          "elapsed_ms": 1025
+        },
+        {
+          "country": "CN",
+          "city": "Wuhan",
+          "asn": 9808,
+          "network": "China Mobile Communications Group",
+          "http_status": 200,
+          "tls_authorized": true,
+          "content_type": "text/html; charset=utf-8",
+          "elapsed_ms": 637
+        }
+      ]
+    },
+    {
+      "endpoint": "research",
+      "measurement_id": "2v7ICRQALsafsXHSq00021Vri",
+      "created_at": "2026-11-16T06:14:26.032Z",
+      "result_url": "https://api.globalping.io/v1/measurements/2v7ICRQALsafsXHSq00021Vri",
+      "status": "finished",
+      "results": [
+        {
+          "country": "CN",
+          "city": "Guangzhou",
+          "asn": 4134,
+          "network": "Chinanet Backbone",
+          "http_status": 200,
+          "tls_authorized": true,
+          "content_type": "text/html; charset=utf-8",
+          "elapsed_ms": 970
+        },
+        {
+          "country": "CN",
+          "city": "Changsha",
+          "asn": 4837,
+          "network": "CHINA UNICOM China169 Backbone",
+          "http_status": 200,
+          "tls_authorized": true,
+          "content_type": "text/html; charset=utf-8",
+          "elapsed_ms": 762
+        },
+        {
+          "country": "CN",
+          "city": "Taishan",
+          "asn": 9808,
+          "network": "China Mobile Communications Group",
+          "http_status": 200,
+          "tls_authorized": true,
+          "content_type": "text/html; charset=utf-8",
+          "elapsed_ms": 529
+        }
+      ]
+    },
+    {
+      "endpoint": "sourcezip",
+      "measurement_id": "2AIsdubpdqxvI6OlM00021Vri",
+      "created_at": "2026-11-16T06:14:26.123Z",
+      "result_url": "https://api.globalping.io/v1/measurements/2AIsdubpdqxvI6OlM00021Vri",
+      "status": "finished",
+      "results": [
+        {
+          "country": "CN",
+          "city": "Yancheng",
+          "asn": 4134,
+          "network": "China Telecom",
+          "http_status": 200,
+          "tls_authorized": true,
+          "content_type": "application/x-zip-compressed",
+          "elapsed_ms": 4113
+        },
+        {
+          "country": "CN",
+          "city": "Wuhan",
+          "asn": 4837,
+          "network": "CHINA UNICOM China169 Backbone",
+          "http_status": 200,
+          "tls_authorized": true,
+          "content_type": "application/x-zip-compressed",
+          "elapsed_ms": 1008
+        },
+        {
+          "country": "CN",
+          "city": "Kunming",
+          "asn": 9808,
+          "network": "China Mobile Communications Group",
+          "http_status": 200,
+          "tls_authorized": true,
+          "content_type": "application/x-zip-compressed",
+          "elapsed_ms": 638
+        }
+      ]
+    }
+  ],
+  "conclusion": "三地三运营商对首页、研究页与源码ZIP端点共9次HTTP200，TLS通过",
+  "limitations": [
+    "仅代表所选探针及该时刻，不保证所有大陆网络持续可用",
+    "未做中国大陆普通浏览器交互验证",
+    "探针返回体可能截断，ZIP完整性另由当前云环境下载核验"
+  ]
+}

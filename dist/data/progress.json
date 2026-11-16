@@ -18,7 +18,7 @@
     ],
     "primary_goal": "在可比任务与约束下提升效率；详细计算、网页计算工具及量化成果展示同步推进"
   },
-  "updated_at": "2026-11-16T06:14:25.546499+00:00",
+  "updated_at": "2026-11-16T06:15:21.533004+00:00",
   "data_snapshot": {
     "retrieved_at": "2026-11-16",
     "public_parameter_records": 48,
@@ -441,7 +441,7 @@
       "title": "解决大陆可访问性并完成普通浏览器验证",
       "type": "deployment",
       "topic": "国内可达性",
-      "status": "blocked",
+      "status": "in_progress",
       "priority": "high",
       "gap_ids": [],
       "source_ids": [],
@@ -455,9 +455,15 @@
       "dependencies": [
         "D-CN"
       ],
-      "evidence": [],
-      "blocked_reason": "平台Cloudflare返回403；需要站点平台解除限制或另部署镜像并复测",
-      "last_updated": "2026-11-16T04:41:27.209380+00:00"
+      "evidence": [
+        {
+          "path": "research/evidence/pages-mainland-probes.json",
+          "kind": "mainland_http_probes",
+          "limitations": "HTTP与TLS通过；非普通浏览器交互及长期可用保证"
+        }
+      ],
+      "blocked_reason": null,
+      "last_updated": "2026-11-16T06:15:21.533004+00:00"
     },
     {
       "id": "D-GHPAGES",
@@ -691,7 +697,7 @@
     "automatic_github_to_sites_sync": "not_configured",
     "site_url": "https://qingyuan-hydro-thesis.aquaticbench3.chatgpt.site",
     "sites_status": "published",
-    "domestic_status": "three_mainland_probes_http_403",
+    "domestic_status": "Pages镜像三地三运营商9次HTTP200；普通浏览器交互仍待验",
     "github_url": "https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations",
     "deployment_note": "GitHub main自动构建、模型检查和Pages发布已成功；原Sites仍独立发布，不把两个主机混称自动同步。",
     "github_pages_status": "已启用，自动发布成功；匿名首页HTTP200",
@@ -735,7 +741,12 @@
       "published_url": "https://yan888-clo.github.io/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations/",
       "workflow_run_url": "https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations/actions/runs/43815237173",
       "verified_at": "2026-11-16T06:14:25.546499+00:00",
-      "management_api_status_note": "此前管理API403已由所有者网页启用解决；无需再次修改设置"
+      "management_api_status_note": "此前管理API403已由所有者网页启用解决；无需再次修改设置",
+      "mainland_access": {
+        "status": "three_network_http_200",
+        "evidence": "research/evidence/pages-mainland-probes.json",
+        "checked_at": "2026-11-16T06:15:21.533004+00:00"
+      }
     }
   },
   "claims": {

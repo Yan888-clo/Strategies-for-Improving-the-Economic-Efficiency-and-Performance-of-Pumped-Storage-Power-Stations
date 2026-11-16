@@ -5,13 +5,13 @@
     "research/data/qingyuan_public_parameters.json": "96bf9bf1db74bb69d25d4caeecb101c7288eaf852f3832a952c860b2c1166e88",
     "research/data/economics_spot_20261115_96points.csv": "e056f4489657606ad66a5bf54f4edefef5850fa368c9bb2f9103acb0e93eedcd",
     "research/data/stations_2023.json": "2e0c1f9c9dd9340d141f8a4a08cb334de568ea6b451f664c622b5b9fad400524",
-    "research/progress.json": "17c943b8cad5424073af9ae2ac0888ea48ada46edce0c64a6546de7ab329cb8d"
+    "research/progress.json": "123d9ca6ddf8986b859aaec7974c520327c10d0e57a72b5c5565368d9705f5c2"
   },
   "parameter_count": 48,
   "price_count": 96,
   "gap_count": 16,
   "task_count": 14,
-  "source_bundle_sha256": "3dd8666e3c44fa903610761021dcba5878dfdc1c8e6876e2a5e4c77d36d023e3",
+  "source_bundle_sha256": "b62e6f683770911a5b38b88aacf460c0e49668dd1843ed59d268de67c3f83fef",
   "source_files": [
     {
       "path": ".github/workflows/pages.yml",
@@ -35,7 +35,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "459fe9dcf8e718c6eca9c7bb50ac12346c83dc00d84ea6ed1e0b7d8da1dfffb8"
+      "sha256": "e7d6ce9bdd07a10e530fd22ed3bbc43a657888ff50333a6ebb7eae9473a05954"
     },
     {
       "path": "docs/DATA_POLICY.md",
@@ -75,7 +75,7 @@
     },
     {
       "path": "research/CHANGELOG.md",
-      "sha256": "0108d946e5a749a0ba22daa7526f8693128865e6ea3121bb0892440e478d3f85"
+      "sha256": "51a5506619cc73c64af5ca1054680b530c3c1c91a0da92b9d645591f7d080891"
     },
     {
       "path": "research/RESEARCH_PLAN.md",
@@ -150,6 +150,10 @@
       "sha256": "c56242f36f57854246707189d506b125095ac224b28e8d0e3f438b3d6e645406"
     },
     {
+      "path": "research/evidence/pages-mainland-probes.json",
+      "sha256": "726047b6b7254e3f87de1434c9bbffcebe3303c2e1e252b947dcbd36820de8c0"
+    },
+    {
       "path": "research/evidence/reservoir_findings.json",
       "sha256": "77fe143b864de60661310a37d59eaa8e6b1bbaf67d01e95349565a9bb3f9f60c"
     },
@@ -159,7 +163,7 @@
     },
     {
       "path": "research/progress.json",
-      "sha256": "17c943b8cad5424073af9ae2ac0888ea48ada46edce0c64a6546de7ab329cb8d"
+      "sha256": "123d9ca6ddf8986b859aaec7974c520327c10d0e57a72b5c5565368d9705f5c2"
     },
     {
       "path": "research/sources/index.json",
@@ -236,24 +240,24 @@
   ],
   "outputs": {
     "LICENSE": "333837bb036d4062c338821e13e7c341bbe128fc0ed7c9927fd3a827b83e2f32",
-    "README.md": "459fe9dcf8e718c6eca9c7bb50ac12346c83dc00d84ea6ed1e0b7d8da1dfffb8",
+    "README.md": "e7d6ce9bdd07a10e530fd22ed3bbc43a657888ff50333a6ebb7eae9473a05954",
     "app.js": "f66b3681ee45f9b1105ea44e9d15c74caf494b2df80a3be5ba10eb538c71f701",
     "data/economics_spot_20261115_96points.csv": "e056f4489657606ad66a5bf54f4edefef5850fa368c9bb2f9103acb0e93eedcd",
-    "data/progress.json": "17c943b8cad5424073af9ae2ac0888ea48ada46edce0c64a6546de7ab329cb8d",
+    "data/progress.json": "123d9ca6ddf8986b859aaec7974c520327c10d0e57a72b5c5565368d9705f5c2",
     "data/qingyuan_public_parameters.csv": "f9392b9a4bf003d3b81effadd30ee379aa31ea01485026c746f34f7b37ce2644",
     "data/qingyuan_public_parameters.json": "96bf9bf1db74bb69d25d4caeecb101c7288eaf852f3832a952c860b2c1166e88",
     "data/sources.json": "31baefef5b9d9557e11b3c71bb2b9afd88a557ebb765cf90b3aa58149a9a3352",
     "data/stations_2023.json": "2e0c1f9c9dd9340d141f8a4a08cb334de568ea6b451f664c622b5b9fad400524",
-    "downloads/pumped-storage-source.zip": "3dd8666e3c44fa903610761021dcba5878dfdc1c8e6876e2a5e4c77d36d023e3",
+    "downloads/pumped-storage-source.zip": "b62e6f683770911a5b38b88aacf460c0e49668dd1843ed59d268de67c3f83fef",
     "economics.js": "86b179ffff834939445d71780fbc7138c213ed380518cc91575b9463febc68d6",
     "efficiency-model.js": "fd186f761eba44e61880dcfc7c6bb39e8dc31e295511ec25febf95fe84512967",
     "efficiency.css": "7905a3a924079aabebac7f070eb6194ad231ce0d89cbcf865a4dd4e7c0b829b2",
     "efficiency.html": "02658f402e8f328d0526397ac58f07e246aea26bf9b56cdaa56a6c3ccd1ab607",
     "efficiency.js": "a85cccaf56641ee1c3dbe300f93e41543e5bb3f4178e31c0309c5fc7380d2ee9",
     "index.html": "b1bec7b5b98e76b818ed5d4445c13ef3387de06e349d4728e68e2a5b66066631",
-    "research-data.js": "760f16b15f33e483c308507196b2110b0903f0c91ee76d8c60d02b6e199f53bc",
+    "research-data.js": "6aca167670237d868987d2e6bfb0e591ff1a0e93d38b42b469e77c21ac6ea16d",
     "research.css": "e076d1f29490b86bbd853f4eebecba67312bfef233e1000c964be725c6f24e37",
-    "research.html": "0aebcde227027beec62ead0704f68f1432a9a83b7028b7a22382f621527078ef",
+    "research.html": "3481064c2a82bf996dd2b346ade891ac071d7c5caf7e4d67f815180b5320eb03",
     "research.js": "a020e58ba7043b2d5517bf7b50516c3f38d5808130b537add0291835d86197fc",
     "station-data.js": "cc95df254afe18e8ee5d96bb2c867a4cfd35c0660b7383f6debb8228d3ccf357",
     "stations.json": "2e0c1f9c9dd9340d141f8a4a08cb334de568ea6b451f664c622b5b9fad400524",
