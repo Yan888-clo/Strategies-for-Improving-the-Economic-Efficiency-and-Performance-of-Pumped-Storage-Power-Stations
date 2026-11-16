@@ -59,4 +59,4 @@ python -m http.server 8000 --directory dist
 
 `efficiency.html`提供两组工况、完整代入、同任务节电与费用对照；模型见`research/efficiency-model.md`。效率提升为核心目标，网页与研究计算同时维护。
 
-GitHub Pages镜像已完成大陆桂林电信、武汉联通、台山移动三点探测，首页/研究页/ZIP共9次HTTP200且TLS通过；见research/evidence/pages-mainland-probes.json。仅为本次HTTP探测，不保证所有网络长期可用，普通浏览器交互另验；原Sites的历史403记录保留。
+GitHub Pages镜像已完成中国大陆电信、联通、移动探针测试（实际城市见记录），首页/研究页/ZIP共9次HTTP200且TLS通过；见research/evidence/pages-mainland-probes.json。仅为本次HTTP探测，不保证所有网络长期可用，普通浏览器交互另验；原Sites的历史403记录保留。

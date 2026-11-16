@@ -11,7 +11,7 @@
   "price_count": 96,
   "gap_count": 16,
   "task_count": 14,
-  "source_bundle_sha256": "b62e6f683770911a5b38b88aacf460c0e49668dd1843ed59d268de67c3f83fef",
+  "source_bundle_sha256": "af153b23b9271410c150aa758048cd664aeb6910e082bf206674f449cc9fac75",
   "source_files": [
     {
       "path": ".github/workflows/pages.yml",
@@ -35,7 +35,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "e7d6ce9bdd07a10e530fd22ed3bbc43a657888ff50333a6ebb7eae9473a05954"
+      "sha256": "423986df8161b50b4fdb96b876e3cfa1f01fd0ed2693fca38528e184a2aafa12"
     },
     {
       "path": "docs/DATA_POLICY.md",
@@ -75,7 +75,7 @@
     },
     {
       "path": "research/CHANGELOG.md",
-      "sha256": "51a5506619cc73c64af5ca1054680b530c3c1c91a0da92b9d645591f7d080891"
+      "sha256": "ee8bdac2ccc7e1a5f0d124f8e3daeb24c3260ba177e1cc7b13b23fd856bb42a2"
     },
     {
       "path": "research/RESEARCH_PLAN.md",
@@ -240,7 +240,7 @@
   ],
   "outputs": {
     "LICENSE": "333837bb036d4062c338821e13e7c341bbe128fc0ed7c9927fd3a827b83e2f32",
-    "README.md": "e7d6ce9bdd07a10e530fd22ed3bbc43a657888ff50333a6ebb7eae9473a05954",
+    "README.md": "423986df8161b50b4fdb96b876e3cfa1f01fd0ed2693fca38528e184a2aafa12",
     "app.js": "f66b3681ee45f9b1105ea44e9d15c74caf494b2df80a3be5ba10eb538c71f701",
     "data/economics_spot_20261115_96points.csv": "e056f4489657606ad66a5bf54f4edefef5850fa368c9bb2f9103acb0e93eedcd",
     "data/progress.json": "123d9ca6ddf8986b859aaec7974c520327c10d0e57a72b5c5565368d9705f5c2",
@@ -248,7 +248,7 @@
     "data/qingyuan_public_parameters.json": "96bf9bf1db74bb69d25d4caeecb101c7288eaf852f3832a952c860b2c1166e88",
     "data/sources.json": "31baefef5b9d9557e11b3c71bb2b9afd88a557ebb765cf90b3aa58149a9a3352",
     "data/stations_2023.json": "2e0c1f9c9dd9340d141f8a4a08cb334de568ea6b451f664c622b5b9fad400524",
-    "downloads/pumped-storage-source.zip": "b62e6f683770911a5b38b88aacf460c0e49668dd1843ed59d268de67c3f83fef",
+    "downloads/pumped-storage-source.zip": "af153b23b9271410c150aa758048cd664aeb6910e082bf206674f449cc9fac75",
     "economics.js": "86b179ffff834939445d71780fbc7138c213ed380518cc91575b9463febc68d6",
     "efficiency-model.js": "fd186f761eba44e61880dcfc7c6bb39e8dc31e295511ec25febf95fe84512967",
     "efficiency.css": "7905a3a924079aabebac7f070eb6194ad231ce0d89cbcf865a4dd4e7c0b829b2",
