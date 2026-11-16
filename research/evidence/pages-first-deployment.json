@@ -1,0 +1,143 @@
+{
+  "checked_at": "2026-11-16T06:14:25.546499+00:00",
+  "published_url": "https://yan888-clo.github.io/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations/",
+  "workflow": {
+    "conclusion": "success",
+    "jobs": [
+      {
+        "completedAt": "2026-11-16T06:13:10Z",
+        "conclusion": "success",
+        "databaseId": 133125678768,
+        "name": "build",
+        "startedAt": "2026-11-16T06:13:01Z",
+        "status": "completed",
+        "steps": [
+          {
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Run actions/setup-python@v5",
+            "number": 3,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Run actions/setup-node@v4",
+            "number": 4,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Verify efficiency calculation boundaries",
+            "number": 5,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Build from canonical research data",
+            "number": 6,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Check evidence, units, generated pages and downloads",
+            "number": 7,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Upload website",
+            "number": 8,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Post Run actions/setup-node@v4",
+            "number": 14,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Post Run actions/setup-python@v5",
+            "number": 15,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 16,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 17,
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations/actions/runs/43815237173/job/133125678768"
+      },
+      {
+        "completedAt": "2026-11-16T06:13:26Z",
+        "conclusion": "success",
+        "databaseId": 133125738442,
+        "name": "deploy",
+        "startedAt": "2026-11-16T06:13:15Z",
+        "status": "completed",
+        "steps": [
+          {
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Check Pages configuration",
+            "number": 3,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Deploy public static website",
+            "number": 4,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 8,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 9,
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations/actions/runs/43815237173/job/133125738442"
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations/actions/runs/43815237173"
+  },
+  "anonymous_home_http_status": 200,
+  "note": "已验证部署步骤成功，非仅构建成功；国内网络另测"
+}

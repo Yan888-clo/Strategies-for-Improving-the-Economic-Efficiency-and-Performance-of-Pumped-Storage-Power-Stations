@@ -18,7 +18,7 @@
     ],
     "primary_goal": "在可比任务与约束下提升效率；详细计算、网页计算工具及量化成果展示同步推进"
   },
-  "updated_at": "2026-11-16T05:54:06.310481+00:00",
+  "updated_at": "2026-11-16T06:14:25.546499+00:00",
   "data_snapshot": {
     "retrieved_at": "2026-11-16",
     "public_parameter_records": 48,
@@ -464,7 +464,7 @@
       "title": "启用GitHub Pages并验证自动发布",
       "type": "deployment",
       "topic": "仓库自动部署",
-      "status": "blocked",
+      "status": "done",
       "priority": "high",
       "gap_ids": [],
       "source_ids": [],
@@ -479,15 +479,15 @@
         "工作流通过且部署返回真实URL",
         "匿名访问与下载成功后再作大陆实测"
       ],
-      "blocked_reason": "当前连接管理Pages设置的API返回403；需仓库所有者在Settings → Pages选择GitHub Actions",
+      "blocked_reason": null,
       "evidence": [
         {
-          "path": "research/evidence/github-push-6315d90.json",
-          "kind": "pages_management_permission_failure",
-          "checked_at": "2026-11-16T05:51:22.136083+00:00"
+          "path": "research/evidence/pages-first-deployment.json",
+          "kind": "successful_pages_deployment",
+          "checked_at": "2026-11-16T06:14:25.546499+00:00"
         }
       ],
-      "last_updated": "2026-11-16T05:51:22.136083+00:00"
+      "last_updated": "2026-11-16T06:14:25.546499+00:00"
     },
     {
       "id": "D-EFF-CALC",
@@ -693,8 +693,9 @@
     "sites_status": "published",
     "domestic_status": "three_mainland_probes_http_403",
     "github_url": "https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations",
-    "deployment_note": "GitHub已接入并完成源码推送；main工作流已启动。Pages首次开通需网页设置，原Sites仍独立发布。",
-    "github_pages_status": "待仓库所有者启用Pages；源码推送与自动构建不受影响"
+    "deployment_note": "GitHub main自动构建、模型检查和Pages发布已成功；原Sites仍独立发布，不把两个主机混称自动同步。",
+    "github_pages_status": "已启用，自动发布成功；匿名首页HTTP200",
+    "github_pages_url": "https://yan888-clo.github.io/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations/"
   },
   "deployment": {
     "site_project_id": "appgprj_6afa7f3df0048191a958ae780f2c34c8",
@@ -727,11 +728,14 @@
     "github_push_status": "succeeded",
     "github_verified_commit": "6315d902b5a98dd422e281055c408ae0223a85a8",
     "github_pages": {
-      "status": "requires_owner_setup",
+      "status": "published",
       "settings_url": "https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations/settings/pages",
       "build_workflow_url": "https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations/actions",
       "management_api_status": 403,
-      "published_url": null
+      "published_url": "https://yan888-clo.github.io/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations/",
+      "workflow_run_url": "https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations/actions/runs/43815237173",
+      "verified_at": "2026-11-16T06:14:25.546499+00:00",
+      "management_api_status_note": "此前管理API403已由所有者网页启用解决；无需再次修改设置"
     }
   },
   "claims": {

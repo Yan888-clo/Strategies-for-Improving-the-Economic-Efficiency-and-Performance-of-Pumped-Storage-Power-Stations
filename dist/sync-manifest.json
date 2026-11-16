@@ -5,13 +5,13 @@
     "research/data/qingyuan_public_parameters.json": "96bf9bf1db74bb69d25d4caeecb101c7288eaf852f3832a952c860b2c1166e88",
     "research/data/economics_spot_20261115_96points.csv": "e056f4489657606ad66a5bf54f4edefef5850fa368c9bb2f9103acb0e93eedcd",
     "research/data/stations_2023.json": "2e0c1f9c9dd9340d141f8a4a08cb334de568ea6b451f664c622b5b9fad400524",
-    "research/progress.json": "77d3ecabf4a58089fa4f13dc466df66799bc3d57c66faf177a02179a02df43bc"
+    "research/progress.json": "17c943b8cad5424073af9ae2ac0888ea48ada46edce0c64a6546de7ab329cb8d"
   },
   "parameter_count": 48,
   "price_count": 96,
   "gap_count": 16,
   "task_count": 14,
-  "source_bundle_sha256": "8f6603faac16d0b1c5c1fdbe76276d37b2f5391519ead2f0e97fe0864c0c905b",
+  "source_bundle_sha256": "3dd8666e3c44fa903610761021dcba5878dfdc1c8e6876e2a5e4c77d36d023e3",
   "source_files": [
     {
       "path": ".github/workflows/pages.yml",
@@ -35,7 +35,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "5abd3ac301158abfb1093e0a5153c4afec05c427c58924e1d9d609ff47998714"
+      "sha256": "459fe9dcf8e718c6eca9c7bb50ac12346c83dc00d84ea6ed1e0b7d8da1dfffb8"
     },
     {
       "path": "docs/DATA_POLICY.md",
@@ -43,7 +43,7 @@
     },
     {
       "path": "docs/DEPLOYMENT.md",
-      "sha256": "be8d24f1159cac96b5856a1f3d3ba7fb3d200afacc7d0e03dc4e7065b9b7997d"
+      "sha256": "308a34e5384860fcb98ee9e113f36cd2ba810242bc34aa77c450c303b07c11d2"
     },
     {
       "path": "docs/GITHUB_INITIAL_README.md",
@@ -51,7 +51,7 @@
     },
     {
       "path": "docs/SYNC.md",
-      "sha256": "0d015ac8f57239e1ecb1ee37e52ea7a2c16cb129ad80b0fabb2f328439465b10"
+      "sha256": "5de051ae176bfe2b52925bbb5d97e5be02b3df614c8b7c1f9b394b8ae456b3b0"
     },
     {
       "path": "docs/UPSTREAM_README.md",
@@ -70,8 +70,12 @@
       "sha256": "3fdad175990d334fa7281458ddbf11f58c6ecebe05e120653a36172e185dfeea"
     },
     {
+      "path": "docs/workflow-archive/static.original.yml",
+      "sha256": "f2d965580744ee9ee893f4f5de6017da9d55a5850b86fc4c47dc138db7b8bcb4"
+    },
+    {
       "path": "research/CHANGELOG.md",
-      "sha256": "fe9fcde3097200b8661bd367f912b8c282ea82415bfdf9c946aefac02fe70917"
+      "sha256": "0108d946e5a749a0ba22daa7526f8693128865e6ea3121bb0892440e478d3f85"
     },
     {
       "path": "research/RESEARCH_PLAN.md",
@@ -142,6 +146,10 @@
       "sha256": "56254919b5b95b2408bcc7e8b91f478de553d46c468b8b4318e1f61fd7497030"
     },
     {
+      "path": "research/evidence/pages-first-deployment.json",
+      "sha256": "c56242f36f57854246707189d506b125095ac224b28e8d0e3f438b3d6e645406"
+    },
+    {
       "path": "research/evidence/reservoir_findings.json",
       "sha256": "77fe143b864de60661310a37d59eaa8e6b1bbaf67d01e95349565a9bb3f9f60c"
     },
@@ -151,7 +159,7 @@
     },
     {
       "path": "research/progress.json",
-      "sha256": "77d3ecabf4a58089fa4f13dc466df66799bc3d57c66faf177a02179a02df43bc"
+      "sha256": "17c943b8cad5424073af9ae2ac0888ea48ada46edce0c64a6546de7ab329cb8d"
     },
     {
       "path": "research/sources/index.json",
@@ -228,24 +236,24 @@
   ],
   "outputs": {
     "LICENSE": "333837bb036d4062c338821e13e7c341bbe128fc0ed7c9927fd3a827b83e2f32",
-    "README.md": "5abd3ac301158abfb1093e0a5153c4afec05c427c58924e1d9d609ff47998714",
+    "README.md": "459fe9dcf8e718c6eca9c7bb50ac12346c83dc00d84ea6ed1e0b7d8da1dfffb8",
     "app.js": "f66b3681ee45f9b1105ea44e9d15c74caf494b2df80a3be5ba10eb538c71f701",
     "data/economics_spot_20261115_96points.csv": "e056f4489657606ad66a5bf54f4edefef5850fa368c9bb2f9103acb0e93eedcd",
-    "data/progress.json": "77d3ecabf4a58089fa4f13dc466df66799bc3d57c66faf177a02179a02df43bc",
+    "data/progress.json": "17c943b8cad5424073af9ae2ac0888ea48ada46edce0c64a6546de7ab329cb8d",
     "data/qingyuan_public_parameters.csv": "f9392b9a4bf003d3b81effadd30ee379aa31ea01485026c746f34f7b37ce2644",
     "data/qingyuan_public_parameters.json": "96bf9bf1db74bb69d25d4caeecb101c7288eaf852f3832a952c860b2c1166e88",
     "data/sources.json": "31baefef5b9d9557e11b3c71bb2b9afd88a557ebb765cf90b3aa58149a9a3352",
     "data/stations_2023.json": "2e0c1f9c9dd9340d141f8a4a08cb334de568ea6b451f664c622b5b9fad400524",
-    "downloads/pumped-storage-source.zip": "8f6603faac16d0b1c5c1fdbe76276d37b2f5391519ead2f0e97fe0864c0c905b",
+    "downloads/pumped-storage-source.zip": "3dd8666e3c44fa903610761021dcba5878dfdc1c8e6876e2a5e4c77d36d023e3",
     "economics.js": "86b179ffff834939445d71780fbc7138c213ed380518cc91575b9463febc68d6",
     "efficiency-model.js": "fd186f761eba44e61880dcfc7c6bb39e8dc31e295511ec25febf95fe84512967",
     "efficiency.css": "7905a3a924079aabebac7f070eb6194ad231ce0d89cbcf865a4dd4e7c0b829b2",
     "efficiency.html": "02658f402e8f328d0526397ac58f07e246aea26bf9b56cdaa56a6c3ccd1ab607",
     "efficiency.js": "a85cccaf56641ee1c3dbe300f93e41543e5bb3f4178e31c0309c5fc7380d2ee9",
     "index.html": "b1bec7b5b98e76b818ed5d4445c13ef3387de06e349d4728e68e2a5b66066631",
-    "research-data.js": "f9cbfd47dddca55b3ed9febacd458314cc3ad8d60584ed98a684ea43b1b53159",
+    "research-data.js": "760f16b15f33e483c308507196b2110b0903f0c91ee76d8c60d02b6e199f53bc",
     "research.css": "e076d1f29490b86bbd853f4eebecba67312bfef233e1000c964be725c6f24e37",
-    "research.html": "6b1feba540e5c54cf0f1e5b5e1d0a86011b17a49c1e4827d2c0b085d24313500",
+    "research.html": "0aebcde227027beec62ead0704f68f1432a9a83b7028b7a22382f621527078ef",
     "research.js": "a020e58ba7043b2d5517bf7b50516c3f38d5808130b537add0291835d86197fc",
     "station-data.js": "cc95df254afe18e8ee5d96bb2c867a4cfd35c0660b7383f6debb8228d3ccf357",
     "stations.json": "2e0c1f9c9dd9340d141f8a4a08cb334de568ea6b451f664c622b5b9fad400524",

@@ -47,3 +47,7 @@ GitHub仓库Settings → Pages → Build and deployment → Source选择GitHub A
 GitHub仓库写入已成功；证据见research/evidence/github-push-6315d90.json。首次启用Pages的POST接口返回HTTP403 Resource not accessible by integration。仓库owner权限不代表当前应用拥有Pages配置权限。不要为此重新连接账号或在聊天发送令牌；直接在仓库Settings → Pages → Build and deployment → Source选择GitHub Actions，然后在Actions重新运行工作流即可。
 
 工作流会检查Pages配置：未找到或发布源未选Actions时，保留构建产物并明确提示，不执行发布；403等其他错误仍使检查失败，避免掩盖权限故障。Pages未实际发布前不提供虚构的已上线镜像地址。
+
+## Pages已启用与真实发布验证
+
+所有者已在网页启用Pages，工作流43815237173的真实Deploy步骤成功。公开地址：https://yan888-clo.github.io/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations/ 。以后main更新由pages.yml构建、模型检查并发布dist/。静态模板static.yml原本上传整个仓库，会与pages.yml竞争；原文已保留到docs/workflow-archive/static.original.yml，仅保留正式部署流程执行。此前403是历史故障，不再表示Pages未启用。

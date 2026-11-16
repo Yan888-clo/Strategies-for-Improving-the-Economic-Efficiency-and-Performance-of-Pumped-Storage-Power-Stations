@@ -8,7 +8,7 @@
 
 原站的Sites Git历史与现有GitHub初始提交均已保留。公开仓库：[Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations](https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations)。GitHub授权、源码与研究资料推送已完成，远端SHA已核对。main更新会触发GitHub Actions构建与检查。
 
-GitHub Pages首次开通尚受限：当前连接修改Pages设置时返回403，需仓库所有者打开[Pages设置](https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations/settings/pages)，在Source选择GitHub Actions，再重新运行工作流。工作流会在Pages未准备好时明确提示并跳过发布，不把检查通过当作已部署。**GitHub Pages与原Sites是两个独立部署目标，Pages成功不代表Sites自动更新。**
+GitHub Pages已启用并发布：[打开公开镜像](https://yan888-clo.github.io/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations/)。main更新会自动构建、检查并发布dist/；无需访客登录。GitHub默认生成的整仓库发布模板保留于docs/workflow-archive/static.original.yml，已从自动工作流目录移出，避免与正式流程竞争。**GitHub Pages与原Sites是两个独立部署目标，Pages成功不代表Sites自动更新。**
 
 ## 本地运行
 
