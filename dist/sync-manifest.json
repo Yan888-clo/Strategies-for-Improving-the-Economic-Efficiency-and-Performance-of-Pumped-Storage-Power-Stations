@@ -5,13 +5,13 @@
     "research/data/qingyuan_public_parameters.json": "96bf9bf1db74bb69d25d4caeecb101c7288eaf852f3832a952c860b2c1166e88",
     "research/data/economics_spot_20261115_96points.csv": "e056f4489657606ad66a5bf54f4edefef5850fa368c9bb2f9103acb0e93eedcd",
     "research/data/stations_2023.json": "2e0c1f9c9dd9340d141f8a4a08cb334de568ea6b451f664c622b5b9fad400524",
-    "research/progress.json": "70eb661acb0c6398726015ce1dc8620b3f222bd933ac673d96877491f6f95503"
+    "research/progress.json": "1423adebd186cf6ddc6294fd337478e09d67e053cb3f7adab4c1c2c59b21bd59"
   },
   "parameter_count": 48,
   "price_count": 96,
   "gap_count": 16,
   "task_count": 12,
-  "source_bundle_sha256": "88d556aba35568df267ae66a3d5705c0728aab1847cf85522eaee887a4ae9960",
+  "source_bundle_sha256": "9517e3caeeb9386e0e4afd52d50718f7d181487bd7ea67513f002fb72d4ebb3b",
   "source_files": [
     {
       "path": ".github/workflows/pages.yml",
@@ -59,7 +59,7 @@
     },
     {
       "path": "research/CHANGELOG.md",
-      "sha256": "8bc28c115d16eafce2fd67073777bde731071bb421d3aca46fa052a6adb79b2e"
+      "sha256": "14792c1206b54728384fad347364da3d89c81446bf3be8fc8a2a58437fca7491"
     },
     {
       "path": "research/RESEARCH_PLAN.md",
@@ -80,6 +80,10 @@
     {
       "path": "research/data/stations_2023.json",
       "sha256": "2e0c1f9c9dd9340d141f8a4a08cb334de568ea6b451f664c622b5b9fad400524"
+    },
+    {
+      "path": "research/evidence/anonymous-release-4.json",
+      "sha256": "eae1df6f5d664193c2c29c017df16b4b485a6aa91b42e52c4a9caf71aa1bf220"
     },
     {
       "path": "research/evidence/economics_findings.json",
@@ -114,8 +118,12 @@
       "sha256": "77fe143b864de60661310a37d59eaa8e6b1bbaf67d01e95349565a9bb3f9f60c"
     },
     {
+      "path": "research/evidence/sites-release-4.json",
+      "sha256": "0db2c0604aeed85d6dd0024d305ccad68030ad8ce646e94fd074ea0ae0270a93"
+    },
+    {
       "path": "research/progress.json",
-      "sha256": "70eb661acb0c6398726015ce1dc8620b3f222bd933ac673d96877491f6f95503"
+      "sha256": "1423adebd186cf6ddc6294fd337478e09d67e053cb3f7adab4c1c2c59b21bd59"
     },
     {
       "path": "research/sources/index.json",
@@ -171,17 +179,17 @@
     "README.md": "e83a9e7bb76eb86d31ac1b5ed712508cc2c3e250bf368d430c95c692d7172664",
     "app.js": "f66b3681ee45f9b1105ea44e9d15c74caf494b2df80a3be5ba10eb538c71f701",
     "data/economics_spot_20261115_96points.csv": "e056f4489657606ad66a5bf54f4edefef5850fa368c9bb2f9103acb0e93eedcd",
-    "data/progress.json": "70eb661acb0c6398726015ce1dc8620b3f222bd933ac673d96877491f6f95503",
+    "data/progress.json": "1423adebd186cf6ddc6294fd337478e09d67e053cb3f7adab4c1c2c59b21bd59",
     "data/qingyuan_public_parameters.csv": "f9392b9a4bf003d3b81effadd30ee379aa31ea01485026c746f34f7b37ce2644",
     "data/qingyuan_public_parameters.json": "96bf9bf1db74bb69d25d4caeecb101c7288eaf852f3832a952c860b2c1166e88",
     "data/sources.json": "31baefef5b9d9557e11b3c71bb2b9afd88a557ebb765cf90b3aa58149a9a3352",
     "data/stations_2023.json": "2e0c1f9c9dd9340d141f8a4a08cb334de568ea6b451f664c622b5b9fad400524",
-    "downloads/pumped-storage-source.zip": "88d556aba35568df267ae66a3d5705c0728aab1847cf85522eaee887a4ae9960",
+    "downloads/pumped-storage-source.zip": "9517e3caeeb9386e0e4afd52d50718f7d181487bd7ea67513f002fb72d4ebb3b",
     "economics.js": "86b179ffff834939445d71780fbc7138c213ed380518cc91575b9463febc68d6",
     "index.html": "0560ff529fd270324b33c7ca4238a9027280de5cfff090bb9baa495dcd7bdcc8",
-    "research-data.js": "60af6c197e88ce8b1002d3d8957e9c9f69243b76c816fa5c140f058bd4320f55",
+    "research-data.js": "bce6c571230ca09c9292cc8f22cb4991d4aceb190ce4bb3ad5e174bc050c822b",
     "research.css": "e076d1f29490b86bbd853f4eebecba67312bfef233e1000c964be725c6f24e37",
-    "research.html": "7c979561a2f9658e8b6487f49619f06ac19d6762b4c77dbca0d04e716127bfc4",
+    "research.html": "89c8aeacbd8d47a25311d44a5c50101592af03e8cc03ac2018e4fa7368ffff40",
     "research.js": "a020e58ba7043b2d5517bf7b50516c3f38d5808130b537add0291835d86197fc",
     "station-data.js": "cc95df254afe18e8ee5d96bb2c867a4cfd35c0660b7383f6debb8228d3ccf357",
     "stations.json": "2e0c1f9c9dd9340d141f8a4a08cb334de568ea6b451f664c622b5b9fad400524",

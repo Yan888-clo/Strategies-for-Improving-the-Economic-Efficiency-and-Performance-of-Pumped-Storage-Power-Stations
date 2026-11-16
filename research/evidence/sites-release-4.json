@@ -1,0 +1,12 @@
+{
+  "project_id": "appgprj_6afa7f3df0048191a958ae780f2c34c8",
+  "commit_sha": "a3e0dcd2764535f2c50de94a8a26cffd4a6de9f7",
+  "version_number": 4,
+  "version_id": "appgprj_6afa7f3df0048191a958ae780f2c34c8~appgver_7d68859843e48191bebf8991e5667267",
+  "deployment_id": "appgdep_6afa89b750d48191affb113081588e8a",
+  "status": "succeeded",
+  "url": "https://qingyuan-hydro-thesis.aquaticbench3.chatgpt.site",
+  "access_mode": "public",
+  "native_verified_at": "2026-11-16T04:42:36.375409+00:00",
+  "scope": "Release 4 receipt; retained as evidence, not an assertion that every future commit is deployed."
+}

@@ -17,7 +17,7 @@
       "收益机制"
     ]
   },
-  "updated_at": "2026-11-16T04:41:27.209380+00:00",
+  "updated_at": "2026-11-16T04:43:42.649175+00:00",
   "data_snapshot": {
     "retrieved_at": "2026-11-16",
     "public_parameter_records": 48,
@@ -363,7 +363,7 @@
       "title": "更新现有Sites站点并核验匿名访问",
       "type": "deployment",
       "topic": "原站部署",
-      "status": "in_progress",
+      "status": "done",
       "priority": "high",
       "gap_ids": [],
       "source_ids": [],
@@ -380,10 +380,23 @@
       "dependencies": [
         "D-SYNC"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "path": "research/evidence/sites-release-4.json",
+          "kind": "native_sites_deployment_receipt",
+          "checked_at": "2026-11-16T04:42:36.375409+00:00",
+          "limitations": "已成功发布版本4；后续版本回执单独记录"
+        },
+        {
+          "path": "research/evidence/anonymous-release-4.json",
+          "kind": "anonymous_http",
+          "checked_at": "2026-11-16T04:43:03.909984+00:00",
+          "limitations": "当前云机无账号Cookie/Bearer，五端点HTTP200且下载包hash匹配；未做交互浏览器QA"
+        }
+      ],
       "blocked_reason": null,
       "extra_inputs": [],
-      "last_updated": "2026-11-16T04:41:27.209380+00:00"
+      "last_updated": "2026-11-16T04:43:42.649175+00:00"
     },
     {
       "id": "D-CN",
@@ -595,26 +608,26 @@
     "github_status": "awaiting_account_connection",
     "sites_source_access": "owner_confirmed",
     "sites_current_access_mode": "public",
-    "publication_status": "pending",
+    "publication_status": "published",
     "automatic_github_to_sites_sync": "not_configured",
     "site_url": "https://qingyuan-hydro-thesis.aquaticbench3.chatgpt.site",
-    "sites_status": "publishing",
+    "sites_status": "published",
     "domestic_status": "three_mainland_probes_http_403",
     "github_url": null,
-    "deployment_note": "研究数据与网页构建同步已通过；GitHub待账号授权，原Sites正发布。"
+    "deployment_note": "版本4已成功发布并匿名HTTP核验；本页与下载包随同仓库构建。GitHub待授权，未配置GitHub自动更新原Sites。"
   },
   "deployment": {
     "site_project_id": "appgprj_6afa7f3df0048191a958ae780f2c34c8",
     "site_url": "https://qingyuan-hydro-thesis.aquaticbench3.chatgpt.site",
     "github_repository_url": null,
-    "commit_sha": null,
-    "version_id": null,
-    "deployment_id": null,
-    "status": "publishing",
+    "commit_sha": "a3e0dcd2764535f2c50de94a8a26cffd4a6de9f7",
+    "version_id": "appgprj_6afa7f3df0048191a958ae780f2c34c8~appgver_7d68859843e48191bebf8991e5667267",
+    "deployment_id": "appgdep_6afa89b750d48191affb113081588e8a",
+    "status": "succeeded",
     "anonymous_access_check": {
-      "status": "pending",
-      "checked_at": null,
-      "result": null
+      "status": "http_200_verified",
+      "checked_at": "2026-11-16T04:43:03.909984+00:00",
+      "result": "首页、研究页、进度JSON、同步清单与源码ZIP均HTTP200，源码ZIP哈希匹配"
     },
     "domestic_access_check": {
       "status": "tested_http_403",
@@ -627,7 +640,9 @@
       "result": "首页/研究页/源码ZIP共9次TLS通过、HTTP403；Cloudflare安全阻断",
       "limitation": "需要真实中国大陆节点记录；境外HTTP结果不作为国内验证",
       "evidence_path": "research/evidence/hosting_reachability.json"
-    }
+    },
+    "last_verified_version": 4,
+    "receipt_note": "这里记录最近已归档的版本4回执；后续发布不将未知提交或版本写为已验证。"
   },
   "claims": {
     "real_station_efficiency_improvement": null,

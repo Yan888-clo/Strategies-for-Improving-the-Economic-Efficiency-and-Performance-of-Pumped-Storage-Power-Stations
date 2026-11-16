@@ -17,3 +17,9 @@
 - GitHub Pages main自动构建/部署工作流与安全连接脚本已写入；GitHub账号授权尚缺，未创建公开仓库或声称该CI已运行。
 - 已完成大陆三运营商、三端点实际探测，9次均TLS通过但HTTP403；另列可执行镜像主机及费用边界，未采购。
 - 原Sites发布进行中，最终状态以发布回执及匿名HTTP核对为准。
+
+## 原站发布核验
+
+- 原Sites版本4已发布成功，源码提交`a3e0dcd2764535f2c50de94a8a26cffd4a6de9f7`；原生回执见`research/evidence/sites-release-4.json`。
+- 当前云出口未发送访客Cookie或Bearer，首页、研究页、进度、同步清单与源码ZIP均HTTP200，ZIP哈希与构建清单一致。未做交互浏览器QA。
+- 本次归档回执与最终状态将随后续同仓库版本发布；最终版本回执保留在工作区local-status。GitHub仍待账号授权，大陆三点HTTP403未解决。

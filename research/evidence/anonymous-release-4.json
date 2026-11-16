@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-11-16T04:43:03.909984+00:00",
+  "authentication": "none; no visitor cookie or bearer sent",
+  "network_scope": "current cloud egress only",
+  "checks": [
+    {
+      "path": "/",
+      "curl_exit": 0,
+      "response": "200 https://qingyuan-hydro-thesis.aquaticbench3.chatgpt.site/?revision=a3e0dcd",
+      "error": "",
+      "bytes": 26507,
+      "sha256": "0560ff529fd270324b33c7ca4238a9027280de5cfff090bb9baa495dcd7bdcc8"
+    },
+    {
+      "path": "/research.html",
+      "curl_exit": 0,
+      "response": "200 https://qingyuan-hydro-thesis.aquaticbench3.chatgpt.site/research?revision=a3e0dcd",
+      "error": "",
+      "bytes": 31351,
+      "sha256": "7c979561a2f9658e8b6487f49619f06ac19d6762b4c77dbca0d04e716127bfc4"
+    },
+    {
+      "path": "/data/progress.json",
+      "curl_exit": 0,
+      "response": "200 https://qingyuan-hydro-thesis.aquaticbench3.chatgpt.site/data/progress.json?revision=a3e0dcd",
+      "error": "",
+      "bytes": 21740,
+      "sha256": "70eb661acb0c6398726015ce1dc8620b3f222bd933ac673d96877491f6f95503"
+    },
+    {
+      "path": "/sync-manifest.json",
+      "curl_exit": 0,
+      "response": "200 https://qingyuan-hydro-thesis.aquaticbench3.chatgpt.site/sync-manifest.json?revision=a3e0dcd",
+      "error": "",
+      "bytes": 7881,
+      "sha256": "48f3c4f64a01f1ec0fcf88abe7a729eb5fe76d6ab3b28b86d7f26a7da8130043"
+    },
+    {
+      "path": "/downloads/pumped-storage-source.zip",
+      "curl_exit": 0,
+      "response": "200 https://qingyuan-hydro-thesis.aquaticbench3.chatgpt.site/downloads/pumped-storage-source.zip?revision=a3e0dcd",
+      "error": "",
+      "bytes": 120671,
+      "sha256": "88d556aba35568df267ae66a3d5705c0728aab1847cf85522eaee887a4ae9960"
+    }
+  ],
+  "source_bundle_verified": true,
+  "browser_qa": "not_run; cua_repl.js tool unavailable"
+}
