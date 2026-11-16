@@ -1,0 +1,68 @@
+{
+  "imported_at": "2026-11-16T04:36:55.508457+00:00",
+  "site_url": "https://qingyuan-hydro-thesis.aquaticbench3.chatgpt.site",
+  "download_url": "https://qingyuan-hydro-thesis.aquaticbench3.chatgpt.site/downloads/pumped-storage-source.zip",
+  "archive_sha256": "c9b42e71224966229472d529f63660524db55aee6622ea01501d1d04827f3332",
+  "site_head_before_import": "2a53225",
+  "readme": "docs/UPSTREAM_README.md",
+  "license": "LICENSE",
+  "conflicting_files": [],
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "5bbfc07a003dd36cdba61e1b006f51474ee746a4424e7856b3bba364291bcdbc"
+    },
+    {
+      "path": "app.js",
+      "sha256": "f66b3681ee45f9b1105ea44e9d15c74caf494b2df80a3be5ba10eb538c71f701"
+    },
+    {
+      "path": "research.js",
+      "sha256": "d827578fa51429a056c6aab8c74792f1d9bc6e30a8dcb65dd76de4ef57c3af37"
+    },
+    {
+      "path": "index.html",
+      "sha256": "8c27e91ddb236749a01fa69cdc17668d41766eebba5b0266598f64f449b8f756"
+    },
+    {
+      "path": "stations.json",
+      "sha256": "2e0c1f9c9dd9340d141f8a4a08cb334de568ea6b451f664c622b5b9fad400524"
+    },
+    {
+      "path": "research.css",
+      "sha256": "e2bfdc6a2fd4c2894a892be213e9a8145d5b02dc343d4a9f05d7c7bbd240c8fc"
+    },
+    {
+      "path": "research.html",
+      "sha256": "e3809f6922effafa5bb5fab4786af360df7690e1718a0fd4cc8e3604ef8b583e"
+    },
+    {
+      "path": "economics.js",
+      "sha256": "14188580a99c87434efd31591091b588f07eb338fe40432e124e4d088b60325d"
+    },
+    {
+      "path": "research-data.js",
+      "sha256": "cf229de18c259ccce2949683c2e92498afbb44f4f9f46aa9b2bf375efa72d748"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "0455b41f22b9ca83ff529602bf0dad63bbe31ba6c6557db634080a2369efbfba"
+    },
+    {
+      "path": "style.css",
+      "sha256": "21b1c2ef06df91a29e8b0f3ed606e8b0abb9057f76d9c67b0c743ff41c27c3c8"
+    },
+    {
+      "path": "data/qingyuan_public_parameters.csv",
+      "sha256": "f9392b9a4bf003d3b81effadd30ee379aa31ea01485026c746f34f7b37ce2644"
+    },
+    {
+      "path": "data/qingyuan_public_parameters.json",
+      "sha256": "96bf9bf1db74bb69d25d4caeecb101c7288eaf852f3832a952c860b2c1166e88"
+    },
+    {
+      "path": "data/economics_spot_20261115_96points.csv",
+      "sha256": "e056f4489657606ad66a5bf54f4edefef5850fa368c9bb2f9103acb0e93eedcd"
+    }
+  ]
+}

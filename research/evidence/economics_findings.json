@@ -1,0 +1,390 @@
+{
+  "scope": "辽宁清原一期抽水蓄能电站，6×300MW；非二期、非广东清远",
+  "retrieved_date": "2026-11-16",
+  "sources": [
+    {
+      "id": "E1",
+      "title": "多能互补视角下抽水蓄能电站运营管理的影响因素分析——以辽宁清原抽水蓄能电站为例",
+      "url": "https://xbna.pku.edu.cn/fileup/0479-8023/HTML/2024-5-917.html",
+      "publisher": "北京大学学报（自然科学版）",
+      "date": "2024-09",
+      "locator": "第60卷第5期，1.2调查方法；doi:10.13209/j.0479-8023.2024.075",
+      "kind": "original_research"
+    },
+    {
+      "id": "E2",
+      "title": "关于抽水蓄能电站容量电价及有关事项的通知（发改价格〔2023〕533号）附件",
+      "url": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/202305/P020230515603052952327.pdf",
+      "publisher": "国家发展改革委",
+      "date": "2023-05-11",
+      "locator": "PDF第2页序号43及表下注；正文自2023-06-01执行",
+      "kind": "official_tariff"
+    },
+    {
+      "id": "E3",
+      "title": "关于完善发电侧容量电价机制的通知（发改价格〔2026〕114号）",
+      "url": "https://www.ndrc.gov.cn/xwdt/tzgg/202601/t20260130_1403525.html",
+      "publisher": "国家发展改革委、国家能源局",
+      "date": "2026-01-27",
+      "locator": "二（二）、四（二）",
+      "kind": "official_policy"
+    },
+    {
+      "id": "E4",
+      "title": "省发展改革委关于第四监管周期辽宁电网输配电价及有关事项的通知",
+      "url": "https://fgw.ln.gov.cn/fgw/zc/zxzc/2026073115014473464/index.shtml",
+      "publisher": "辽宁省发展改革委",
+      "date": "2026-07-31",
+      "locator": "二、其他事项第2条；三第3条自2026-08-01起执行",
+      "kind": "official_policy"
+    },
+    {
+      "id": "E5",
+      "title": "第四监管周期辽宁电网输配电价表",
+      "url": "https://fgw.ln.gov.cn/fgw/zc/zxzc/2026073115014473464/2026073114583385294.pdf",
+      "publisher": "辽宁省发展改革委",
+      "date": "2026-07-31",
+      "locator": "附件1 PDF第1页，220千伏及以上、单一制；注2、3",
+      "kind": "official_tariff"
+    },
+    {
+      "id": "E6",
+      "title": "关于建立发电侧可靠容量补偿机制的通知",
+      "url": "https://fgw.ln.gov.cn/fgw/zc/zxzc/2026110915280075305/index.shtml",
+      "publisher": "辽宁省发展改革委",
+      "date": "2026-11-09",
+      "locator": "一实施范围、三补偿标准、五电费分摊",
+      "kind": "official_policy"
+    },
+    {
+      "id": "E7",
+      "title": "辽宁省深化燃煤发电上网电价形成机制改革实施方案",
+      "url": "https://fgw.ln.gov.cn/fgw/index/tzgg/296A9D43AC834C4B90D052A97F7F7E66/index.shtml",
+      "publisher": "辽宁省发展改革委",
+      "date": "2020-04-02",
+      "locator": "三（一），自2020-01-01执行",
+      "kind": "official_historical_tariff"
+    },
+    {
+      "id": "E8",
+      "title": "关于进一步完善抽水蓄能价格形成机制的意见（发改价格〔2021〕633号）",
+      "url": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/202105/t20210507_1279341.html",
+      "publisher": "国家发展改革委",
+      "date": "2021-04-30",
+      "locator": "二（一）第1、2条；三（二）",
+      "kind": "official_historical_policy"
+    },
+    {
+      "id": "E9",
+      "title": "抽水蓄能容量电价核定办法",
+      "url": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/202105/P020210519510284562741.pdf",
+      "publisher": "国家发展改革委",
+      "date": "2021-04-30",
+      "locator": "第2页第六条、第八条；第3页第八、九条",
+      "kind": "official_regulatory_assumptions"
+    },
+    {
+      "id": "E10",
+      "title": "辽宁省水利厅关于准予辽宁清原抽水蓄能有限公司抽水蓄能电站取水许可决定书",
+      "url": "https://slt.ln.gov.cn/slt/zfxxgk/fdzdgknr/xzxkjd/2026060514021837722/index.shtml",
+      "publisher": "辽宁省水利厅",
+      "date": "2026-02-09",
+      "locator": "一、项目基本情况",
+      "kind": "official_permit"
+    },
+    {
+      "id": "E11",
+      "title": "东北地区最大抽水蓄能电站全面投产发电",
+      "url": "https://www.ln.gov.cn/web/ywdt/zymtkln/2025012009163748293/index.shtml",
+      "publisher": "辽宁省人民政府（转载人民网报道）",
+      "date": "2025-01-20",
+      "locator": "正文第1、2段及最后一段；截至全面投产2025-01-16",
+      "kind": "government_news_reprint"
+    },
+    {
+      "id": "E12",
+      "title": "辽宁清原抽水蓄能电站连创运营新纪录",
+      "url": "https://fushun.gov.cn/006/006022/006022002/20260325/012360fc-84e5-4e2d-9b17-8f7b2cff4918.html",
+      "publisher": "抚顺市人民政府（来源抚顺新闻网）",
+      "date": "2026-03-25",
+      "locator": "首段及末段，累计口径不同",
+      "kind": "government_news_reprint"
+    },
+    {
+      "id": "E13",
+      "title": "现货电价—统一结算点电价信息表",
+      "url": "https://fgw.ln.gov.cn/fgw/xxgk/xhdj/index.shtml",
+      "publisher": "辽宁省发展改革委",
+      "date": "2026-11-15",
+      "locator": "栏目iframe https://fgw.ln.gov.cn/indexview；公开前端调用POST /indexview/api/getLine JSON {date:2026-11-15}，data.xData/before/realTime",
+      "kind": "official_open_dashboard",
+      "api": "https://fgw.ln.gov.cn/indexview/api/getLine",
+      "payload": {
+        "date": "2026-11-15"
+      },
+      "raw_file": "economics_spot_20261115_raw.json",
+      "csv_file": "economics_spot_20261115_96points.csv"
+    }
+  ],
+  "parameters": [
+    {
+      "parameter": "设计年发电量",
+      "value": 30.11,
+      "unit": "亿kWh/年",
+      "status": "published_design",
+      "source": "E1",
+      "locator": "1.2调查方法",
+      "note": "非实测年发电量；政府新闻常四舍五入为30亿"
+    },
+    {
+      "parameter": "设计年抽水用电量",
+      "value": 40.15,
+      "unit": "亿kWh/年",
+      "status": "published_design",
+      "source": "E1",
+      "locator": "1.2调查方法",
+      "note": "非实测年购电量；政府新闻常四舍五入为40亿"
+    },
+    {
+      "parameter": "设计年发电量/抽水量比值",
+      "value": 0.7499377334993773,
+      "unit": "1",
+      "status": "derived",
+      "source": "E1",
+      "formula": "30.11/40.15",
+      "note": "约74.994%；设计年度比值，不是机组最大效率、未证明现场闭合循环测得效率"
+    },
+    {
+      "parameter": "年发电利用小时",
+      "value": 1673,
+      "unit": "h/年",
+      "status": "published_design",
+      "source": "E10",
+      "note": "水利许可年利用小时；与30.11亿/180万=1672.78h一致，不是实测运行小时"
+    },
+    {
+      "parameter": "连续满发小时",
+      "value": 6,
+      "unit": "h",
+      "status": "published_design",
+      "source": "E10"
+    },
+    {
+      "parameter": "总投资",
+      "value": 109,
+      "unit": "亿元",
+      "status": "published_project_investment_rounded",
+      "source": "E11",
+      "note": "报道口径，非经审计竣工决算；不能据此精确重建现金流"
+    },
+    {
+      "parameter": "核定容量电价（2023标准）",
+      "value": 599.66,
+      "unit": "元/kW（年度容量价格）",
+      "status": "published_regulated_tariff_historical",
+      "source": "E2",
+      "locator": "第2页序号43，含增值税",
+      "note": "表中原单位元/千瓦；633附件第六条定义为年平均收入/覆盖容量，故年度口径。未找到2026对清原重新核价的公开专门文件，不能无条件称2026最新实结标准。2023-06-01起生效"
+    },
+    {
+      "parameter": "满容量年度容量电费理论值",
+      "value": 1079388000.0,
+      "unit": "元/年",
+      "status": "derived_scenario",
+      "source": "E2",
+      "formula": "599.66*1800000",
+      "note": "10.79388亿元/年，仅全容量覆盖、全年可用及按该标准执行的静态估算，非实际净利润、非已结算收入"
+    },
+    {
+      "parameter": "现行抽发电能量价规则",
+      "value": "所在节点现货市场实时价格",
+      "unit": "规则",
+      "status": "published_policy",
+      "source": "E4",
+      "note": "2026-08-01起执行；不能用统一结算点电价冒充清原节点结算价"
+    },
+    {
+      "parameter": "220kV及以上单一制输配电量价",
+      "value": 0.141,
+      "unit": "元/kWh",
+      "status": "published_tariff",
+      "source": "E5",
+      "note": "含增值税；清原500kV落此电压档为推断；按E4抽水收取、发电退减，不能重复计费"
+    },
+    {
+      "parameter": "省内上网环节线损率",
+      "value": 3.78,
+      "unit": "%",
+      "status": "published_tariff",
+      "source": "E5",
+      "note": "线损费用在输配电价外单列；不是机组效率损失率"
+    },
+    {
+      "parameter": "2027可靠容量补偿标准",
+      "value": 370,
+      "unit": "元/kW·年",
+      "status": "not_applicable_to_qingyuan_current_scope",
+      "source": "E6",
+      "note": "通知当前实施范围不含抽蓄；不得替代清原原容量电价或重复加算。抽蓄抽水电量列为分摊对象"
+    },
+    {
+      "parameter": "辽宁燃煤基准价",
+      "value": 0.3749,
+      "unit": "元/kWh",
+      "status": "published_historical_reference",
+      "source": "E7",
+      "note": "非清原2026实际售电价"
+    },
+    {
+      "parameter": "历史无现货抽水价情景",
+      "value": 0.281175,
+      "unit": "元/kWh",
+      "status": "derived_historical_policy_scenario",
+      "source": "E7+E8",
+      "formula": "0.3749*75%",
+      "note": "0.281175；仅2021机制“现货尚未运行且电网提供电量”等适用条件下，不能用作2026当前实际购电价"
+    },
+    {
+      "parameter": "容量核价经营期",
+      "value": 40,
+      "unit": "年",
+      "status": "regulatory_assumption",
+      "source": "E9",
+      "note": "核价参数，不等于工程物理寿命"
+    },
+    {
+      "parameter": "容量核价资本金内部收益率",
+      "value": 6.5,
+      "unit": "%",
+      "status": "regulatory_assumption",
+      "source": "E9",
+      "note": "核价参数，不是清原实际投资收益率，也不能直接当项目折现率"
+    },
+    {
+      "parameter": "容量核价还贷期限",
+      "value": 25,
+      "unit": "年",
+      "status": "regulatory_assumption",
+      "source": "E9"
+    },
+    {
+      "parameter": "临时容量核价资本金比例",
+      "value": 20,
+      "unit": "%投资",
+      "status": "regulatory_assumption",
+      "source": "E9",
+      "note": "实际资本金未公开，不能称清原实测资本结构"
+    },
+    {
+      "parameter": "全面投产日期",
+      "value": "2025-01-16",
+      "unit": "日期",
+      "status": "published_event",
+      "source": "E11",
+      "note": "第6台机组正式商运"
+    },
+    {
+      "parameter": "首台投产日期",
+      "value": "2023-12-15",
+      "unit": "日期",
+      "status": "published_event",
+      "source": "E11"
+    },
+    {
+      "parameter": "截至全面投产累计抽水电量",
+      "value": 16.37,
+      "unit": "亿kWh",
+      "status": "reported_operating_cumulative",
+      "source": "E11",
+      "note": "自2023-12-15至全面投产；非完整年度/闭合循环数据"
+    },
+    {
+      "parameter": "截至全面投产累计发电电量",
+      "value": 12.46,
+      "unit": "亿kWh",
+      "status": "reported_operating_cumulative",
+      "source": "E11",
+      "note": "不可直接把两累计量比值当闭合循环效率"
+    },
+    {
+      "parameter": "截至全面投产累计抽水次数",
+      "value": 1342,
+      "unit": "次",
+      "status": "reported_operating_cumulative",
+      "source": "E11"
+    },
+    {
+      "parameter": "截至全面投产累计发电次数",
+      "value": 1356,
+      "unit": "次",
+      "status": "reported_operating_cumulative",
+      "source": "E11"
+    },
+    {
+      "parameter": "截至全面投产累计抽水时长",
+      "value": 4954.18,
+      "unit": "h",
+      "status": "reported_operating_cumulative",
+      "source": "E11",
+      "note": "多台机组累计时长，不能当全站等效利用小时"
+    },
+    {
+      "parameter": "截至全面投产累计发电时长",
+      "value": 4776.88,
+      "unit": "h",
+      "status": "reported_operating_cumulative",
+      "source": "E11",
+      "note": "多台机组累计时长，不能当全站等效利用小时"
+    },
+    {
+      "parameter": "全面商运以来累计发电量（2026-03报道）",
+      "value": 25,
+      "unit": "亿kWh",
+      "status": "reported_approximate_cumulative",
+      "source": "E12",
+      "note": "报道首段约25亿，与末段投运以来38.6亿起点不同，非2025全年"
+    },
+    {
+      "parameter": "投运以来累计发电量（2026-03报道）",
+      "value": 38.6,
+      "unit": "亿kWh",
+      "status": "reported_operating_cumulative",
+      "source": "E12",
+      "note": "截至报道时累计，未披露精确截止时刻和配套抽水量"
+    }
+  ],
+  "price_sample": {
+    "date": "2026-11-15",
+    "points": 96,
+    "step_minutes": 15,
+    "time_zone": "Asia/Shanghai",
+    "time_label": "日内时刻00:15至24:00，按15分钟区间末端标签处理，原始xData保留",
+    "location": "辽宁统一结算点，非清原节点",
+    "unit": "元/MWh",
+    "source": "E13",
+    "real_time_min": -100.0,
+    "real_time_max": 432.74,
+    "real_time_arithmetic_mean": 213.48697916666666,
+    "day_ahead_min": -100.0,
+    "day_ahead_max": 460.0,
+    "day_ahead_arithmetic_mean": 120.57104166666667,
+    "negative_real_time_points": 19,
+    "note": "真实公开栏目返回的数据；可作为可追溯代理电价算例，不能声称是清原实际结算单。日均数为各15分钟价简单均值，不是电量加权均价。负价保留。"
+  },
+  "missing": [
+    "清原节点历史实时电价完整序列及站级购售电结算单",
+    "2025整年同口径抽水电量、发电电量和初末库水位",
+    "站级运行维护费及修理费台账",
+    "单次启动耗电、水量和货币成本",
+    "容量电价2026专门重新核定或校核文件",
+    "经审计竣工决算、实际资本金比例、贷款利率和还款进度",
+    "输配电费退减与系统运行费的站级实际结算数额"
+  ],
+  "cautions": [
+    "设计值、报道累计值、监管核价假设和推算情景必须分列",
+    "599.66容量电价不能写为元/kWh；政府转载页有疑似单位笔误，应采用国家原始附件",
+    "40年为容量核价经营期，不是工程设计使用期",
+    "2026最新电价规则与2021无现货75%规则不同，应按研究年份选取",
+    "无需依靠不公开财务台账也能做物理节能量研究，但不能把全部购电节省直接等同股东利润"
+  ]
+}

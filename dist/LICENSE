@@ -22,3 +22,7 @@ SOFTWARE.
 
 Scope: original website HTML, CSS and JavaScript code only. Third-party data,
 source materials, papers and trademarks are excluded; see README.md.
+
+Additional scope for this continuation: project-authored scripts/*.py and
+scripts/*.sh are also provided under the MIT terms above. Third-party data,
+source publications and trademarks remain excluded.

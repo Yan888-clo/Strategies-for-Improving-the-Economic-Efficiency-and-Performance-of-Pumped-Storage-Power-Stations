@@ -1,0 +1,249 @@
+{
+  "id": "2i6JhUAaqfbIRldF900021Vq8",
+  "type": "http",
+  "status": "finished",
+  "createdAt": "2026-11-16T04:36:48.828Z",
+  "updatedAt": "2026-11-16T04:36:50.046Z",
+  "target": "qingyuan-hydro-thesis.aquaticbench3.chatgpt.site",
+  "probesCount": 3,
+  "locations": [
+    {
+      "country": "CN",
+      "asn": 4134
+    },
+    {
+      "country": "CN",
+      "asn": 4837
+    },
+    {
+      "country": "CN",
+      "asn": 9808
+    }
+  ],
+  "measurementOptions": {
+    "request": {
+      "method": "GET",
+      "path": "/downloads/pumped-storage-source.zip"
+    }
+  },
+  "results": [
+    {
+      "probe": {
+        "continent": "AS",
+        "region": "Eastern Asia",
+        "country": "CN",
+        "state": null,
+        "city": "Guilin",
+        "asn": 4134,
+        "longitude": 110.29,
+        "latitude": 25.28,
+        "network": "China Telecom",
+        "tags": [
+          "eyeball-network",
+          "u-shuangzhijinghua"
+        ],
+        "resolvers": [
+          "202.103.224.68",
+          "202.103.225.68"
+        ]
+      },
+      "result": {
+        "status": "finished",
+        "resolvedAddress": "104.18.23.186",
+        "headers": {
+          "date": "Mon, 16 Nov 2026 04:36:49 GMT",
+          "content-type": "text/html; charset=UTF-8",
+          "transfer-encoding": "chunked",
+          "connection": "close",
+          "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+          "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+          "referrer-policy": "same-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "set-cookie": "__cf_bm=7iL5netuTh7okQIHRmToVgyZS4RobsL.TPYktGIjY0o-1794803809.759529-1.0.1.1-ThKu9xj9b36T4kTtkcrju2TdI5.zquj12_4eVDRsQmaaP3rIDeQ6W4CFY3FajIwmPF__ntEcaOISuLH.p6ZqI38gQuN6nKI769NM.DZVZ7Qm3E6d1nhibphqx6e0ifUa; HttpOnly; SameSite=None; Partitioned; Secure; Path=/; Domain=chatgpt.site; Expires=Mon, 16 Nov 2026 05:06:49 GMT",
+          "content-encoding": "gzip",
+          "server": "cloudflare",
+          "cf-ray": "a5b3cc02fe9e498b-LAX"
+        },
+        "rawHeaders": "Date: Mon, 16 Nov 2026 04:36:49 GMT\nContent-Type: text/html; charset=UTF-8\nTransfer-Encoding: chunked\nConnection: close\nCache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0\nExpires: Thu, 01 Jan 1970 00:00:01 GMT\nReferrer-Policy: same-origin\nX-Frame-Options: SAMEORIGIN\nset-cookie: __cf_bm=7iL5netuTh7okQIHRmToVgyZS4RobsL.TPYktGIjY0o-1794803809.759529-1.0.1.1-ThKu9xj9b36T4kTtkcrju2TdI5.zquj12_4eVDRsQmaaP3rIDeQ6W4CFY3FajIwmPF__ntEcaOISuLH.p6ZqI38gQuN6nKI769NM.DZVZ7Qm3E6d1nhibphqx6e0ifUa; HttpOnly; SameSite=None; Partitioned; Secure; Path=/; Domain=chatgpt.site; Expires=Mon, 16 Nov 2026 05:06:49 GMT\nContent-Encoding: gzip\nServer: cloudflare\nCF-RAY: a5b3cc02fe9e498b-LAX",
+        "rawBody": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n<title>Attention Required! | Cloudflare</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n<link rel=\"stylesheet\" id=\"cf_styles-css\" href=\"/cdn-cgi/styles/cf.errors.css\" />\n<!--[if lt IE 9]><link rel=\"stylesheet\" id='cf_styles-ie-css' href=\"/cdn-cgi/styles/cf.errors.ie.css\" /><![endif]-->\n<style>body{margin:0;padding:0}</style>\n\n\n<!--[if gte IE 10]><!-->\n<script>\n  if (!navigator.cookieEnabled) {\n    window.addEventListener('DOMContentLoaded', function () {\n      var cookieEl = document.getElementById('cookie-alert');\n      cookieEl.style.display = 'block';\n    })\n  }\n</script>\n<!--<![endif]-->\n\n</head>\n<body>\n  <div id=\"cf-wrapper\">\n    <div class=\"cf-alert cf-alert-error cf-cookie-error\" id=\"cookie-alert\" data-translate=\"enable_cookies\">Please enable cookies.</div>\n    <div id=\"cf-error-details\" class=\"cf-error-details-wrapper\">\n      <div class=\"cf-wrapper cf-header cf-error-overview\">\n        <h1 data-translate=\"block_headline\">Sorry, you have been blocked</h1>\n        <h2 class=\"cf-subheadline\"><span data-translate=\"unable_to_access\">You are unable to access</span> chatgpt.site</h2>\n      </div><!-- /.header -->\n\n      <div class=\"cf-section cf-highlight\">\n        <div class=\"cf-wrapper\">\n          <div class=\"cf-screenshot-container cf-screenshot-full\">\n            \n              <span class=\"cf-no-screenshot error\"></span>\n            \n          </div>\n        </div>\n      </div><!-- /.captcha-container -->\n\n      <div class=\"cf-section cf-wrapper\">\n        <div class=\"cf-columns two\">\n          <div class=\"cf-column\">\n            <h2 data-translate=\"blocked_why_headline\">Why have I been blocked?</h2>\n\n            <p data-translate=\"blocked_why_detail\">This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.</p>\n          </div>\n\n          <div class=\"cf-column\">\n            <h2 data-translate=\"blocked_resolve_headline\">What can I do to resolve this?</h2>\n\n            <p data-translate=\"blocked_resolve_detail\">You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.</p>\n          </div>\n        </div>\n      </div><!-- /.section -->\n\n      <div class=\"cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300\">\n    <p class=\"text-13\">\n      <span class=\"cf-footer-item sm:block sm:mb-1\">Cloudflare Ray ID: <strong class=\"font-semibold\">a5b3cc02fe9e498b</strong></span>\n      <span class=\"cf-footer-separator sm:hidden\">&bull;</span>\n      <span id=\"cf-footer-item-ip\" class=\"cf-footer-item hidden sm:block sm:mb-1\">\n        Your IP:\n        <button type=\"button\" id=\"cf-footer-ip-reveal\" class=\"cf-footer-ip-reveal-btn\">Click to reveal</button>\n        <span class=\"hidden\" id=\"cf-footer-ip\">116.1.77.195</span>\n        <span class=\"cf-footer-separator sm:hidden\">&bull;</span>\n      </span>\n      <span class=\"cf-footer-item sm:block sm:mb-1\"><span>Performance &amp; security by</span> <a rel=\"noopener noreferrer\" href=\"https://www.cloudflare.com/5xx-error-landing\" id=\"brand_link\" target=\"_blank\">Cloudflare</a></span>\n      \n    </p>\n    <script>(function(){function d(){var b=a.getElementById(\"cf-footer-item-ip\"),c=a.getElementById(\"cf-footer-ip-reveal\");b&&\"classList\"in b&&(b.classList.remove(\"hidden\"),c.addEventListener(\"click\",function(){c.classList.add(\"hidden\");a.getElementById(\"cf-footer-ip\").classList.remove(\"hidden\")}))}var a=document;document.addEventListener&&a.addEventListener(\"DOMContentLoaded\",d)})();</script>\n  </div><!-- /.error-footer -->\n\n    </div><!-- /#cf-error-details -->\n  </div><!-- /#cf-wrapper -->\n\n  <script>\n    window._cf_translation = {};\n    \n    \n  </script>\n<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'a5b3cc02fe9e498b',t:'MTc5NDgwMzgwOQ=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5b3cc02fe9e498b',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);\";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>\n</html>",
+        "rawOutput": "HTTP/1.1 403\nDate: Mon, 16 Nov 2026 04:36:49 GMT\nContent-Type: text/html; charset=UTF-8\nTransfer-Encoding: chunked\nConnection: close\nCache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0\nExpires: Thu, 01 Jan 1970 00:00:01 GMT\nReferrer-Policy: same-origin\nX-Frame-Options: SAMEORIGIN\nset-cookie: __cf_bm=7iL5netuTh7okQIHRmToVgyZS4RobsL.TPYktGIjY0o-1794803809.759529-1.0.1.1-ThKu9xj9b36T4kTtkcrju2TdI5.zquj12_4eVDRsQmaaP3rIDeQ6W4CFY3FajIwmPF__ntEcaOISuLH.p6ZqI38gQuN6nKI769NM.DZVZ7Qm3E6d1nhibphqx6e0ifUa; HttpOnly; SameSite=None; Partitioned; Secure; Path=/; Domain=chatgpt.site; Expires=Mon, 16 Nov 2026 05:06:49 GMT\nContent-Encoding: gzip\nServer: cloudflare\nCF-RAY: a5b3cc02fe9e498b-LAX\n\n<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n<title>Attention Required! | Cloudflare</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n<link rel=\"stylesheet\" id=\"cf_styles-css\" href=\"/cdn-cgi/styles/cf.errors.css\" />\n<!--[if lt IE 9]><link rel=\"stylesheet\" id='cf_styles-ie-css' href=\"/cdn-cgi/styles/cf.errors.ie.css\" /><![endif]-->\n<style>body{margin:0;padding:0}</style>\n\n\n<!--[if gte IE 10]><!-->\n<script>\n  if (!navigator.cookieEnabled) {\n    window.addEventListener('DOMContentLoaded', function () {\n      var cookieEl = document.getElementById('cookie-alert');\n      cookieEl.style.display = 'block';\n    })\n  }\n</script>\n<!--<![endif]-->\n\n</head>\n<body>\n  <div id=\"cf-wrapper\">\n    <div class=\"cf-alert cf-alert-error cf-cookie-error\" id=\"cookie-alert\" data-translate=\"enable_cookies\">Please enable cookies.</div>\n    <div id=\"cf-error-details\" class=\"cf-error-details-wrapper\">\n      <div class=\"cf-wrapper cf-header cf-error-overview\">\n        <h1 data-translate=\"block_headline\">Sorry, you have been blocked</h1>\n        <h2 class=\"cf-subheadline\"><span data-translate=\"unable_to_access\">You are unable to access</span> chatgpt.site</h2>\n      </div><!-- /.header -->\n\n      <div class=\"cf-section cf-highlight\">\n        <div class=\"cf-wrapper\">\n          <div class=\"cf-screenshot-container cf-screenshot-full\">\n            \n              <span class=\"cf-no-screenshot error\"></span>\n            \n          </div>\n        </div>\n      </div><!-- /.captcha-container -->\n\n      <div class=\"cf-section cf-wrapper\">\n        <div class=\"cf-columns two\">\n          <div class=\"cf-column\">\n            <h2 data-translate=\"blocked_why_headline\">Why have I been blocked?</h2>\n\n            <p data-translate=\"blocked_why_detail\">This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.</p>\n          </div>\n\n          <div class=\"cf-column\">\n            <h2 data-translate=\"blocked_resolve_headline\">What can I do to resolve this?</h2>\n\n            <p data-translate=\"blocked_resolve_detail\">You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.</p>\n          </div>\n        </div>\n      </div><!-- /.section -->\n\n      <div class=\"cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300\">\n    <p class=\"text-13\">\n      <span class=\"cf-footer-item sm:block sm:mb-1\">Cloudflare Ray ID: <strong class=\"font-semibold\">a5b3cc02fe9e498b</strong></span>\n      <span class=\"cf-footer-separator sm:hidden\">&bull;</span>\n      <span id=\"cf-footer-item-ip\" class=\"cf-footer-item hidden sm:block sm:mb-1\">\n        Your IP:\n        <button type=\"button\" id=\"cf-footer-ip-reveal\" class=\"cf-footer-ip-reveal-btn\">Click to reveal</button>\n        <span class=\"hidden\" id=\"cf-footer-ip\">116.1.77.195</span>\n        <span class=\"cf-footer-separator sm:hidden\">&bull;</span>\n      </span>\n      <span class=\"cf-footer-item sm:block sm:mb-1\"><span>Performance &amp; security by</span> <a rel=\"noopener noreferrer\" href=\"https://www.cloudflare.com/5xx-error-landing\" id=\"brand_link\" target=\"_blank\">Cloudflare</a></span>\n      \n    </p>\n    <script>(function(){function d(){var b=a.getElementById(\"cf-footer-item-ip\"),c=a.getElementById(\"cf-footer-ip-reveal\");b&&\"classList\"in b&&(b.classList.remove(\"hidden\"),c.addEventListener(\"click\",function(){c.classList.add(\"hidden\");a.getElementById(\"cf-footer-ip\").classList.remove(\"hidden\")}))}var a=document;document.addEventListener&&a.addEventListener(\"DOMContentLoaded\",d)})();</script>\n  </div><!-- /.error-footer -->\n\n    </div><!-- /#cf-error-details -->\n  </div><!-- /#cf-wrapper -->\n\n  <script>\n    window._cf_translation = {};\n    \n    \n  </script>\n<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'a5b3cc02fe9e498b',t:'MTc5NDgwMzgwOQ=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5b3cc02fe9e498b',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);\";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>\n</html>",
+        "truncated": false,
+        "statusCode": 403,
+        "statusCodeName": "Forbidden",
+        "timings": {
+          "total": 849,
+          "dns": 276,
+          "tcp": 178,
+          "tls": 188,
+          "firstByte": 207,
+          "download": 0
+        },
+        "tls": {
+          "authorized": true,
+          "protocol": "TLSv1.3",
+          "cipherName": "TLS_AES_256_GCM_SHA384",
+          "createdAt": "2026-11-16T02:59:45.000Z",
+          "expiresAt": "2027-02-14T02:59:44.000Z",
+          "issuer": {
+            "C": "US",
+            "O": "Let's Encrypt",
+            "CN": "YE2"
+          },
+          "subject": {
+            "CN": "*.aquaticbench3.chatgpt.site",
+            "alt": "DNS:*.aquaticbench3.chatgpt.site"
+          },
+          "keyType": "EC",
+          "keyBits": 256,
+          "serialNumber": "06:12:A7:0F:88:46:5B:27:0C:83:31:5B:23:A2:24:20:C1:25",
+          "fingerprint256": "99:B2:E5:2B:D1:01:89:D1:A8:12:66:E8:7C:BF:3B:D2:80:F8:6F:2A:84:2F:66:25:68:A8:92:77:DA:26:E5:8C",
+          "publicKey": "04:2F:33:60:72:F8:1C:BC:4F:8D:25:48:44:29:56:51:04:9A:49:2A:10:5A:CB:BC:9C:FC:84:A5:B4:2B:7C:3E:E3:88:B7:FB:6A:F1:C6:50:E3:73:A3:3C:79:DA:A5:2B:6A:9B:F5:00:09:39:11:83:AB:CA:50:AA:DB:16:B3:85:94"
+        }
+      }
+    },
+    {
+      "probe": {
+        "continent": "AS",
+        "region": "Eastern Asia",
+        "country": "CN",
+        "state": null,
+        "city": "Wuhan",
+        "asn": 4837,
+        "longitude": 114.27,
+        "latitude": 30.58,
+        "network": "CHINA UNICOM China169 Backbone",
+        "tags": [
+          "eyeball-network"
+        ],
+        "resolvers": [
+          "private"
+        ]
+      },
+      "result": {
+        "status": "finished",
+        "resolvedAddress": "104.18.23.186",
+        "headers": {
+          "date": "Mon, 16 Nov 2026 04:36:49 GMT",
+          "content-type": "text/html; charset=UTF-8",
+          "transfer-encoding": "chunked",
+          "connection": "close",
+          "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+          "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+          "referrer-policy": "same-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "set-cookie": "__cf_bm=p9x.0_Q3yZvhSJfhiEo33ko_dwgG2T7YacFYPthJuk4-1794803809.3749716-1.0.1.1-SiUs_A6U5aVZNPG9Dh4Nf._kfVGY5UPSRA3juZ.KH.ObfO8vU1LMWFBI7Jlu7rWVQnikhG04PUEYVPX_KjJMDiQFtnVw4oQ_GIoxP8UQfBwAcKd6Rhe2MY8XD27Kszyb; HttpOnly; SameSite=None; Partitioned; Secure; Path=/; Domain=chatgpt.site; Expires=Mon, 16 Nov 2026 05:06:49 GMT",
+          "content-encoding": "gzip",
+          "server": "cloudflare",
+          "cf-ray": "a5b3cc0099d40460-HKG"
+        },
+        "rawHeaders": "Date: Mon, 16 Nov 2026 04:36:49 GMT\nContent-Type: text/html; charset=UTF-8\nTransfer-Encoding: chunked\nConnection: close\nCache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0\nExpires: Thu, 01 Jan 1970 00:00:01 GMT\nReferrer-Policy: same-origin\nX-Frame-Options: SAMEORIGIN\nset-cookie: __cf_bm=p9x.0_Q3yZvhSJfhiEo33ko_dwgG2T7YacFYPthJuk4-1794803809.3749716-1.0.1.1-SiUs_A6U5aVZNPG9Dh4Nf._kfVGY5UPSRA3juZ.KH.ObfO8vU1LMWFBI7Jlu7rWVQnikhG04PUEYVPX_KjJMDiQFtnVw4oQ_GIoxP8UQfBwAcKd6Rhe2MY8XD27Kszyb; HttpOnly; SameSite=None; Partitioned; Secure; Path=/; Domain=chatgpt.site; Expires=Mon, 16 Nov 2026 05:06:49 GMT\nContent-Encoding: gzip\nServer: cloudflare\nCF-RAY: a5b3cc0099d40460-HKG",
+        "rawBody": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n<title>Attention Required! | Cloudflare</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n<link rel=\"stylesheet\" id=\"cf_styles-css\" href=\"/cdn-cgi/styles/cf.errors.css\" />\n<!--[if lt IE 9]><link rel=\"stylesheet\" id='cf_styles-ie-css' href=\"/cdn-cgi/styles/cf.errors.ie.css\" /><![endif]-->\n<style>body{margin:0;padding:0}</style>\n\n\n<!--[if gte IE 10]><!-->\n<script>\n  if (!navigator.cookieEnabled) {\n    window.addEventListener('DOMContentLoaded', function () {\n      var cookieEl = document.getElementById('cookie-alert');\n      cookieEl.style.display = 'block';\n    })\n  }\n</script>\n<!--<![endif]-->\n\n</head>\n<body>\n  <div id=\"cf-wrapper\">\n    <div class=\"cf-alert cf-alert-error cf-cookie-error\" id=\"cookie-alert\" data-translate=\"enable_cookies\">Please enable cookies.</div>\n    <div id=\"cf-error-details\" class=\"cf-error-details-wrapper\">\n      <div class=\"cf-wrapper cf-header cf-error-overview\">\n        <h1 data-translate=\"block_headline\">Sorry, you have been blocked</h1>\n        <h2 class=\"cf-subheadline\"><span data-translate=\"unable_to_access\">You are unable to access</span> chatgpt.site</h2>\n      </div><!-- /.header -->\n\n      <div class=\"cf-section cf-highlight\">\n        <div class=\"cf-wrapper\">\n          <div class=\"cf-screenshot-container cf-screenshot-full\">\n            \n              <span class=\"cf-no-screenshot error\"></span>\n            \n          </div>\n        </div>\n      </div><!-- /.captcha-container -->\n\n      <div class=\"cf-section cf-wrapper\">\n        <div class=\"cf-columns two\">\n          <div class=\"cf-column\">\n            <h2 data-translate=\"blocked_why_headline\">Why have I been blocked?</h2>\n\n            <p data-translate=\"blocked_why_detail\">This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.</p>\n          </div>\n\n          <div class=\"cf-column\">\n            <h2 data-translate=\"blocked_resolve_headline\">What can I do to resolve this?</h2>\n\n            <p data-translate=\"blocked_resolve_detail\">You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.</p>\n          </div>\n        </div>\n      </div><!-- /.section -->\n\n      <div class=\"cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300\">\n    <p class=\"text-13\">\n      <span class=\"cf-footer-item sm:block sm:mb-1\">Cloudflare Ray ID: <strong class=\"font-semibold\">a5b3cc0099d40460</strong></span>\n      <span class=\"cf-footer-separator sm:hidden\">&bull;</span>\n      <span id=\"cf-footer-item-ip\" class=\"cf-footer-item hidden sm:block sm:mb-1\">\n        Your IP:\n        <button type=\"button\" id=\"cf-footer-ip-reveal\" class=\"cf-footer-ip-reveal-btn\">Click to reveal</button>\n        <span class=\"hidden\" id=\"cf-footer-ip\">58.19.85.255</span>\n        <span class=\"cf-footer-separator sm:hidden\">&bull;</span>\n      </span>\n      <span class=\"cf-footer-item sm:block sm:mb-1\"><span>Performance &amp; security by</span> <a rel=\"noopener noreferrer\" href=\"https://www.cloudflare.com/5xx-error-landing\" id=\"brand_link\" target=\"_blank\">Cloudflare</a></span>\n      \n    </p>\n    <script>(function(){function d(){var b=a.getElementById(\"cf-footer-item-ip\"),c=a.getElementById(\"cf-footer-ip-reveal\");b&&\"classList\"in b&&(b.classList.remove(\"hidden\"),c.addEventListener(\"click\",function(){c.classList.add(\"hidden\");a.getElementById(\"cf-footer-ip\").classList.remove(\"hidden\")}))}var a=document;document.addEventListener&&a.addEventListener(\"DOMContentLoaded\",d)})();</script>\n  </div><!-- /.error-footer -->\n\n    </div><!-- /#cf-error-details -->\n  </div><!-- /#cf-wrapper -->\n\n  <script>\n    window._cf_translation = {};\n    \n    \n  </script>\n<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'a5b3cc0099d40460',t:'MTc5NDgwMzgwOQ=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5b3cc0099d40460',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);\";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>\n</html>",
+        "rawOutput": "HTTP/1.1 403\nDate: Mon, 16 Nov 2026 04:36:49 GMT\nContent-Type: text/html; charset=UTF-8\nTransfer-Encoding: chunked\nConnection: close\nCache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0\nExpires: Thu, 01 Jan 1970 00:00:01 GMT\nReferrer-Policy: same-origin\nX-Frame-Options: SAMEORIGIN\nset-cookie: __cf_bm=p9x.0_Q3yZvhSJfhiEo33ko_dwgG2T7YacFYPthJuk4-1794803809.3749716-1.0.1.1-SiUs_A6U5aVZNPG9Dh4Nf._kfVGY5UPSRA3juZ.KH.ObfO8vU1LMWFBI7Jlu7rWVQnikhG04PUEYVPX_KjJMDiQFtnVw4oQ_GIoxP8UQfBwAcKd6Rhe2MY8XD27Kszyb; HttpOnly; SameSite=None; Partitioned; Secure; Path=/; Domain=chatgpt.site; Expires=Mon, 16 Nov 2026 05:06:49 GMT\nContent-Encoding: gzip\nServer: cloudflare\nCF-RAY: a5b3cc0099d40460-HKG\n\n<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n<title>Attention Required! | Cloudflare</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n<link rel=\"stylesheet\" id=\"cf_styles-css\" href=\"/cdn-cgi/styles/cf.errors.css\" />\n<!--[if lt IE 9]><link rel=\"stylesheet\" id='cf_styles-ie-css' href=\"/cdn-cgi/styles/cf.errors.ie.css\" /><![endif]-->\n<style>body{margin:0;padding:0}</style>\n\n\n<!--[if gte IE 10]><!-->\n<script>\n  if (!navigator.cookieEnabled) {\n    window.addEventListener('DOMContentLoaded', function () {\n      var cookieEl = document.getElementById('cookie-alert');\n      cookieEl.style.display = 'block';\n    })\n  }\n</script>\n<!--<![endif]-->\n\n</head>\n<body>\n  <div id=\"cf-wrapper\">\n    <div class=\"cf-alert cf-alert-error cf-cookie-error\" id=\"cookie-alert\" data-translate=\"enable_cookies\">Please enable cookies.</div>\n    <div id=\"cf-error-details\" class=\"cf-error-details-wrapper\">\n      <div class=\"cf-wrapper cf-header cf-error-overview\">\n        <h1 data-translate=\"block_headline\">Sorry, you have been blocked</h1>\n        <h2 class=\"cf-subheadline\"><span data-translate=\"unable_to_access\">You are unable to access</span> chatgpt.site</h2>\n      </div><!-- /.header -->\n\n      <div class=\"cf-section cf-highlight\">\n        <div class=\"cf-wrapper\">\n          <div class=\"cf-screenshot-container cf-screenshot-full\">\n            \n              <span class=\"cf-no-screenshot error\"></span>\n            \n          </div>\n        </div>\n      </div><!-- /.captcha-container -->\n\n      <div class=\"cf-section cf-wrapper\">\n        <div class=\"cf-columns two\">\n          <div class=\"cf-column\">\n            <h2 data-translate=\"blocked_why_headline\">Why have I been blocked?</h2>\n\n            <p data-translate=\"blocked_why_detail\">This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.</p>\n          </div>\n\n          <div class=\"cf-column\">\n            <h2 data-translate=\"blocked_resolve_headline\">What can I do to resolve this?</h2>\n\n            <p data-translate=\"blocked_resolve_detail\">You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.</p>\n          </div>\n        </div>\n      </div><!-- /.section -->\n\n      <div class=\"cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300\">\n    <p class=\"text-13\">\n      <span class=\"cf-footer-item sm:block sm:mb-1\">Cloudflare Ray ID: <strong class=\"font-semibold\">a5b3cc0099d40460</strong></span>\n      <span class=\"cf-footer-separator sm:hidden\">&bull;</span>\n      <span id=\"cf-footer-item-ip\" class=\"cf-footer-item hidden sm:block sm:mb-1\">\n        Your IP:\n        <button type=\"button\" id=\"cf-footer-ip-reveal\" class=\"cf-footer-ip-reveal-btn\">Click to reveal</button>\n        <span class=\"hidden\" id=\"cf-footer-ip\">58.19.85.255</span>\n        <span class=\"cf-footer-separator sm:hidden\">&bull;</span>\n      </span>\n      <span class=\"cf-footer-item sm:block sm:mb-1\"><span>Performance &amp; security by</span> <a rel=\"noopener noreferrer\" href=\"https://www.cloudflare.com/5xx-error-landing\" id=\"brand_link\" target=\"_blank\">Cloudflare</a></span>\n      \n    </p>\n    <script>(function(){function d(){var b=a.getElementById(\"cf-footer-item-ip\"),c=a.getElementById(\"cf-footer-ip-reveal\");b&&\"classList\"in b&&(b.classList.remove(\"hidden\"),c.addEventListener(\"click\",function(){c.classList.add(\"hidden\");a.getElementById(\"cf-footer-ip\").classList.remove(\"hidden\")}))}var a=document;document.addEventListener&&a.addEventListener(\"DOMContentLoaded\",d)})();</script>\n  </div><!-- /.error-footer -->\n\n    </div><!-- /#cf-error-details -->\n  </div><!-- /#cf-wrapper -->\n\n  <script>\n    window._cf_translation = {};\n    \n    \n  </script>\n<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'a5b3cc0099d40460',t:'MTc5NDgwMzgwOQ=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5b3cc0099d40460',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);\";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>\n</html>",
+        "truncated": false,
+        "statusCode": 403,
+        "statusCodeName": "Forbidden",
+        "timings": {
+          "total": 641,
+          "dns": 1,
+          "tcp": 206,
+          "tls": 230,
+          "firstByte": 203,
+          "download": 1
+        },
+        "tls": {
+          "authorized": true,
+          "protocol": "TLSv1.3",
+          "cipherName": "TLS_AES_256_GCM_SHA384",
+          "createdAt": "2026-11-16T02:59:45.000Z",
+          "expiresAt": "2027-02-14T02:59:44.000Z",
+          "issuer": {
+            "C": "US",
+            "O": "Let's Encrypt",
+            "CN": "YE2"
+          },
+          "subject": {
+            "CN": "*.aquaticbench3.chatgpt.site",
+            "alt": "DNS:*.aquaticbench3.chatgpt.site"
+          },
+          "keyType": "EC",
+          "keyBits": 256,
+          "serialNumber": "06:12:A7:0F:88:46:5B:27:0C:83:31:5B:23:A2:24:20:C1:25",
+          "fingerprint256": "99:B2:E5:2B:D1:01:89:D1:A8:12:66:E8:7C:BF:3B:D2:80:F8:6F:2A:84:2F:66:25:68:A8:92:77:DA:26:E5:8C",
+          "publicKey": "04:2F:33:60:72:F8:1C:BC:4F:8D:25:48:44:29:56:51:04:9A:49:2A:10:5A:CB:BC:9C:FC:84:A5:B4:2B:7C:3E:E3:88:B7:FB:6A:F1:C6:50:E3:73:A3:3C:79:DA:A5:2B:6A:9B:F5:00:09:39:11:83:AB:CA:50:AA:DB:16:B3:85:94"
+        }
+      }
+    },
+    {
+      "probe": {
+        "continent": "AS",
+        "region": "Eastern Asia",
+        "country": "CN",
+        "state": null,
+        "city": "Taishan",
+        "asn": 9808,
+        "longitude": 112.78,
+        "latitude": 22.25,
+        "network": "China Mobile Communications Group",
+        "tags": [
+          "eyeball-network"
+        ],
+        "resolvers": [
+          "private"
+        ]
+      },
+      "result": {
+        "status": "finished",
+        "resolvedAddress": "104.18.23.186",
+        "headers": {
+          "date": "Mon, 16 Nov 2026 04:36:49 GMT",
+          "content-type": "text/html; charset=UTF-8",
+          "transfer-encoding": "chunked",
+          "connection": "close",
+          "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+          "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+          "referrer-policy": "same-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "set-cookie": "__cf_bm=hh2IlkRrfniH1eAlCFJWtXDWQtFRpMelTr37rrZK_nM-1794803809.5400772-1.0.1.1-iXSwTu8I7OFci07_X2iHf1nSQjeBSQUaWPm2NaunnXObdpeR_JB5MZ3anYW5DxEZGy_AaezHOx2V9oCsbND_GZU_LzvTOJZq1aPLYXkyy36FazdH_ZdJfY2IPP5eQmFl; HttpOnly; SameSite=None; Partitioned; Secure; Path=/; Domain=chatgpt.site; Expires=Mon, 16 Nov 2026 05:06:49 GMT",
+          "content-encoding": "gzip",
+          "server": "cloudflare",
+          "cf-ray": "a5b3cc019887a580-LHR"
+        },
+        "rawHeaders": "Date: Mon, 16 Nov 2026 04:36:49 GMT\nContent-Type: text/html; charset=UTF-8\nTransfer-Encoding: chunked\nConnection: close\nCache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0\nExpires: Thu, 01 Jan 1970 00:00:01 GMT\nReferrer-Policy: same-origin\nX-Frame-Options: SAMEORIGIN\nset-cookie: __cf_bm=hh2IlkRrfniH1eAlCFJWtXDWQtFRpMelTr37rrZK_nM-1794803809.5400772-1.0.1.1-iXSwTu8I7OFci07_X2iHf1nSQjeBSQUaWPm2NaunnXObdpeR_JB5MZ3anYW5DxEZGy_AaezHOx2V9oCsbND_GZU_LzvTOJZq1aPLYXkyy36FazdH_ZdJfY2IPP5eQmFl; HttpOnly; SameSite=None; Partitioned; Secure; Path=/; Domain=chatgpt.site; Expires=Mon, 16 Nov 2026 05:06:49 GMT\nContent-Encoding: gzip\nServer: cloudflare\nCF-RAY: a5b3cc019887a580-LHR",
+        "rawBody": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n<title>Attention Required! | Cloudflare</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n<link rel=\"stylesheet\" id=\"cf_styles-css\" href=\"/cdn-cgi/styles/cf.errors.css\" />\n<!--[if lt IE 9]><link rel=\"stylesheet\" id='cf_styles-ie-css' href=\"/cdn-cgi/styles/cf.errors.ie.css\" /><![endif]-->\n<style>body{margin:0;padding:0}</style>\n\n\n<!--[if gte IE 10]><!-->\n<script>\n  if (!navigator.cookieEnabled) {\n    window.addEventListener('DOMContentLoaded', function () {\n      var cookieEl = document.getElementById('cookie-alert');\n      cookieEl.style.display = 'block';\n    })\n  }\n</script>\n<!--<![endif]-->\n\n</head>\n<body>\n  <div id=\"cf-wrapper\">\n    <div class=\"cf-alert cf-alert-error cf-cookie-error\" id=\"cookie-alert\" data-translate=\"enable_cookies\">Please enable cookies.</div>\n    <div id=\"cf-error-details\" class=\"cf-error-details-wrapper\">\n      <div class=\"cf-wrapper cf-header cf-error-overview\">\n        <h1 data-translate=\"block_headline\">Sorry, you have been blocked</h1>\n        <h2 class=\"cf-subheadline\"><span data-translate=\"unable_to_access\">You are unable to access</span> chatgpt.site</h2>\n      </div><!-- /.header -->\n\n      <div class=\"cf-section cf-highlight\">\n        <div class=\"cf-wrapper\">\n          <div class=\"cf-screenshot-container cf-screenshot-full\">\n            \n              <span class=\"cf-no-screenshot error\"></span>\n            \n          </div>\n        </div>\n      </div><!-- /.captcha-container -->\n\n      <div class=\"cf-section cf-wrapper\">\n        <div class=\"cf-columns two\">\n          <div class=\"cf-column\">\n            <h2 data-translate=\"blocked_why_headline\">Why have I been blocked?</h2>\n\n            <p data-translate=\"blocked_why_detail\">This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.</p>\n          </div>\n\n          <div class=\"cf-column\">\n            <h2 data-translate=\"blocked_resolve_headline\">What can I do to resolve this?</h2>\n\n            <p data-translate=\"blocked_resolve_detail\">You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.</p>\n          </div>\n        </div>\n      </div><!-- /.section -->\n\n      <div class=\"cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300\">\n    <p class=\"text-13\">\n      <span class=\"cf-footer-item sm:block sm:mb-1\">Cloudflare Ray ID: <strong class=\"font-semibold\">a5b3cc019887a580</strong></span>\n      <span class=\"cf-footer-separator sm:hidden\">&bull;</span>\n      <span id=\"cf-footer-item-ip\" class=\"cf-footer-item hidden sm:block sm:mb-1\">\n        Your IP:\n        <button type=\"button\" id=\"cf-footer-ip-reveal\" class=\"cf-footer-ip-reveal-btn\">Click to reveal</button>\n        <span class=\"hidden\" id=\"cf-footer-ip\">120.230.174.136</span>\n        <span class=\"cf-footer-separator sm:hidden\">&bull;</span>\n      </span>\n      <span class=\"cf-footer-item sm:block sm:mb-1\"><span>Performance &amp; security by</span> <a rel=\"noopener noreferrer\" href=\"https://www.cloudflare.com/5xx-error-landing\" id=\"brand_link\" target=\"_blank\">Cloudflare</a></span>\n      \n    </p>\n    <script>(function(){function d(){var b=a.getElementById(\"cf-footer-item-ip\"),c=a.getElementById(\"cf-footer-ip-reveal\");b&&\"classList\"in b&&(b.classList.remove(\"hidden\"),c.addEventListener(\"click\",function(){c.classList.add(\"hidden\");a.getElementById(\"cf-footer-ip\").classList.remove(\"hidden\")}))}var a=document;document.addEventListener&&a.addEventListener(\"DOMContentLoaded\",d)})();</script>\n  </div><!-- /.error-footer -->\n\n    </div><!-- /#cf-error-details -->\n  </div><!-- /#cf-wrapper -->\n\n  <script>\n    window._cf_translation = {};\n    \n    \n  </script>\n<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'a5b3cc019887a580',t:'MTc5NDgwMzgwOQ=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5b3cc019887a580',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);\";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>\n</html>",
+        "rawOutput": "HTTP/1.1 403\nDate: Mon, 16 Nov 2026 04:36:49 GMT\nContent-Type: text/html; charset=UTF-8\nTransfer-Encoding: chunked\nConnection: close\nCache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0\nExpires: Thu, 01 Jan 1970 00:00:01 GMT\nReferrer-Policy: same-origin\nX-Frame-Options: SAMEORIGIN\nset-cookie: __cf_bm=hh2IlkRrfniH1eAlCFJWtXDWQtFRpMelTr37rrZK_nM-1794803809.5400772-1.0.1.1-iXSwTu8I7OFci07_X2iHf1nSQjeBSQUaWPm2NaunnXObdpeR_JB5MZ3anYW5DxEZGy_AaezHOx2V9oCsbND_GZU_LzvTOJZq1aPLYXkyy36FazdH_ZdJfY2IPP5eQmFl; HttpOnly; SameSite=None; Partitioned; Secure; Path=/; Domain=chatgpt.site; Expires=Mon, 16 Nov 2026 05:06:49 GMT\nContent-Encoding: gzip\nServer: cloudflare\nCF-RAY: a5b3cc019887a580-LHR\n\n<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n<title>Attention Required! | Cloudflare</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n<link rel=\"stylesheet\" id=\"cf_styles-css\" href=\"/cdn-cgi/styles/cf.errors.css\" />\n<!--[if lt IE 9]><link rel=\"stylesheet\" id='cf_styles-ie-css' href=\"/cdn-cgi/styles/cf.errors.ie.css\" /><![endif]-->\n<style>body{margin:0;padding:0}</style>\n\n\n<!--[if gte IE 10]><!-->\n<script>\n  if (!navigator.cookieEnabled) {\n    window.addEventListener('DOMContentLoaded', function () {\n      var cookieEl = document.getElementById('cookie-alert');\n      cookieEl.style.display = 'block';\n    })\n  }\n</script>\n<!--<![endif]-->\n\n</head>\n<body>\n  <div id=\"cf-wrapper\">\n    <div class=\"cf-alert cf-alert-error cf-cookie-error\" id=\"cookie-alert\" data-translate=\"enable_cookies\">Please enable cookies.</div>\n    <div id=\"cf-error-details\" class=\"cf-error-details-wrapper\">\n      <div class=\"cf-wrapper cf-header cf-error-overview\">\n        <h1 data-translate=\"block_headline\">Sorry, you have been blocked</h1>\n        <h2 class=\"cf-subheadline\"><span data-translate=\"unable_to_access\">You are unable to access</span> chatgpt.site</h2>\n      </div><!-- /.header -->\n\n      <div class=\"cf-section cf-highlight\">\n        <div class=\"cf-wrapper\">\n          <div class=\"cf-screenshot-container cf-screenshot-full\">\n            \n              <span class=\"cf-no-screenshot error\"></span>\n            \n          </div>\n        </div>\n      </div><!-- /.captcha-container -->\n\n      <div class=\"cf-section cf-wrapper\">\n        <div class=\"cf-columns two\">\n          <div class=\"cf-column\">\n            <h2 data-translate=\"blocked_why_headline\">Why have I been blocked?</h2>\n\n            <p data-translate=\"blocked_why_detail\">This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.</p>\n          </div>\n\n          <div class=\"cf-column\">\n            <h2 data-translate=\"blocked_resolve_headline\">What can I do to resolve this?</h2>\n\n            <p data-translate=\"blocked_resolve_detail\">You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.</p>\n          </div>\n        </div>\n      </div><!-- /.section -->\n\n      <div class=\"cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300\">\n    <p class=\"text-13\">\n      <span class=\"cf-footer-item sm:block sm:mb-1\">Cloudflare Ray ID: <strong class=\"font-semibold\">a5b3cc019887a580</strong></span>\n      <span class=\"cf-footer-separator sm:hidden\">&bull;</span>\n      <span id=\"cf-footer-item-ip\" class=\"cf-footer-item hidden sm:block sm:mb-1\">\n        Your IP:\n        <button type=\"button\" id=\"cf-footer-ip-reveal\" class=\"cf-footer-ip-reveal-btn\">Click to reveal</button>\n        <span class=\"hidden\" id=\"cf-footer-ip\">120.230.174.136</span>\n        <span class=\"cf-footer-separator sm:hidden\">&bull;</span>\n      </span>\n      <span class=\"cf-footer-item sm:block sm:mb-1\"><span>Performance &amp; security by</span> <a rel=\"noopener noreferrer\" href=\"https://www.cloudflare.com/5xx-error-landing\" id=\"brand_link\" target=\"_blank\">Cloudflare</a></span>\n      \n    </p>\n    <script>(function(){function d(){var b=a.getElementById(\"cf-footer-item-ip\"),c=a.getElementById(\"cf-footer-ip-reveal\");b&&\"classList\"in b&&(b.classList.remove(\"hidden\"),c.addEventListener(\"click\",function(){c.classList.add(\"hidden\");a.getElementById(\"cf-footer-ip\").classList.remove(\"hidden\")}))}var a=document;document.addEventListener&&a.addEventListener(\"DOMContentLoaded\",d)})();</script>\n  </div><!-- /.error-footer -->\n\n    </div><!-- /#cf-error-details -->\n  </div><!-- /#cf-wrapper -->\n\n  <script>\n    window._cf_translation = {};\n    \n    \n  </script>\n<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'a5b3cc019887a580',t:'MTc5NDgwMzgwOQ=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5b3cc019887a580',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);\";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>\n</html>",
+        "truncated": false,
+        "statusCode": 403,
+        "statusCodeName": "Forbidden",
+        "timings": {
+          "total": 696,
+          "dns": 0,
+          "tcp": 238,
+          "tls": 236,
+          "firstByte": 221,
+          "download": 1
+        },
+        "tls": {
+          "authorized": true,
+          "protocol": "TLSv1.3",
+          "cipherName": "TLS_AES_256_GCM_SHA384",
+          "createdAt": "2026-11-16T02:59:45.000Z",
+          "expiresAt": "2027-02-14T02:59:44.000Z",
+          "issuer": {
+            "C": "US",
+            "O": "Let's Encrypt",
+            "CN": "YE2"
+          },
+          "subject": {
+            "CN": "*.aquaticbench3.chatgpt.site",
+            "alt": "DNS:*.aquaticbench3.chatgpt.site"
+          },
+          "keyType": "EC",
+          "keyBits": 256,
+          "serialNumber": "06:12:A7:0F:88:46:5B:27:0C:83:31:5B:23:A2:24:20:C1:25",
+          "fingerprint256": "99:B2:E5:2B:D1:01:89:D1:A8:12:66:E8:7C:BF:3B:D2:80:F8:6F:2A:84:2F:66:25:68:A8:92:77:DA:26:E5:8C",
+          "publicKey": "04:2F:33:60:72:F8:1C:BC:4F:8D:25:48:44:29:56:51:04:9A:49:2A:10:5A:CB:BC:9C:FC:84:A5:B4:2B:7C:3E:E3:88:B7:FB:6A:F1:C6:50:E3:73:A3:3C:79:DA:A5:2B:6A:9B:F5:00:09:39:11:83:AB:CA:50:AA:DB:16:B3:85:94"
+        }
+      }
+    }
+  ]
+}

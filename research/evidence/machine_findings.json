@@ -1,0 +1,88 @@
+{
+  "scope": "辽宁清原一期，6台×300MW；排除辽宁清原二期4台×300MW、广东清远、浙江庆元",
+  "retrieved_at": "2026-11-16",
+  "sources": [
+    {
+      "id": "VOITH36",
+      "title": "Voith hypower No.36, Qingyuan—Pilotprojekt im Gigawatt-Maßstab",
+      "url": "https://d15nmabv5huvcn.cloudfront.net/asset/180128162393/document_vu8g1f58ht0opdl8khvntpbm3i/hypower_nr36-deutsch.pdf",
+      "locator": "印刷页25，Leistungsdaten及Besondere Merkmale，PDF已下载并用pdftotext读取",
+      "source_type": "设备供应商福伊特自有刊物，一手资料",
+      "local_file": "/workspace/research_qingyuan/machine_hypower36_de.pdf"
+    },
+    {
+      "id": "VOITH_NEWS",
+      "title": "国网新源辽宁清原抽水蓄能电站4号机组顺利投产发电",
+      "url": "https://gdshe.org/article/22894.html",
+      "locator": "2024-09-03，来源明确署福伊特集团，第2自然段",
+      "source_type": "供应商发布稿的学会转载，可交叉核对"
+    },
+    {
+      "id": "MEISHAN2024",
+      "title": "章勋等. 宁波梅山港抽水蓄能电站机组选型分析[J]. 水利水电快报, 2024,45(8):52–58",
+      "url": "https://slsdkb.xml-journal.net/cn/article/pdf/preview/10.15974/j.cnki.slsdkb.2024.08.008.pdf",
+      "locator": "表2、表3的清原行；精确印刷页码未能核实",
+      "source_type": "公开研究论文中的跨电站对照统计；非清原原始设计文件",
+      "access_note": "搜索服务索引直接返回完整表头及清原数据行；当前直接下载遇到期刊安全验证，未取得可用PDF；不能声称已下载阅读全篇。"
+    },
+    {
+      "id": "GAO2020",
+      "title": "高学平,陈昊,孙博闻,朱洪涛. 侧式进/出水口数值模拟湍流模型比较研究[J]. 水利水电技术,2020,51(11):109–116. DOI:10.13928/j.cnki.wrahe.2020.11.013",
+      "url": "https://sjwj.cbpt.cnki.net/portal/journal/portal//client/paper/preview?cache=false&filePath=history%2FEditor%2F2022%2F1231%2Fsjwj%2F29fdece5-f5a5-41e9-af15-da6a9a2a3e63.pdf",
+      "locator": "111页图1；112页2.1、2.3及式14；113页表1",
+      "source_type": "清原下水库进出水口的设计研究，一手模型试验及数值模拟论文",
+      "local_file": "/workspace/research_qingyuan/machine_inlet_turbulence2020.pdf",
+      "limit": "论文实测值是1:60设计物理模型试验测值，不是投产后电站现场运行实测；几何参数对应设计研究方案，不保证竣工状态一致。"
+    },
+    {
+      "id": "MAIN2023",
+      "title": "朱茹莎. 清原抽水蓄能电站水泵水轮机主要参数选择及结构设计[J]. 水利水电技术(中英文),2023,54(S2):62–66. DOI:10.13928/j.cnki.wrahe.2023.S2.011",
+      "url": "https://sjwj.cbpt.cnki.net/portal/journal/portal/client/paper/26872000ecadbfd9818dc44d6152a31a",
+      "locator": "公开题录及摘要；全文未获取",
+      "source_type": "北京院作者清原机组原始研究，优先补充全文",
+      "access_note": "期刊页面明确提示如需获取全文请访问cnki.net；已按中文全题、DOI、作者及英文题名检索，未找到可合法公开访问的全文；不从未读正文中填参数。"
+    },
+    {
+      "id": "PIPE_NEWS",
+      "title": "绿色与科技点亮电力明珠——清原抽水蓄能电站首台机组投产发电系列报道之二",
+      "url": "https://www.fushun.gov.cn/ywdt/001001/20231206/6b16da99-50de-4004-93ca-de01d0834b9c.html",
+      "locator": "压力钢管段落，2023-12-06",
+      "source_type": "市政府网站刊载采访新闻；不是原始设计参数表",
+      "limit": "1136m引水压力钢管、121m尾水支管的统计口径不明确，不应直接当单条完整输水水道长度。"
+    }
+  ],
+  "parameters": [
+    {"name":"机组数量","value":6,"unit":"台","status":"已核实供应商资料","source":"VOITH36","locator":"印刷页25","limitation":"一期"},
+    {"name":"单机发电额定功率","value":300,"unit":"MW","status":"已核实供应商资料","source":"VOITH36","locator":"印刷页25","limitation":"电气输出功率；不可直接等同水轮机轴输出功率"},
+    {"name":"总装机功率","value":1800,"unit":"MW","status":"已核实供应商资料","source":"VOITH36","locator":"印刷页25"},
+    {"name":"额定发电水头","value":390,"unit":"m","status":"已核实供应商资料","source":"VOITH36","locator":"印刷页25","crosscheck_source":"MEISHAN2024表3及VOITH_NEWS"},
+    {"name":"额定转速","value":375,"unit":"r/min","status":"已核实供应商资料","source":"VOITH36","locator":"印刷页25","crosscheck_source":"MEISHAN2024表2及VOITH_NEWS"},
+    {"name":"机组形式","value":"立轴、单级、可逆混流式","unit":"","status":"已核实供应商资料","source":"VOITH36","locator":"印刷页25"},
+    {"name":"最大水头","value":421.57,"unit":"m","status":"已核实公开论文对照表，待原始清原设计复核","source":"MEISHAN2024","locator":"表3清原行","limitation":"直接按表头记录，不自行改称最大毛水头或额定工况水头"},
+    {"name":"最小水头","value":364.13,"unit":"m","status":"已核实公开论文对照表，待原始清原设计复核","source":"MEISHAN2024","locator":"表3清原行"},
+    {"name":"最大扬程","value":433.31,"unit":"m","status":"已核实公开论文对照表，待原始清原设计复核","source":"MEISHAN2024","locator":"表3清原行","limitation":"表2按433.3m舍入"},
+    {"name":"最大扬程/最小水头","value":1.190,"unit":"无量纲","status":"已核实公开论文对照表","source":"MEISHAN2024","locator":"表3清原行"},
+    {"name":"消落深度系数K","value":0.45,"unit":"无量纲","status":"已核实公开论文对照表","source":"MEISHAN2024","locator":"表3清原行","limitation":"必须沿用原论文定义，不能当损失系数"},
+    {"name":"转轮直径D1","value":4.543,"unit":"m","status":"已核实公开论文对照表，待原始清原设计复核","source":"MEISHAN2024","locator":"表2清原行","limitation":"与2017年网络工程简介约4.7m不一致，勿混用；本条优先取学术统计明确D1值但不声明竣工尺寸"},
+    {"name":"发电电动机额定容量","value":333.3,"unit":"MVA","status":"已核实公开论文对照表，待原始清原设计复核","source":"MEISHAN2024","locator":"表2清原行","limitation":"容量单位MVA，不是MW；不能据此推导抽水入力"},
+    {"name":"进水球阀公称直径","value":2500,"unit":"mm","status":"已核实供应商资料","source":"VOITH36","locator":"印刷页25","limitation":"球阀直径，不是全部流道管径"},
+    {"name":"进水球阀设计水头","value":714,"unit":"m","status":"已核实供应商资料","source":"VOITH36","locator":"印刷页25","limitation":"部件压力设计条件，绝非电站运行水头/扬程"},
+    {"name":"设计研究方案下水库进出水口隧洞直径","value":8.2,"unit":"m","status":"已核实一手设计研究论文","source":"GAO2020","locator":"111页图1","limitation":"设计研究几何；不能推广至全部引水及尾水管径"},
+    {"name":"设计研究方案下水库进出水口总长","value":72.5,"unit":"m","status":"已核实一手设计研究论文","source":"GAO2020","locator":"112页2.1"},
+    {"name":"设计研究方案下水库进出水口扩散段长度","value":36,"unit":"m","status":"已核实一手设计研究论文","source":"GAO2020","locator":"112页2.1"},
+    {"name":"设计研究方案下水库进出水口孔数","value":4,"unit":"个","status":"已核实一手设计研究论文","source":"GAO2020","locator":"111–112页2.1"},
+    {"name":"设计研究方案下水库进出水口每孔宽","value":6.3,"unit":"m","status":"已核实一手设计研究论文","source":"GAO2020","locator":"112页2.1"},
+    {"name":"设计研究方案下水库进出水口每孔高","value":8.7,"unit":"m","status":"已核实一手设计研究论文","source":"GAO2020","locator":"112页2.1"},
+    {"name":"下水库进出水口进流损失系数ξ","value":0.141,"unit":"无量纲","status":"已核实设计物理模型试验测值","source":"GAO2020","locator":"113页表1，112页式14","limitation":"模型比尺1:60；进流为下库向隧洞流动，对应抽水方向；基准速度为隧洞断面平均流速，动能修正系数α=1；范围为库水位至渐变段末端1.5D断面，不是全输水系统，也不是电站投产运行实测"},
+    {"name":"下水库进出水口出流损失系数ξ","value":0.347,"unit":"无量纲","status":"已核实设计物理模型试验测值","source":"GAO2020","locator":"113页表1，112页式14","limitation":"模型比尺1:60；出流为隧洞向下库流动，对应发电方向；基准速度为隧洞断面平均流速，动能修正系数α=1；仅该下库进出水口单体范围，不是全输水系统，也不是电站投产运行实测"}
+  ],
+  "unresolved": [
+    {"parameter":"水轮机额定轴输出功率","value":null,"note":"仅2017年非一手网络工程简介出现306MW，未取得可靠原始设计文件，暂不列为确认参数。"},
+    {"parameter":"额定发电流量、最大/最小抽水流量及对应扬程","value":null,"note":"未找到清原一期公开原始数值；不得把其他电站约89m3/s直接移植。"},
+    {"parameter":"水轮机/水泵/发电机/电动机效率及效率随水头负荷变化曲线","value":null,"note":"原始验收效率及全特性曲线未获取；设计年发电量/抽水电量=75%不能拆分为各设备效率，更不能用于标定唯一二维曲线。"},
+    {"parameter":"最小稳定功率、振动禁区、空化限制、泵工况运行范围","value":null,"note":"未找到一期正式运行/设计边界；通用30%或50%负荷不应充当清原事实。"},
+    {"parameter":"启停时间/能耗、最短开停机时间、爬坡限值","value":null,"note":"报道约3分钟发电响应只能作背景；未找到正式工况转换约束及能量指标。"},
+    {"parameter":"完整输水系统分段长度、管径、糙率/摩阻系数及局部损失","value":null,"note":"3899.2m是全站压力钢管安装累计长度，不能当单流道；1136m和121m新闻数值口径未清；0.141/0.347仅下库进出水口单体设计模型试验损失系数。"},
+    {"parameter":"吸出高度","value":null,"note":"非一手2017工程简介为-75m；原始2023选参论文正文未获取，未核实竣工选定值。"}
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "scope": "辽宁清原一期6×300MW。检索日期2026-11-16。未与二期或广东清远混用。",
+  "verified_parameters": [
+    {
+      "parameter": "upper_normal_level",
+      "name": "上水库正常蓄水位",
+      "value": 725,
+      "unit": "m",
+      "phase": "清原一期",
+      "source_url": "https://slt.ln.gov.cn/slt/zfxxgk/fdzdgknr/xzxkjd/2026060514021837722/index.shtml",
+      "source_title": "辽宁省水利厅关于准予辽宁清原抽水蓄能有限公司抽水蓄能电站取水许可决定书",
+      "publication_date": "2026-02-11",
+      "document_date": "2026-02-09",
+      "locator": "一、项目基本情况（许可水量位于二、批准事项）",
+      "status": "官方直接公布",
+      "note": "许可取水量不是机组循环抽水量；总库容、正常蓄水位库容、调节库容不可互换。"
+    },
+    {
+      "parameter": "upper_dead_level",
+      "name": "上水库死水位",
+      "value": 695,
+      "unit": "m",
+      "phase": "清原一期",
+      "source_url": "https://slt.ln.gov.cn/slt/zfxxgk/fdzdgknr/xzxkjd/2026060514021837722/index.shtml",
+      "source_title": "辽宁省水利厅关于准予辽宁清原抽水蓄能有限公司抽水蓄能电站取水许可决定书",
+      "publication_date": "2026-02-11",
+      "document_date": "2026-02-09",
+      "locator": "一、项目基本情况（许可水量位于二、批准事项）",
+      "status": "官方直接公布",
+      "note": "许可取水量不是机组循环抽水量；总库容、正常蓄水位库容、调节库容不可互换。"
+    },
+    {
+      "parameter": "upper_total_volume",
+      "name": "上水库总库容",
+      "value": 1522,
+      "unit": "万m³",
+      "phase": "清原一期",
+      "source_url": "https://slt.ln.gov.cn/slt/zfxxgk/fdzdgknr/xzxkjd/2026060514021837722/index.shtml",
+      "source_title": "辽宁省水利厅关于准予辽宁清原抽水蓄能有限公司抽水蓄能电站取水许可决定书",
+      "publication_date": "2026-02-11",
+      "document_date": "2026-02-09",
+      "locator": "一、项目基本情况（许可水量位于二、批准事项）",
+      "status": "官方直接公布",
+      "note": "许可取水量不是机组循环抽水量；总库容、正常蓄水位库容、调节库容不可互换。"
+    },
+    {
+      "parameter": "upper_normal_volume",
+      "name": "上水库正常蓄水位对应库容",
+      "value": 1437,
+      "unit": "万m³",
+      "phase": "清原一期",
+      "source_url": "https://slt.ln.gov.cn/slt/zfxxgk/fdzdgknr/xzxkjd/2026060514021837722/index.shtml",
+      "source_title": "辽宁省水利厅关于准予辽宁清原抽水蓄能有限公司抽水蓄能电站取水许可决定书",
+      "publication_date": "2026-02-11",
+      "document_date": "2026-02-09",
+      "locator": "一、项目基本情况（许可水量位于二、批准事项）",
+      "status": "官方直接公布",
+      "note": "许可取水量不是机组循环抽水量；总库容、正常蓄水位库容、调节库容不可互换。"
+    },
+    {
+      "parameter": "upper_regulating_volume",
+      "name": "上水库调节库容",
+      "value": 1216,
+      "unit": "万m³",
+      "phase": "清原一期",
+      "source_url": "https://slt.ln.gov.cn/slt/zfxxgk/fdzdgknr/xzxkjd/2026060514021837722/index.shtml",
+      "source_title": "辽宁省水利厅关于准予辽宁清原抽水蓄能有限公司抽水蓄能电站取水许可决定书",
+      "publication_date": "2026-02-11",
+      "document_date": "2026-02-09",
+      "locator": "一、项目基本情况（许可水量位于二、批准事项）",
+      "status": "官方直接公布",
+      "note": "许可取水量不是机组循环抽水量；总库容、正常蓄水位库容、调节库容不可互换。"
+    },
+    {
+      "parameter": "lower_normal_level",
+      "name": "下水库正常蓄水位",
+      "value": 319,
+      "unit": "m",
+      "phase": "清原一期",
+      "source_url": "https://slt.ln.gov.cn/slt/zfxxgk/fdzdgknr/xzxkjd/2026060514021837722/index.shtml",
+      "source_title": "辽宁省水利厅关于准予辽宁清原抽水蓄能有限公司抽水蓄能电站取水许可决定书",
+      "publication_date": "2026-02-11",
+      "document_date": "2026-02-09",
+      "locator": "一、项目基本情况（许可水量位于二、批准事项）",
+      "status": "官方直接公布",
+      "note": "许可取水量不是机组循环抽水量；总库容、正常蓄水位库容、调节库容不可互换。"
+    },
+    {
+      "parameter": "lower_dead_level",
+      "name": "下水库死水位",
+      "value": 298,
+      "unit": "m",
+      "phase": "清原一期",
+      "source_url": "https://slt.ln.gov.cn/slt/zfxxgk/fdzdgknr/xzxkjd/2026060514021837722/index.shtml",
+      "source_title": "辽宁省水利厅关于准予辽宁清原抽水蓄能有限公司抽水蓄能电站取水许可决定书",
+      "publication_date": "2026-02-11",
+      "document_date": "2026-02-09",
+      "locator": "一、项目基本情况（许可水量位于二、批准事项）",
+      "status": "官方直接公布",
+      "note": "许可取水量不是机组循环抽水量；总库容、正常蓄水位库容、调节库容不可互换。"
+    },
+    {
+      "parameter": "lower_total_volume",
+      "name": "下水库总库容",
+      "value": 1708,
+      "unit": "万m³",
+      "phase": "清原一期",
+      "source_url": "https://slt.ln.gov.cn/slt/zfxxgk/fdzdgknr/xzxkjd/2026060514021837722/index.shtml",
+      "source_title": "辽宁省水利厅关于准予辽宁清原抽水蓄能有限公司抽水蓄能电站取水许可决定书",
+      "publication_date": "2026-02-11",
+      "document_date": "2026-02-09",
+      "locator": "一、项目基本情况（许可水量位于二、批准事项）",
+      "status": "官方直接公布",
+      "note": "许可取水量不是机组循环抽水量；总库容、正常蓄水位库容、调节库容不可互换。"
+    },
+    {
+      "parameter": "lower_normal_volume",
+      "name": "下水库正常蓄水位对应库容",
+      "value": 1614,
+      "unit": "万m³",
+      "phase": "清原一期",
+      "source_url": "https://slt.ln.gov.cn/slt/zfxxgk/fdzdgknr/xzxkjd/2026060514021837722/index.shtml",
+      "source_title": "辽宁省水利厅关于准予辽宁清原抽水蓄能有限公司抽水蓄能电站取水许可决定书",
+      "publication_date": "2026-02-11",
+      "document_date": "2026-02-09",
+      "locator": "一、项目基本情况（许可水量位于二、批准事项）",
+      "status": "官方直接公布",
+      "note": "许可取水量不是机组循环抽水量；总库容、正常蓄水位库容、调节库容不可互换。"
+    },
+    {
+      "parameter": "lower_regulating_volume",
+      "name": "下水库调节库容",
+      "value": 1492,
+      "unit": "万m³",
+      "phase": "清原一期",
+      "source_url": "https://slt.ln.gov.cn/slt/zfxxgk/fdzdgknr/xzxkjd/2026060514021837722/index.shtml",
+      "source_title": "辽宁省水利厅关于准予辽宁清原抽水蓄能有限公司抽水蓄能电站取水许可决定书",
+      "publication_date": "2026-02-11",
+      "document_date": "2026-02-09",
+      "locator": "一、项目基本情况（许可水量位于二、批准事项）",
+      "status": "官方直接公布",
+      "note": "许可取水量不是机组循环抽水量；总库容、正常蓄水位库容、调节库容不可互换。"
+    },
+    {
+      "parameter": "lower_catchment_area",
+      "name": "下水库集水面积",
+      "value": 65.3,
+      "unit": "km²",
+      "phase": "清原一期",
+      "source_url": "https://slt.ln.gov.cn/slt/zfxxgk/fdzdgknr/xzxkjd/2026060514021837722/index.shtml",
+      "source_title": "辽宁省水利厅关于准予辽宁清原抽水蓄能有限公司抽水蓄能电站取水许可决定书",
+      "publication_date": "2026-02-11",
+      "document_date": "2026-02-09",
+      "locator": "一、项目基本情况（许可水量位于二、批准事项）",
+      "status": "官方直接公布",
+      "note": "许可取水量不是机组循环抽水量；总库容、正常蓄水位库容、调节库容不可互换。"
+    },
+    {
+      "parameter": "annual_permitted_withdrawal",
+      "name": "许可年取水量",
+      "value": 254.89,
+      "unit": "万m³/年",
+      "phase": "清原一期",
+      "source_url": "https://slt.ln.gov.cn/slt/zfxxgk/fdzdgknr/xzxkjd/2026060514021837722/index.shtml",
+      "source_title": "辽宁省水利厅关于准予辽宁清原抽水蓄能有限公司抽水蓄能电站取水许可决定书",
+      "publication_date": "2026-02-11",
+      "document_date": "2026-02-09",
+      "locator": "一、项目基本情况（许可水量位于二、批准事项）",
+      "status": "官方直接公布",
+      "note": "许可取水量不是机组循环抽水量；总库容、正常蓄水位库容、调节库容不可互换。"
+    },
+    {
+      "parameter": "full_output_duration",
+      "name": "连续满发利用小时数",
+      "value": 6,
+      "unit": "h",
+      "phase": "清原一期",
+      "source_url": "https://slt.ln.gov.cn/slt/zfxxgk/fdzdgknr/xzxkjd/2026060514021837722/index.shtml",
+      "source_title": "辽宁省水利厅关于准予辽宁清原抽水蓄能有限公司抽水蓄能电站取水许可决定书",
+      "publication_date": "2026-02-11",
+      "document_date": "2026-02-09",
+      "locator": "一、项目基本情况（许可水量位于二、批准事项）",
+      "status": "官方直接公布",
+      "note": "许可取水量不是机组循环抽水量；总库容、正常蓄水位库容、调节库容不可互换。"
+    },
+    {
+      "parameter": "annual_utilization_hours",
+      "name": "年利用小时数",
+      "value": 1673,
+      "unit": "h/年",
+      "phase": "清原一期",
+      "source_url": "https://slt.ln.gov.cn/slt/zfxxgk/fdzdgknr/xzxkjd/2026060514021837722/index.shtml",
+      "source_title": "辽宁省水利厅关于准予辽宁清原抽水蓄能有限公司抽水蓄能电站取水许可决定书",
+      "publication_date": "2026-02-11",
+      "document_date": "2026-02-09",
+      "locator": "一、项目基本情况（许可水量位于二、批准事项）",
+      "status": "官方直接公布",
+      "note": "许可取水量不是机组循环抽水量；总库容、正常蓄水位库容、调节库容不可互换。"
+    }
+  ],
+  "derived_parameters": [
+    {
+      "name": "上水库死库容",
+      "value": 221,
+      "unit": "万m³",
+      "formula": "1437-1216",
+      "status": "从同一官方口径推导，非直接公布"
+    },
+    {
+      "name": "下水库死库容",
+      "value": 122,
+      "unit": "万m³",
+      "formula": "1614-1492",
+      "status": "从同一官方口径推导，非直接公布"
+    }
+  ],
+  "missing": [
+    {
+      "parameter": "上下水库完整水位—库容曲线或逐点表",
+      "status": "未找到可公开读取的清原一期原始曲线/表",
+      "searched_terms": [
+        "清原抽水蓄能 库容曲线",
+        "清原抽水蓄能 水位库容",
+        "清原抽水蓄能 水位—库容",
+        "清原抽水蓄能 水位-库容"
+      ],
+      "fallback": "可以将死水位—正常水位之间做线性近似，仅用于明确标注的敏感性算例，不得称实际曲线。正常水位对应库容与调节库容是已知端点，不能额外假造中间测点。"
+    },
+    {
+      "parameter": "一期逐月生态流量m³/s",
+      "status": "找到针对清原的原始论文，未取得正文表；期刊公开PDF接口pdfUrl为空、仅转CNKI摘要",
+      "source_title": "康建民,胡雅杰,唐彩红,张尚弘.抽水蓄能电站生态流量计算方法适宜性及应用研究[J].人民黄河,2025,47(12):110起",
+      "source_url": "https://rmhh.cbpt.cnki.net/portal/journal/portal/client/paper/9077bc868addb97d82a049232d881b39",
+      "doi": "10.3969/j.issn.1000-1379.2025.12.018",
+      "confirmed_abstract": "研究以清原抽水蓄能电站为例，选用水文学法与湿周法；未在摘要公布可用于模型的逐月流量值。不得把摘要10%规则代替许可流量。"
+    },
+    {
+      "parameter": "一期蒸发、渗漏逐月或逐日损失和天然入流过程",
+      "status": "未找到公开可用的时间序列。许可年取水量254.89万m³不能直接拆分为这些分项。"
+    }
+  ],
+  "conflicts": [
+    {
+      "parameter": "水库库容",
+      "older_values": "历史百科及非原始转载有上1424、下1654万m³等；VR项目介绍有上正常1433、调节1214万m³",
+      "resolution": "优先记录2026官方许可1522/1708总库容、1437/1614正常库容、1216/1492调节库容，历史数作为独立版本保留，不平均混拼。",
+      "older_secondary_url": "https://www.vrqjcs.com/p/1dd0830524057ecd"
+    }
+  ],
+  "phase2_exclusions": [
+    {
+      "source_url": "https://sthj.ln.gov.cn/sthj/xxgk/zwxxgk/xxgkml/2026031209482487283/index.shtml",
+      "note": "该批复是清原二期1200MW，生态流量6—9月0.0196m³/s、10—次年5月0.0065m³/s，不能作为一期流量。"
+    },
+    {
+      "source_url": "https://sthj.ln.gov.cn/sthj/zfxxgk/fdzdgknr/xzxkxxgk/czzj/hbzxzjxm/2026012216244520605/2026012216211846902.pdf",
+      "local_path": "/workspace/research_qingyuan/reservoir_phase2_eia.pdf",
+      "note": "实际为16页公众参与说明，不是完整环评报告书。内含二期早期参数862万m³等，不应套一期。p5提供完整环评征求意见稿百度网盘公开链接。",
+      "full_eia_link": "https://pan.baidu.com/s/15iz-kMJ1OeA2DpR8nVjH_A",
+      "code": "588d"
+    }
+  ],
+  "old_phase1_eia_trace": {
+    "source_title": "辽宁省环境保护厅关于辽宁清原抽水蓄能电站环境影响报告书的批复",
+    "date": "2016-10-08（历史参考条目标注，未从Flash正文核实）",
+    "source_url": "https://web.archive.org/web/20170222105959/http://218.60.147.62/xmglgs/gs.html?f=2016109831",
+    "status": "已打开历史官方网页档案，但正文为Flash展示，无法直接读取。raw HTML指向Swf/2016109831.swf。不可称已取得批复正文。"
+  }
+}

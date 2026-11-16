@@ -1,0 +1,415 @@
+{
+  "target": "https://qingyuan-hydro-thesis.aquaticbench3.chatgpt.site",
+  "checked_at_utc": "2026-11-16T04:38:05.974869+00:00",
+  "task_scope": "只读可访问性与备选托管方案；未注册账号、购买资源、绑定域名或修改平台访问策略。",
+  "cloud_environment_observation": {
+    "anonymous_https_home_status": 200,
+    "location": "当前托管云环境，未把出口认定为中国大陆",
+    "limitation": "只证明该云环境出口，不等于中国大陆验证。"
+  },
+  "mainland_test": {
+    "provider": "Globalping公开分布式探针",
+    "geolocation_basis": "服务报告country=CN、城市及ASN，并带eyeball-network标签；不将CF边缘机房后缀视为探针位置。",
+    "measurements": [
+      {
+        "name": "首页",
+        "path": "/",
+        "measurement_id": "2KyG7iZt1I4V4als500021Vq8",
+        "api_result_url": "https://api.globalping.io/v1/measurements/2KyG7iZt1I4V4als500021Vq8",
+        "created_at": "2026-11-16T04:36:07.314Z",
+        "status": "finished",
+        "results": [
+          {
+            "country": "CN",
+            "city": "Guilin",
+            "asn": 4134,
+            "network": "China Telecom",
+            "probe_tags": [
+              "eyeball-network",
+              "u-shuangzhijinghua"
+            ],
+            "http_status": 403,
+            "tls_authorized": true,
+            "tls_protocol": "TLSv1.3",
+            "timing_ms": {
+              "total": 1057,
+              "dns": 63,
+              "tcp": 179,
+              "tls": 442,
+              "firstByte": 372,
+              "download": 1
+            },
+            "server": "cloudflare",
+            "cf_ray": "a5b3caffca284800-LAX",
+            "body_classification": "Cloudflare security block: Sorry, you have been blocked",
+            "target_resolved_address": "104.18.22.186"
+          },
+          {
+            "country": "CN",
+            "city": "Wuhan",
+            "asn": 4837,
+            "network": "CHINA UNICOM China169 Backbone",
+            "probe_tags": [
+              "eyeball-network"
+            ],
+            "http_status": 403,
+            "tls_authorized": true,
+            "tls_protocol": "TLSv1.3",
+            "timing_ms": {
+              "total": 1058,
+              "dns": 505,
+              "tcp": 172,
+              "tls": 195,
+              "firstByte": 185,
+              "download": 1
+            },
+            "server": "cloudflare",
+            "cf_ray": "a5b3caffdaad0855-HKG",
+            "body_classification": "Cloudflare security block: Sorry, you have been blocked",
+            "target_resolved_address": "104.18.22.186"
+          },
+          {
+            "country": "CN",
+            "city": "Taishan",
+            "asn": 9808,
+            "network": "China Mobile Communications Group",
+            "probe_tags": [
+              "eyeball-network"
+            ],
+            "http_status": 403,
+            "tls_authorized": true,
+            "tls_protocol": "TLSv1.3",
+            "timing_ms": {
+              "total": 851,
+              "dns": 198,
+              "tcp": 212,
+              "tls": 224,
+              "firstByte": 216,
+              "download": 1
+            },
+            "server": "cloudflare",
+            "cf_ray": "a5b3caff2c971655-LHR",
+            "body_classification": "Cloudflare security block: Sorry, you have been blocked",
+            "target_resolved_address": "104.18.23.186"
+          }
+        ],
+        "raw_file": "globalping-home-results.json",
+        "raw_sha256": "8ea180814a6e0b03c8af0542c2e51fbbf8636eab86c57a3cc5b4f36a03b65d6a"
+      },
+      {
+        "name": "研究页",
+        "path": "/research",
+        "measurement_id": "2aH70GVVXDAmIriBS00021Vq8",
+        "api_result_url": "https://api.globalping.io/v1/measurements/2aH70GVVXDAmIriBS00021Vq8",
+        "created_at": "2026-11-16T04:36:48.438Z",
+        "status": "finished",
+        "results": [
+          {
+            "country": "CN",
+            "city": "Guilin",
+            "asn": 4134,
+            "network": "China Telecom",
+            "probe_tags": [
+              "eyeball-network",
+              "u-shuangzhijinghua"
+            ],
+            "http_status": 403,
+            "tls_authorized": true,
+            "tls_protocol": "TLSv1.3",
+            "timing_ms": {
+              "total": 793,
+              "dns": 13,
+              "tcp": 175,
+              "tls": 196,
+              "firstByte": 187,
+              "download": 222
+            },
+            "server": "cloudflare",
+            "cf_ray": "a5b3cc000909f59a-LAX",
+            "body_classification": "Cloudflare security block: Sorry, you have been blocked",
+            "target_resolved_address": "104.18.22.186"
+          },
+          {
+            "country": "CN",
+            "city": "Wuhan",
+            "asn": 4837,
+            "network": "CHINA UNICOM China169 Backbone",
+            "probe_tags": [
+              "eyeball-network"
+            ],
+            "http_status": 403,
+            "tls_authorized": true,
+            "tls_protocol": "TLSv1.3",
+            "timing_ms": {
+              "total": 618,
+              "dns": 27,
+              "tcp": 179,
+              "tls": 212,
+              "firstByte": 199,
+              "download": 1
+            },
+            "server": "cloudflare",
+            "cf_ray": "a5b3cbfdfb8f04c7-HKG",
+            "body_classification": "Cloudflare security block: Sorry, you have been blocked",
+            "target_resolved_address": "104.18.22.186"
+          },
+          {
+            "country": "CN",
+            "city": "Taishan",
+            "asn": 9808,
+            "network": "China Mobile Communications Group",
+            "probe_tags": [
+              "eyeball-network"
+            ],
+            "http_status": 403,
+            "tls_authorized": true,
+            "tls_protocol": "TLSv1.3",
+            "timing_ms": {
+              "total": 680,
+              "dns": 1,
+              "tcp": 217,
+              "tls": 232,
+              "firstByte": 229,
+              "download": 1
+            },
+            "server": "cloudflare",
+            "cf_ray": "a5b3cbff0f86886d-LHR",
+            "body_classification": "Cloudflare security block: Sorry, you have been blocked",
+            "target_resolved_address": "104.18.23.186"
+          }
+        ],
+        "raw_file": "globalping-research-results.json",
+        "raw_sha256": "d5d0cf694683b5f37ff4c210c30026722dd542eed54ac3e97ea5093d68c875a1"
+      },
+      {
+        "name": "源码ZIP下载",
+        "path": "/downloads/pumped-storage-source.zip",
+        "measurement_id": "2i6JhUAaqfbIRldF900021Vq8",
+        "api_result_url": "https://api.globalping.io/v1/measurements/2i6JhUAaqfbIRldF900021Vq8",
+        "created_at": "2026-11-16T04:36:48.828Z",
+        "status": "finished",
+        "results": [
+          {
+            "country": "CN",
+            "city": "Guilin",
+            "asn": 4134,
+            "network": "China Telecom",
+            "probe_tags": [
+              "eyeball-network",
+              "u-shuangzhijinghua"
+            ],
+            "http_status": 403,
+            "tls_authorized": true,
+            "tls_protocol": "TLSv1.3",
+            "timing_ms": {
+              "total": 849,
+              "dns": 276,
+              "tcp": 178,
+              "tls": 188,
+              "firstByte": 207,
+              "download": 0
+            },
+            "server": "cloudflare",
+            "cf_ray": "a5b3cc02fe9e498b-LAX",
+            "body_classification": "Cloudflare security block: Sorry, you have been blocked",
+            "target_resolved_address": "104.18.23.186"
+          },
+          {
+            "country": "CN",
+            "city": "Wuhan",
+            "asn": 4837,
+            "network": "CHINA UNICOM China169 Backbone",
+            "probe_tags": [
+              "eyeball-network"
+            ],
+            "http_status": 403,
+            "tls_authorized": true,
+            "tls_protocol": "TLSv1.3",
+            "timing_ms": {
+              "total": 641,
+              "dns": 1,
+              "tcp": 206,
+              "tls": 230,
+              "firstByte": 203,
+              "download": 1
+            },
+            "server": "cloudflare",
+            "cf_ray": "a5b3cc0099d40460-HKG",
+            "body_classification": "Cloudflare security block: Sorry, you have been blocked",
+            "target_resolved_address": "104.18.23.186"
+          },
+          {
+            "country": "CN",
+            "city": "Taishan",
+            "asn": 9808,
+            "network": "China Mobile Communications Group",
+            "probe_tags": [
+              "eyeball-network"
+            ],
+            "http_status": 403,
+            "tls_authorized": true,
+            "tls_protocol": "TLSv1.3",
+            "timing_ms": {
+              "total": 696,
+              "dns": 0,
+              "tcp": 238,
+              "tls": 236,
+              "firstByte": 221,
+              "download": 1
+            },
+            "server": "cloudflare",
+            "cf_ray": "a5b3cc019887a580-LHR",
+            "body_classification": "Cloudflare security block: Sorry, you have been blocked",
+            "target_resolved_address": "104.18.23.186"
+          }
+        ],
+        "raw_file": "globalping-sourcezip-results.json",
+        "raw_sha256": "a5a58d4ad211e13102ff93ec4e421c332985ac446d85f617391cb6c87361ce56"
+      }
+    ],
+    "conclusion": "本次三地三运营商探针，首页、研究页、源码ZIP共9次HTTPS GET均完成DNS/TCP/TLS、证书校验通过，但均HTTP 403且正文为Cloudflare安全阻断页。未取得任何200正文或ZIP。不能声称国内可正常访问。",
+    "limitations": [
+      "只代表该时刻所选3个公开探针与其HTTP客户端，不证明所有大陆网络或普通浏览器均被阻断。",
+      "Globalping采用HTTP客户端，可能被站点反自动化策略拦截；未在中国大陆普通浏览器中完成交互验证。",
+      "TLS可达、HTTP安全阻断与访客登录权限是不同层次，本次403不是ChatGPT登录跳转。",
+      "未尝试绕过站点防护；公开站点的WAF/地区策略是否可调整需平台方能力。",
+      "在线探测结果可能过期，原始响应及摘要已存本地以留档。"
+    ]
+  },
+  "deployment_options": [
+    {
+      "name": "保留现有Sites原站",
+      "execution": "继续使用现有project_id与原域名，源代码修改后通过Sites保存版本再发布；保留公开访问配置。",
+      "cost": "本次无新增主机或域名采购；既有账号计划/额度费用按用户当前平台账户，未查询到账单。",
+      "requirements": [
+        "当前账号原站owner/editor权限",
+        "平台source仓库写入及发布权限"
+      ],
+      "china_access": "本次大陆探针被Cloudflare安全策略阻断；仅公开权限不能保证解除。"
+    },
+    {
+      "name": "GitHub Pages公开镜像",
+      "execution": "公开仓库开启Settings > Pages > GitHub Actions；push后构建静态产物并使用官方Pages部署Action；不需要访客登录。",
+      "cost": "GitHub Free公开仓库可使用Pages，基础托管0元；默认github.io域名无需另买。自定义域名另按注册及续费价格。",
+      "requirements": [
+        "有效GitHub账号连接及仓库管理/Actions/Pages权限"
+      ],
+      "limits": "站点1GB，软带宽100GB/月；仓库不应纳入大体量论文PDF。",
+      "china_access": "须部署后另做大陆电信/联通/移动实测；不能保证github.io在大陆所有网络稳定。",
+      "source_ids": [
+        "H02"
+      ]
+    },
+    {
+      "name": "Cloudflare Pages公开镜像",
+      "execution": "账号连接GitHub仓库或配置受限API令牌，构建目录dist，部署纯静态产物；默认pages.dev，或者用户自有域名。",
+      "cost": "Free计划静态托管0元、500构建/月；自定义域名注册/续费另外计费。超过额度或使用Functions须再核价。",
+      "requirements": [
+        "Cloudflare账号授权",
+        "若用API部署需只授目标项目的令牌及account id"
+      ],
+      "limits": "Free 20000文件，单文件25MiB；当前源码ZIP约57KB，合适。",
+      "china_access": "同为境外静态平台，不能仅靠换域名承诺大陆可达；新域名部署后必须实测。",
+      "source_ids": [
+        "H03",
+        "H04"
+      ]
+    },
+    {
+      "name": "中国大陆阿里云OSS静态站（国内受众优先时可选）",
+      "execution": "实名云账号创建大陆区域标准存储Bucket，上传dist，设置index.html与404，对发布目录允许公开读；绑定已备案自有域名，配置HTTPS/DNS；使用仅该Bucket写入的RAM身份做CI上传。",
+      "cost": "按量费用=存储GB月×选定地域单价 + 外网流出GB×时段单价 + GET/PUT次数×请求单价；另计域名首年和续费、可选CDN/HTTPS服务。未选地域、流量与域名，不能给固定月费或自动购买。",
+      "pricing_status": "当前详细价页面为动态报价，未确认2026特定地域最终单价；官方2024案例单价仅作演示，不充作当前报价。",
+      "requirements": [
+        "用户实名云账号并授权目标Bucket",
+        "可备案域名与备案材料，若选大陆",
+        "域名DNS控制权",
+        "确认具体费用后再创建付费资源"
+      ],
+      "china_access": "需备案、DNS与HTTPS生效后，从大陆三运营商及普通浏览器实际验证；地理位置适合大陆访问，但仍不能提前保证。",
+      "source_ids": [
+        "H05",
+        "H06",
+        "H07"
+      ]
+    },
+    {
+      "name": "腾讯云COS静态站",
+      "execution": "与OSS类似，选择地域、配置静态站与公开读、自定义域名/HTTPS，按官方域名要求备案；使用目标Bucket范围的部署身份。",
+      "cost": "按所选地域的标准存储、请求、外网流量计费，另有域名/CDN；未选配置不报固定月费。",
+      "requirements": [
+        "腾讯云账号授权",
+        "域名/DNS控制权与适用备案"
+      ],
+      "china_access": "新部署后实测，不把产品支持静态站等同国内已测通。",
+      "source_ids": [
+        "H08"
+      ]
+    }
+  ],
+  "manual_browser_check": {
+    "networks": [
+      "中国电信住宅/校园网",
+      "中国联通住宅/校园网",
+      "中国移动4G/5G或宽带"
+    ],
+    "procedure": [
+      "断开VPN/代理，使用无痕窗口，记录北京时间、城市和运营商。",
+      "依次访问首页、/research.html、参数JSON、源码ZIP下载。",
+      "记录是否出现ChatGPT登录页、Cloudflare阻断/验证、DNS/TLS报错；保存开发者工具Network响应状态及响应头。",
+      "下载源码ZIP与研究数据，核对发布的SHA256，确认文件不是HTML阻断页。",
+      "在电脑和手机检查计算按钮及研究表，记录问题截图与测试时间。"
+    ],
+    "acceptance": "各目标运营商得到HTTP 200且内容正确、无需登录，ZIP哈希匹配，核心页面可交互，方可将该网络记为通过。"
+  },
+  "sources": [
+    {
+      "id": "H01",
+      "title": "Globalping 官方OpenAPI与探测说明",
+      "url": "https://github.com/jsdelivr/globalping/blob/master/public/v1/spec.yaml",
+      "verified": "公开API无需账号，250次探测/小时匿名额度，HTTP测量返回探针国别、城市、ASN、HTTP状态和TLS信息。"
+    },
+    {
+      "id": "H02",
+      "title": "GitHub Pages官方限制",
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits",
+      "verified": "GitHub Free可用于公开仓库；已发布站点不超过1GB；软带宽限制100GB/月。"
+    },
+    {
+      "id": "H03",
+      "title": "Cloudflare Pages官方产品与免费计划",
+      "url": "https://www.cloudflare.com/products/pages/",
+      "verified": "可免费起步；静态站请求及带宽不限量；云函数另有额度和计费，当前纯静态项目无需函数。"
+    },
+    {
+      "id": "H04",
+      "title": "Cloudflare Pages官方平台限制",
+      "url": "https://developers.cloudflare.com/pages/platform/limits/",
+      "verified": "Free 500次构建/月，20000文件，单文件25MiB，超额需按官方计划处理。"
+    },
+    {
+      "id": "H05",
+      "title": "阿里云OSS静态网站托管",
+      "url": "https://help.aliyun.com/zh/oss/user-guide/hosting-static-websites",
+      "verified": "OSS Bucket默认域名的HTML可能强制下载；正常网页预览需绑定自定义域名；大陆Bucket绑定域名需ICP备案；公开读取配置应只覆盖发布产物。"
+    },
+    {
+      "id": "H06",
+      "title": "阿里云OSS官网详细价格",
+      "url": "https://www.aliyun.com/price/detail/oss",
+      "verified": "存储、请求、流出流量按量或资源包计费，须选具体地域与冗余类型核价。页面当前动态报价无法从简化正文确认最终适用单价，不据此报固定月费。"
+    },
+    {
+      "id": "H07",
+      "title": "阿里云OSS官方计费案例",
+      "url": "https://help.aliyun.com/zh/oss/billing-examples",
+      "verified": "案例注明单价来自2024-11-20，示例标准ZRS 0.15元/GB/月，GET 0.01元/万次，忙时外网流出0.50元/GB；仅历史计费演示，不作为2026报价。"
+    },
+    {
+      "id": "H08",
+      "title": "腾讯云COS静态网站托管",
+      "url": "https://cloud.tencent.com/document/api/436/9512",
+      "verified": "支持COS静态网站与自定义域名，需依地域与域名要求备案；价格须查询所选地域当期计费。"
+    }
+  ]
+}
