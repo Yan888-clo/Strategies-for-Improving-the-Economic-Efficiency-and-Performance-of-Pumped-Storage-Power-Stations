@@ -10,18 +10,19 @@
 
 本环境没有技能文档所述的`site-workflow.mjs`，因此采用等价的标准Git推送与本地归档，凭据仅从隐藏stdin传入进程内存，不写入源码或Git配置。发布仍使用原生Sites工具核验提交和保存版本。Sites短效仓库凭据不能放进GitHub Actions冒充长期同步配置。
 
-## GitHub：当前受阻步骤
+## GitHub：已发现的仓库与授权步骤
 
-初始工作区没有用户Git仓库，原站仅关联Sites托管Git；`gh auth status`报告现有GH_TOKEN无效，GitHub插件未连接。已展示GitHub连接入口，但后台没有确认完成可用授权。
+现有公开仓库：[https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations](https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations)，账号`Yan888-clo`。已成功读取与fetch main，当前远端提交`77a2406f9a92f4dd35c29872009eb8e428b902cb`，只有README。原README保留在`docs/GITHUB_INITIAL_README.md`，本地与Sites历史合并；不另建仓库，不强推。
 
-用户需要完成：
+用户截图显示“无法连接到GitHub”和“无法连接应用”。这是ChatGPT连接流程的通用失败提示，不能据此判定账号、密码或网络中的哪一项故障。当前`gh auth status`仍报凭据无效，插件未完成连接。公开读取无需写入授权，二者不得混称。
 
-1. 在ChatGPT设置的插件/连接器中连接或重新连接GitHub，完成GitHub账号授权，允许访问目标仓库；如需组织仓库，还要完成组织SSO/仓库授权。
-2. 让当前环境使用有效GitHub连接。在自己的终端也可通过`gh auth login --web`完成授权；不要把token粘进公开仓库。
-3. 授权可用后在项目执行 `bash scripts/connect-github.sh`。脚本优先检查`github`远端；发现同名仓库会停止以便核对，不强推。不存在时按用户指示创建公开`qingyuan-hydro-thesis`仓库，保留原Sites origin。
-4. 在GitHub仓库Settings → Pages → Build and deployment → Source选择GitHub Actions，运行`.github/workflows/pages.yml`。
+前面只要求连接ChatGPT插件的说明不足：应用读取与Codex写入权限需要分别验证。可先在Safari或桌面浏览器登录GitHub与ChatGPT，再通过Codex的仓库/云环境设置选择现有仓库；若出现GitHub授权页，只选择本项目仓库。GitHub端的OpenAI官方[ChatGPT Codex Connector](https://github.com/apps/chatgpt-codex-connector)可用于检查安装及仓库选择，但仅安装App不代表当前任务已经取得写权限。
 
-工作流在main更新后执行build/check并发布`dist/`，不需要访客登录；PR只检查不部署。不包含Sites发布凭据，也不会修改原Sites。公开仓库地址与Pages URL应在创建和成功部署后写入progress的sync字段；当前不得预填一个虚构用户URL。
+官方设置入口说明：[Codex Cloud环境](https://learn.chatgpt.com/docs/environments/cloud-environments)：Settings → Codex Cloud → Environments；选择/编辑环境并选中仓库，按页面完成GitHub授权。在手机平板上如未显示环境管理入口，用网页或桌面端；不要删除当前任务，本工作区成果保留。
+
+获得本仓库写入授权后，回到原任务运行 `bash scripts/connect-github.sh --push`。脚本只使用已配置的github远端，先fetch并核对远端main是本地祖先，先dry-run验证写入，再正常推送；不会强推或另建仓库。无授权会明确停止。不要在聊天、源码或公开仓库中填写密码、验证码或令牌。
+
+GitHub仓库Settings → Pages → Build and deployment → Source选择GitHub Actions，再运行`.github/workflows/pages.yml`。main更新后构建检查并发布dist，PR只检查；原Sites仍独立发布。
 
 ## 中国大陆实际探测
 

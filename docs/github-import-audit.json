@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-11-16T04:56:06.879215+00:00",
+  "account": "Yan888-clo",
+  "repository_url": "https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations",
+  "public_read_verified": true,
+  "remote_main_commit": "77a2406f9a92f4dd35c29872009eb8e428b902cb",
+  "remote_files": [
+    "README.md"
+  ],
+  "original_readme": "docs/GITHUB_INITIAL_README.md",
+  "original_readme_sha256": "4cfd1c71cd4c6d9ce913bc5d9157ebf0bb40b24dadd5fa0fb434f38a35b6cbf7",
+  "conflict_resolution": "Read both READMEs, keep detailed website guide at root and preserve GitHub original README separately; retain both histories through merge.",
+  "write_access": "not_verified; current CLI credential invalid"
+}

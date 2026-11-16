@@ -6,7 +6,7 @@
 
 研究数据、来源、任务与网页放在同一个Git仓库。`research/data/` 是内容依据，`site/` 是网页模板，`scripts/build.py` 把数据与进度生成到 `dist/`，同时更新下载包。修改研究成果后执行构建与校验，网页及下载文件同步更新。只修改聊天内容或另一个ChatGPT项目不会自动修改仓库。
 
-原站的Sites Git历史已保留。当前没有已验证可用的GitHub账号授权，公开GitHub仓库尚未创建。GitHub Actions部署配置已经准备好；需完成授权、创建/连接仓库并启用Pages才能自动发布GitHub Pages。**GitHub Pages与原Sites是两个独立部署目标，不能把Pages成功当作Sites自动更新。**
+原站的Sites Git历史已保留。已找到并核对现有公开仓库：[Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations](https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations)。该仓库目前只有初始README，已添加github远端并在本地保留、合并双方历史。当前没有已验证可用的GitHub写入授权，网站与研究代码尚未推送该仓库。GitHub Actions部署配置已经准备好；需完成写入授权、推送现有仓库并启用Pages才能自动发布GitHub Pages。**GitHub Pages与原Sites是两个独立部署目标，不能把Pages成功当作Sites自动更新。**
 
 ## 本地运行
 

@@ -17,7 +17,7 @@
       "收益机制"
     ]
   },
-  "updated_at": "2026-11-16T04:43:42.649175+00:00",
+  "updated_at": "2026-11-16T04:57:11.550622+00:00",
   "data_snapshot": {
     "retrieved_at": "2026-11-16",
     "public_parameter_records": 48,
@@ -336,7 +336,7 @@
     },
     {
       "id": "D-GITHUB",
-      "title": "连接GitHub并优先复用或创建公开仓库",
+      "title": "复用Yan888-clo已有公开仓库并完成代码推送",
       "type": "deployment",
       "topic": "仓库连接",
       "status": "blocked",
@@ -353,10 +353,17 @@
         "不提交凭据"
       ],
       "dependencies": [],
-      "evidence": [],
-      "blocked_reason": "现有GitHub凭据失效，插件连接待账号授权",
+      "evidence": [
+        {
+          "path": "docs/github-import-audit.json",
+          "kind": "public_repository_read_and_history_reconciliation",
+          "checked_at": "2026-11-16T04:57:11.550622+00:00",
+          "limitations": "只能证明公开读取及本地历史核对，不能证明拥有远端写权限"
+        }
+      ],
+      "blocked_reason": "公开读取和fetch已成功；ChatGPT连接失败，当前环境写入凭据无效，尚未推送GitHub",
       "extra_inputs": [],
-      "last_updated": "2026-11-16T04:39:54.113398+00:00"
+      "last_updated": "2026-11-16T04:57:11.550622+00:00"
     },
     {
       "id": "D-PUBLISH",
@@ -605,7 +612,7 @@
     "website_source": "site/",
     "generated_output": "dist/",
     "build_status": "passed",
-    "github_status": "awaiting_account_connection",
+    "github_status": "公开仓库已找到并核对，本地已接入；写入授权未完成",
     "sites_source_access": "owner_confirmed",
     "sites_current_access_mode": "public",
     "publication_status": "published",
@@ -613,13 +620,13 @@
     "site_url": "https://qingyuan-hydro-thesis.aquaticbench3.chatgpt.site",
     "sites_status": "published",
     "domestic_status": "three_mainland_probes_http_403",
-    "github_url": null,
+    "github_url": "https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations",
     "deployment_note": "版本4已成功发布并匿名HTTP核验；本页与下载包随同仓库构建。GitHub待授权，未配置GitHub自动更新原Sites。"
   },
   "deployment": {
     "site_project_id": "appgprj_6afa7f3df0048191a958ae780f2c34c8",
     "site_url": "https://qingyuan-hydro-thesis.aquaticbench3.chatgpt.site",
-    "github_repository_url": null,
+    "github_repository_url": "https://github.com/Yan888-clo/Strategies-for-Improving-the-Economic-Efficiency-and-Performance-of-Pumped-Storage-Power-Stations",
     "commit_sha": "a3e0dcd2764535f2c50de94a8a26cffd4a6de9f7",
     "version_id": "appgprj_6afa7f3df0048191a958ae780f2c34c8~appgver_7d68859843e48191bebf8991e5667267",
     "deployment_id": "appgdep_6afa89b750d48191affb113081588e8a",
@@ -642,7 +649,9 @@
       "evidence_path": "research/evidence/hosting_reachability.json"
     },
     "last_verified_version": 4,
-    "receipt_note": "这里记录最近已归档的版本4回执；后续发布不将未知提交或版本写为已验证。"
+    "receipt_note": "这里记录最近已归档的版本4回执；后续发布不将未知提交或版本写为已验证。",
+    "github_remote_main_checked": "77a2406f9a92f4dd35c29872009eb8e428b902cb",
+    "github_push_status": "awaiting_write_authorization"
   },
   "claims": {
     "real_station_efficiency_improvement": null,

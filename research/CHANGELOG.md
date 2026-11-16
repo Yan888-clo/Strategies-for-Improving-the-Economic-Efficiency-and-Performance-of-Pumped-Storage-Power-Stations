@@ -23,3 +23,9 @@
 - 原Sites版本4已发布成功，源码提交`a3e0dcd2764535f2c50de94a8a26cffd4a6de9f7`；原生回执见`research/evidence/sites-release-4.json`。
 - 当前云出口未发送访客Cookie或Bearer，首页、研究页、进度、同步清单与源码ZIP均HTTP200，ZIP哈希与构建清单一致。未做交互浏览器QA。
 - 本次归档回执与最终状态将随后续同仓库版本发布；最终版本回执保留在工作区local-status。GitHub仍待账号授权，大陆三点HTTP403未解决。
+
+## 发现已有GitHub仓库并核对连接故障
+
+- 用户提供GitHub用户名Yan888-clo与两张连接错误截图。已找到其现有公开研究仓库，远端main为77a2406，只有初始README；保留原README与初始提交，不重复创建仓库。
+- 已增加github远端并fetch，核对README的add/add冲突后，将完整项目说明保留于根README，远端原文另存docs/GITHUB_INITIAL_README.md，并合并双方历史。
+- 写入授权仍未完成；公开读取成功不等于推送授权，未声称GitHub已同步。更正账号连接指引，区分ChatGPT应用读取和Codex仓库写入。
